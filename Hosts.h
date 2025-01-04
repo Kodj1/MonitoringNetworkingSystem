@@ -57,4 +57,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // DESIGNERARPMRQ_H
+#endif
