@@ -1,11 +1,3 @@
-/********************************************************************************
-** Form generated from reading UI file 'MainWindow - untitlededzpgR.ui'
-**
-** Created by: Qt User Interface Compiler version 5.15.15
-**
-** WARNING! All changes made in this file will be lost when recompiling UI file!
-********************************************************************************/
-
 #ifndef MAINWINDOW_20__2D__20_UNTITLEDEDZPGR_H
 #define MAINWINDOW_20__2D__20_UNTITLEDEDZPGR_H
 
