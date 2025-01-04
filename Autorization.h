@@ -65,4 +65,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // AUTORIZATION_H
+#endif
