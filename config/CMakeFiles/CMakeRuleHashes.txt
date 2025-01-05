@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+90c150b6ff92b2b83d978f10c53c8e55 moc_Autorization.cpp
+1c8fe4def63b0cd51c4f8c20026aea59 moc_Menu.cpp

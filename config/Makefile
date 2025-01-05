@@ -129,6 +129,30 @@ Monitoring_System/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/build
 .PHONY : Monitoring_System/fast
 
+Autorization.o: Autorization.cpp.o
+.PHONY : Autorization.o
+
+# target to build an object file
+Autorization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Autorization.cpp.o
+.PHONY : Autorization.cpp.o
+
+Autorization.i: Autorization.cpp.i
+.PHONY : Autorization.i
+
+# target to preprocess a source file
+Autorization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Autorization.cpp.i
+.PHONY : Autorization.cpp.i
+
+Autorization.s: Autorization.cpp.s
+.PHONY : Autorization.s
+
+# target to generate assembly for a file
+Autorization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Autorization.cpp.s
+.PHONY : Autorization.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -153,6 +177,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+moc_Autorization.o: moc_Autorization.cpp.o
+.PHONY : moc_Autorization.o
+
+# target to build an object file
+moc_Autorization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o
+.PHONY : moc_Autorization.cpp.o
+
+moc_Autorization.i: moc_Autorization.cpp.i
+.PHONY : moc_Autorization.i
+
+# target to preprocess a source file
+moc_Autorization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.i
+.PHONY : moc_Autorization.cpp.i
+
+moc_Autorization.s: moc_Autorization.cpp.s
+.PHONY : moc_Autorization.s
+
+# target to generate assembly for a file
+moc_Autorization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.s
+.PHONY : moc_Autorization.cpp.s
+
+moc_Menu.o: moc_Menu.cpp.o
+.PHONY : moc_Menu.o
+
+# target to build an object file
+moc_Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o
+.PHONY : moc_Menu.cpp.o
+
+moc_Menu.i: moc_Menu.cpp.i
+.PHONY : moc_Menu.i
+
+# target to preprocess a source file
+moc_Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.i
+.PHONY : moc_Menu.cpp.i
+
+moc_Menu.s: moc_Menu.cpp.s
+.PHONY : moc_Menu.s
+
+# target to generate assembly for a file
+moc_Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.s
+.PHONY : moc_Menu.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Monitoring_System"
+	@echo "... Autorization.o"
+	@echo "... Autorization.i"
+	@echo "... Autorization.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... moc_Autorization.o"
+	@echo "... moc_Autorization.i"
+	@echo "... moc_Autorization.s"
+	@echo "... moc_Menu.o"
+	@echo "... moc_Menu.i"
+	@echo "... moc_Menu.s"
 .PHONY : help
 
 
