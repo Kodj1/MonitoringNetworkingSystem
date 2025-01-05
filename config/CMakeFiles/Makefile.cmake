@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/ilyaveretennikov/Local_Monitoring_System/CMakeLists.txt"
+  "/home/ilyaveretennikov/MonitoringNetworkingSystem/CMakeLists.txt"
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeSystem.cmake"
@@ -47,11 +47,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake"
   "/usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake"
   "/usr/lib64/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake"
-  "/usr/lib64/cmake/Qt5Network/Qt5NetworkConfig.cmake"
-  "/usr/lib64/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake"
-  "/usr/lib64/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake"
-  "/usr/lib64/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake"
-  "/usr/lib64/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake"

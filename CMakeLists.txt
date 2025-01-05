@@ -1,17 +1,14 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 
-# Project name
 project(Monitoring_System)
 
-# Set the C++ standard
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
 
-# QtWidgets is required for GUI applications
+set(SOURCES
+    main.cpp
+)
+
+add_executable(${PROJECT_NAME} ${SOURCES})
+
 find_package(Qt5Widgets REQUIRED)
-find_package(Qt5Network REQUIRED)
-
-# Add the executable
-add_executable(Monitoring_System main.cpp)
-
-# Link Qt libraries
-target_link_libraries(Monitoring_System Qt5::Widgets Qt5::Network)
+target_link_libraries(${PROJECT_NAME} Qt5::Widgets)

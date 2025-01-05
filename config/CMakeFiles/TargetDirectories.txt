@@ -1,0 +1,3 @@
+/home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles/Monitoring_System.dir
+/home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles/edit_cache.dir
+/home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles/rebuild_cache.dir

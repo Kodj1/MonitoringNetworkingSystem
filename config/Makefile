@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ilyaveretennikov/Local_Monitoring_System
+CMAKE_SOURCE_DIR = /home/ilyaveretennikov/MonitoringNetworkingSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ilyaveretennikov/Local_Monitoring_System/build
+CMAKE_BINARY_DIR = /home/ilyaveretennikov/MonitoringNetworkingSystem/config
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyaveretennikov/Local_Monitoring_System/build/CMakeFiles /home/ilyaveretennikov/Local_Monitoring_System/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles /home/ilyaveretennikov/MonitoringNetworkingSystem/config//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyaveretennikov/Local_Monitoring_System/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

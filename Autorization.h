@@ -9,6 +9,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
+#include "Menu.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -21,7 +22,7 @@ public:
     QLineEdit *lineEdit_2;
     QLabel *label;
     QStatusBar *statusbar;
-
+ 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
