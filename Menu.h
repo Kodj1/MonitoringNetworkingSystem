@@ -71,4 +71,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // MENU_H
+#endif
