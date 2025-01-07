@@ -43,12 +43,12 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
 
     void Ui_Main_Menu::retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\245\320\276\321\201\321\202\321\213", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\241\320\265\321\202\320\265\320\262\320\260\321\217 \320\260\320\272\321\202\320\270\320\262\320\275\320\276\321\201\321\202\321\214", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\232\320\276\320\275\321\202\320\265\320\271\320\275\320\265\321\200\321\213 \320\270 \320\272\320\273\320\260\321\201\321\202\320\265\321\200\321\213", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\276\320\261\320\273\320\265\320\274\321\213", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("MainWindow", "\320\241\320\272\320\260\320\275\320\270\321\200\320\276\320\262\320\260\320\275\320\270\320\265 \321\201\320\265\321\202\320\270", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Главное меню", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Хосты", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Сетевая активность", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Контейнеры и кластеры", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Проблемы", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
     } // retranslateUi
 
  void Ui_Main_Menu::openMenu()
