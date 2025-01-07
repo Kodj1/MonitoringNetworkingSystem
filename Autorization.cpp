@@ -28,7 +28,10 @@ void Ui_Autorization_Window::setupUi(QMainWindow *MainWindow)
 
     retranslateUi(MainWindow);
 
-    // Подключение сигнала clicked к слоту openMenu
+    // Store the main window pointer
+    mainWindow = MainWindow;
+
+    // Connect the signal clicked to the slot openMenu
     QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Autorization_Window::openMenu);
 
     QMetaObject::connectSlotsByName(MainWindow);
@@ -43,9 +46,12 @@ void Ui_Autorization_Window::retranslateUi(QMainWindow *MainWindow)
 
 void Ui_Autorization_Window::openMenu()
 {
-    // Создание нового окна Menu
+    // Create a new Menu window
     QMainWindow *menuWindow = new QMainWindow();
     Ui::Menu *menu = new Ui::Menu();
     menu->setupUi(menuWindow);
     menuWindow->show();
+    
+    // Close the Authorization window
+    mainWindow->close();
 }

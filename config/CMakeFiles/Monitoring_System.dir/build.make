@@ -81,57 +81,57 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o: CMakeFiles/Monitoring_System.dir/fl
 CMakeFiles/Monitoring_System.dir/main.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp
 CMakeFiles/Monitoring_System.dir/main.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Monitoring_System.dir/main.cpp.o"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/main.cpp.o -MF CMakeFiles/Monitoring_System.dir/main.cpp.o.d -o CMakeFiles/Monitoring_System.dir/main.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/main.cpp.o -MF CMakeFiles/Monitoring_System.dir/main.cpp.o.d -o CMakeFiles/Monitoring_System.dir/main.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp
 
 CMakeFiles/Monitoring_System.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/main.cpp.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp > CMakeFiles/Monitoring_System.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp > CMakeFiles/Monitoring_System.dir/main.cpp.i
 
 CMakeFiles/Monitoring_System.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/main.cpp.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp -o CMakeFiles/Monitoring_System.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp -o CMakeFiles/Monitoring_System.dir/main.cpp.s
 
 CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
 CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp
 CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Monitoring_System.dir/Autorization.cpp.o"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/Autorization.cpp.o -MF CMakeFiles/Monitoring_System.dir/Autorization.cpp.o.d -o CMakeFiles/Monitoring_System.dir/Autorization.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/Autorization.cpp.o -MF CMakeFiles/Monitoring_System.dir/Autorization.cpp.o.d -o CMakeFiles/Monitoring_System.dir/Autorization.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp
 
 CMakeFiles/Monitoring_System.dir/Autorization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/Autorization.cpp.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp > CMakeFiles/Monitoring_System.dir/Autorization.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp > CMakeFiles/Monitoring_System.dir/Autorization.cpp.i
 
 CMakeFiles/Monitoring_System.dir/Autorization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/Autorization.cpp.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp -o CMakeFiles/Monitoring_System.dir/Autorization.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp -o CMakeFiles/Monitoring_System.dir/Autorization.cpp.s
 
 CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
 CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o: moc_Autorization.cpp
 CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o -MF CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o.d -o CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Autorization.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o -MF CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o.d -o CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Autorization.cpp
 
 CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Autorization.cpp > CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Autorization.cpp > CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.i
 
 CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Autorization.cpp -o CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Autorization.cpp -o CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.s
 
 CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
 CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o: moc_Menu.cpp
 CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/config/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o -MF CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o.d -o CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Menu.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o -MF CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o.d -o CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Menu.cpp
 
 CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.i"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Menu.cpp > CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Menu.cpp > CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.i
 
 CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.s"
-	/usr/lib64/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Menu.cpp -o CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/config/moc_Menu.cpp -o CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.s
 
 # Object files for target Monitoring_System
 Monitoring_System_OBJECTS = \

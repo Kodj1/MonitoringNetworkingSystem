@@ -23,6 +23,7 @@ public:
     QLineEdit *lineEdit_2;
     QLabel *label;
     QStatusBar *statusbar;
+    QMainWindow *mainWindow; // Member variable to store the main window
 
     void setupUi(QMainWindow *MainWindow);
     void retranslateUi(QMainWindow *MainWindow);
