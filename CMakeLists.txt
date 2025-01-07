@@ -9,6 +9,7 @@ find_package(Qt5Widgets REQUIRED)
 set(SOURCES
     main.cpp
     Autorization.cpp
+    Menu.cpp
 )
 
 set(HEADERS

@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'Menu.h'
+** Meta object code from reading C++ file 'HostChecker.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.15)
 **
@@ -7,11 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../Menu.h"
+#include "../HostChecker.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'Menu.h' doesn't include <QObject>."
+#error "The header file 'HostChecker.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.15.15. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,27 +21,27 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_Ui_Main_Menu_t {
+struct qt_meta_stringdata_Ui_HostChecker_Window_t {
     QByteArrayData data[3];
-    char stringdata0[23];
+    char stringdata0[34];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Ui_Main_Menu_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_Ui_HostChecker_Window_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Ui_Main_Menu_t qt_meta_stringdata_Ui_Main_Menu = {
+static const qt_meta_stringdata_Ui_HostChecker_Window_t qt_meta_stringdata_Ui_HostChecker_Window = {
     {
-QT_MOC_LITERAL(0, 0, 12), // "Ui_Main_Menu"
-QT_MOC_LITERAL(1, 13, 8), // "openMenu"
-QT_MOC_LITERAL(2, 22, 0) // ""
+QT_MOC_LITERAL(0, 0, 21), // "Ui_HostChecker_Window"
+QT_MOC_LITERAL(1, 22, 10), // "checkHosts"
+QT_MOC_LITERAL(2, 33, 0) // ""
 
     },
-    "Ui_Main_Menu\0openMenu\0"
+    "Ui_HostChecker_Window\0checkHosts\0"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Ui_Main_Menu[] = {
+static const uint qt_meta_data_Ui_HostChecker_Window[] = {
 
  // content:
        8,       // revision
@@ -63,43 +63,43 @@ static const uint qt_meta_data_Ui_Main_Menu[] = {
        0        // eod
 };
 
-void Ui_Main_Menu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Ui_HostChecker_Window::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Ui_Main_Menu *>(_o);
+        auto *_t = static_cast<Ui_HostChecker_Window *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->openMenu(); break;
+        case 0: _t->checkHosts(); break;
         default: ;
         }
     }
     (void)_a;
 }
 
-QT_INIT_METAOBJECT const QMetaObject Ui_Main_Menu::staticMetaObject = { {
+QT_INIT_METAOBJECT const QMetaObject Ui_HostChecker_Window::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_Ui_Main_Menu.data,
-    qt_meta_data_Ui_Main_Menu,
+    qt_meta_stringdata_Ui_HostChecker_Window.data,
+    qt_meta_data_Ui_HostChecker_Window,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *Ui_Main_Menu::metaObject() const
+const QMetaObject *Ui_HostChecker_Window::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Ui_Main_Menu::qt_metacast(const char *_clname)
+void *Ui_HostChecker_Window::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Ui_Main_Menu.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_Ui_HostChecker_Window.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int Ui_Main_Menu::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Ui_HostChecker_Window::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)

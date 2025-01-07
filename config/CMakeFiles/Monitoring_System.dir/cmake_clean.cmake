@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Monitoring_System.dir/Autorization.cpp.o"
   "CMakeFiles/Monitoring_System.dir/Autorization.cpp.o.d"
+  "CMakeFiles/Monitoring_System.dir/Menu.cpp.o"
+  "CMakeFiles/Monitoring_System.dir/Menu.cpp.o.d"
   "CMakeFiles/Monitoring_System.dir/main.cpp.o"
   "CMakeFiles/Monitoring_System.dir/main.cpp.o.d"
   "CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o"
