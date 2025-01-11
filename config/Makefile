@@ -177,6 +177,30 @@ Menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
+NetworkAction.o: NetworkAction.cpp.o
+.PHONY : NetworkAction.o
+
+# target to build an object file
+NetworkAction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o
+.PHONY : NetworkAction.cpp.o
+
+NetworkAction.i: NetworkAction.cpp.i
+.PHONY : NetworkAction.i
+
+# target to preprocess a source file
+NetworkAction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.i
+.PHONY : NetworkAction.cpp.i
+
+NetworkAction.s: NetworkAction.cpp.s
+.PHONY : NetworkAction.s
+
+# target to generate assembly for a file
+NetworkAction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.s
+.PHONY : NetworkAction.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -249,6 +273,30 @@ moc_Menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.s
 .PHONY : moc_Menu.cpp.s
 
+moc_NetworkAction.o: moc_NetworkAction.cpp.o
+.PHONY : moc_NetworkAction.o
+
+# target to build an object file
+moc_NetworkAction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o
+.PHONY : moc_NetworkAction.cpp.o
+
+moc_NetworkAction.i: moc_NetworkAction.cpp.i
+.PHONY : moc_NetworkAction.i
+
+# target to preprocess a source file
+moc_NetworkAction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.i
+.PHONY : moc_NetworkAction.cpp.i
+
+moc_NetworkAction.s: moc_NetworkAction.cpp.s
+.PHONY : moc_NetworkAction.s
+
+# target to generate assembly for a file
+moc_NetworkAction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.s
+.PHONY : moc_NetworkAction.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -264,6 +312,9 @@ help:
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
+	@echo "... NetworkAction.o"
+	@echo "... NetworkAction.i"
+	@echo "... NetworkAction.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -273,6 +324,9 @@ help:
 	@echo "... moc_Menu.o"
 	@echo "... moc_Menu.i"
 	@echo "... moc_Menu.s"
+	@echo "... moc_NetworkAction.o"
+	@echo "... moc_NetworkAction.i"
+	@echo "... moc_NetworkAction.s"
 .PHONY : help
 
 

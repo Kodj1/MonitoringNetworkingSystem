@@ -1,39 +1,39 @@
-#ifndef AUTORIZATION_H
-#define AUTORIZATION_H
+#ifndef NETWORKACTION_H
+#define NETWORKACTION_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLabel>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTreeView>
 #include <QtWidgets/QWidget>
 #include "Menu.h"
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Autorization_Window : public QObject
+class Ui_Network_window : public QObject
 {
     Q_OBJECT
 public:
     QWidget *centralwidget;
+    QTreeView *treeView;
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
     QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLabel *label;
-    QMainWindow *mainWindow; // Member variable to store the main window
 
     void setupUi(QMainWindow *MainWindow);
     void retranslateUi(QMainWindow *MainWindow);
 
 public slots:
-    void openMenu();
+    void openWindow();
 };
 
 namespace Ui {
-    class Autorization_Window : public Ui_Autorization_Window {};
-}
+    class Network_Window: public Ui_Network_window {};
+} // namespace Ui
 
 QT_END_NAMESPACE
 

@@ -9,6 +9,7 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 #include "Autorization.h"
+#include "NetworkAction.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -22,7 +23,6 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
-    QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow);
     void retranslateUi(QMainWindow *MainWindow);  

@@ -22,9 +22,6 @@ void Ui_Autorization_Window::setupUi(QMainWindow *MainWindow)
     label->setObjectName(QString::fromUtf8("label"));
     label->setGeometry(QRect(90, 30, 91, 19));
     MainWindow->setCentralWidget(centralwidget);
-    statusbar = new QStatusBar(MainWindow);
-    statusbar->setObjectName(QString::fromUtf8("statusbar"));
-    MainWindow->setStatusBar(statusbar);
 
     retranslateUi(MainWindow);
 

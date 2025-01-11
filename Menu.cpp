@@ -1,6 +1,8 @@
 #include "Menu.h"
 #include "Autorization.h"
+#include "NetworkAction.h"
 #include <QApplication>
+
 
 
 void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
@@ -26,15 +28,13 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
         pushButton_5->setGeometry(QRect(50, 190, 171, 27));
         MainWindow->setCentralWidget(centralwidget);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        MainWindow->setStatusBar(statusbar);
+ 
 
         retranslateUi(MainWindow);
 
         QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
         QObject::connect(pushButton_2, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
-        QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
+        QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Network_window::openWindow);
         QObject::connect(pushButton_4, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
         QObject::connect(pushButton_5, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
 
