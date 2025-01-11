@@ -32,14 +32,14 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
 
         retranslateUi(MainWindow);
 
-        QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
-        QObject::connect(pushButton_2, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
-        QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Network_window::openWindow);
-        QObject::connect(pushButton_4, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
-        QObject::connect(pushButton_5, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
+        //  QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
+        QObject::connect(pushButton_2, &QPushButton::clicked, this, &Ui_Main_Menu::openWindowNetworkAction);
+        //QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Main_Menu::openWindowNetworkAction);
+        // QObject::connect(pushButton_4, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
+        //QObject::connect(pushButton_5, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
 
         QMetaObject::connectSlotsByName(MainWindow);
-    } // setupUi
+    } 
 
     void Ui_Main_Menu::retranslateUi(QMainWindow *MainWindow)
     {
@@ -51,11 +51,20 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
     } // retranslateUi
 
- void Ui_Main_Menu::openMenu()
-{
+     void Ui_Main_Menu::openMenu()//Open 
+    {
     // Create a new Menu window
     QMainWindow *menuWindow = new QMainWindow();
     Ui::Menu *menu = new Ui::Menu();
     menu->setupUi(menuWindow);
     menuWindow->show();
-}
+    }
+
+    void Ui_Main_Menu::openWindowNetworkAction()
+    {
+    QMainWindow *networkWindow = new QMainWindow();
+    Ui::Network_Window *net_win = new Ui::Network_Window();
+    net_win->setupUi(networkWindow);
+    networkWindow->show();
+    }
+    

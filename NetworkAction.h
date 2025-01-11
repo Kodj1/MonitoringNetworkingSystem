@@ -10,30 +10,35 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTreeView>
 #include <QtWidgets/QWidget>
+#include <QStandardItemModel>
+#include <QHostAddress>
 #include "Menu.h"
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Network_window : public QObject
+class Ui_Network_Window : public QObject
 {
     Q_OBJECT
 public:
     QWidget *centralwidget;
     QTreeView *treeView;
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QLineEdit *lineEdit;
+    QStandardItemModel *model;
 
     void setupUi(QMainWindow *MainWindow);
     void retranslateUi(QMainWindow *MainWindow);
 
 public slots:
-    void openWindow();
+    void ScanNetwork(const QString &startIP, const QString &endIP);
+    bool isHostAlive(const QString &ip);
+    QStringList scanPorts(const QHostAddress &address, const QList<int> &portsToScan);
+    QString getHostIpAddress();
+    QString getHostName(const QHostAddress &address);
 };
 
 namespace Ui {
-    class Network_Window: public Ui_Network_window {};
-} // namespace Ui
+    class Network_Window: public Ui_Network_Window {};
+}
 
 QT_END_NAMESPACE
 

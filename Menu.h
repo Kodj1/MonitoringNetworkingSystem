@@ -29,12 +29,13 @@ public:
 
 public slots:
     void openMenu();
+    void openWindowNetworkAction();
 };
 
 namespace Ui {
     class Menu : public Ui_Main_Menu {};
-} // namespace Ui
+}
 
 QT_END_NAMESPACE
 
-#endif // MENU_H
+#endif
