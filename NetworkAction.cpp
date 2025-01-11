@@ -81,8 +81,10 @@ QString Ui_Network_Window::getHostName(const QHostAddress &address) {
 
 bool Ui_Network_Window::isHostAlive(const QString &ip) {
     QTcpSocket socket;
-    socket.connectToHost(ip, 80); // Проверка доступности хоста по порту 80
-    return socket.waitForConnected(100);
+    socket.connectToHost(ip, 80); 
+   socket.connectToHost(ip, 8080);
+   socket.connectToHost(ip, 443);   // Проверка доступности хоста по порту 80
+    return socket.waitForConnected(15);
 }
 
 QStringList Ui_Network_Window::scanPorts(const QHostAddress &address, const QList<int> &portsToScan) {
@@ -90,7 +92,7 @@ QStringList Ui_Network_Window::scanPorts(const QHostAddress &address, const QLis
     for (int port : portsToScan) {
         QTcpSocket *socket = new QTcpSocket();
         socket->connectToHost(address, port);
-        if (socket->waitForConnected(10)) {
+        if (socket->waitForConnected(15)) {
             openPorts.append(QString::number(port));
             socket->disconnectFromHost();
         }
