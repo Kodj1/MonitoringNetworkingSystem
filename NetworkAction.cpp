@@ -56,7 +56,7 @@ void Ui_Network_Window::setupUi(QMainWindow *MainWindow) {
 void Ui_Network_Window::retranslateUi(QMainWindow *MainWindow) {
     MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Сетевое сканирование", nullptr));
     pushButton->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
-   }
+}
 
 QString Ui_Network_Window::getHostIpAddress() {
     QString ipAddress;
@@ -80,23 +80,30 @@ QString Ui_Network_Window::getHostName(const QHostAddress &address) {
 }
 
 bool Ui_Network_Window::isHostAlive(const QString &ip) {
-    QTcpSocket socket;
-    socket.connectToHost(ip, 80); 
-   socket.connectToHost(ip, 8080);
-   socket.connectToHost(ip, 443);   // Проверка доступности хоста по порту 80
-    return socket.waitForConnected(15);
+    QProcess pingProcess;
+    QString command = "ping";
+    QStringList arguments;
+    arguments << "-c" << "1" << "-W" << "1" << ip; // "-c 1" для одного пакета и "-W 1" для таймаута в 1 секунду
+
+    pingProcess.start(command, arguments);
+    pingProcess.waitForFinished();
+    
+    QString output = pingProcess.readAllStandardOutput();
+    QRegularExpression re("1 received");
+    QRegularExpressionMatch match = re.match(output);
+    
+    return match.hasMatch();
 }
 
 QStringList Ui_Network_Window::scanPorts(const QHostAddress &address, const QList<int> &portsToScan) {
     QStringList openPorts;
     for (int port : portsToScan) {
-        QTcpSocket *socket = new QTcpSocket();
-        socket->connectToHost(address, port);
-        if (socket->waitForConnected(15)) {
+        QTcpSocket socket;
+        socket.connectToHost(address, port);
+        if (socket.waitForConnected(2000)) { // Увеличиваем время ожидания до 2000 миллисекунд (2 секунды)
             openPorts.append(QString::number(port));
-            socket->disconnectFromHost();
+            socket.disconnectFromHost();
         }
-        socket->deleteLater();
     }
     return openPorts;
 }
@@ -112,19 +119,10 @@ void Ui_Network_Window::ScanNetwork(const QString &startIP, const QString &endIP
     quint32 start = startAddress.toIPv4Address();
     quint32 end = endAddress.toIPv4Address();
 
-    QString hostIpAddress = getHostIpAddress();
-    QStringList hostOpenPorts = scanPorts(QHostAddress(hostIpAddress), portsToScan);
-    QString hostName = getHostName(QHostAddress(hostIpAddress));
-
-    QStandardItem *hostNameItem = new QStandardItem(hostName);
-    QStandardItem *hostItem = new QStandardItem(hostIpAddress);
-    QStandardItem *hostPortsItem = new QStandardItem(hostOpenPorts.join(", "));
-    model->appendRow({hostNameItem, hostItem, hostPortsItem});
-
     QList<QFuture<void>> futures;
     QMutex mutex;
 
-    QThreadPool::globalInstance()->setMaxThreadCount(50);
+    QThreadPool::globalInstance()->setMaxThreadCount(100);
 
     QFutureWatcher<void> watcher;
 
@@ -137,20 +135,11 @@ void Ui_Network_Window::ScanNetwork(const QString &startIP, const QString &endIP
                 if (isHostAlive(addressStr)) {
                     QStringList openPorts = scanPorts(address, portsToScan);
                     QString hostName = getHostName(address);
-                    if (!openPorts.isEmpty()) {
-                        QString portsString = openPorts.join(", ");
-                        QStandardItem *hostNameItem = new QStandardItem(hostName);
-                        QStandardItem *ipItem = new QStandardItem(addressStr);
-                        QStandardItem *portsItem = new QStandardItem(portsString);
-
-                        QList<QStandardItem *> rowItems;
-                        rowItems.append(hostNameItem);
-                        rowItems.append(ipItem);
-                        rowItems.append(portsItem);
-
-                        QMutexLocker locker(&mutex);
-                        model->appendRow(rowItems);
-                    }
+                    QMutexLocker locker(&mutex);
+                    QStandardItem *hostNameItem = new QStandardItem(hostName);
+                    QStandardItem *ipItem = new QStandardItem(addressStr);
+                    QStandardItem *portsItem = new QStandardItem(openPorts.join(", "));
+                    model->appendRow({hostNameItem, ipItem, portsItem});
                 }
             }));
         }
