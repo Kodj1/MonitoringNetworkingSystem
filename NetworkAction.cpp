@@ -100,7 +100,7 @@ QStringList Ui_Network_Window::scanPorts(const QHostAddress &address, const QLis
     for (int port : portsToScan) {
         QTcpSocket socket;
         socket.connectToHost(address, port);
-        if (socket.waitForConnected(2000)) { // Увеличиваем время ожидания до 2000 миллисекунд (2 секунды)
+        if (socket.waitForConnected(1000)) { // Увеличиваем время ожидания до 2000 миллисекунд (2 секунды)
             openPorts.append(QString::number(port));
             socket.disconnectFromHost();
         }
