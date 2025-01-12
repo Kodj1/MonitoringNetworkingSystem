@@ -10,6 +10,7 @@
 #include <QtWidgets/QWidget>
 #include "Autorization.h"
 #include "NetworkAction.h"
+#include "Network_traffic.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -28,8 +29,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow);  
 
 public slots:
-    void openMenu();
-    void openWindowNetworkAction();
+    //void Open_Menu();
+    void Open_Window_Network_Action();
+    void Open_Window_Network_Traffic();
 };
 
 namespace Ui {

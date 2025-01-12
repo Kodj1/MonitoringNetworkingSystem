@@ -201,6 +201,30 @@ NetworkAction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.s
 .PHONY : NetworkAction.cpp.s
 
+Network_traffic.o: Network_traffic.cpp.o
+.PHONY : Network_traffic.o
+
+# target to build an object file
+Network_traffic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o
+.PHONY : Network_traffic.cpp.o
+
+Network_traffic.i: Network_traffic.cpp.i
+.PHONY : Network_traffic.i
+
+# target to preprocess a source file
+Network_traffic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.i
+.PHONY : Network_traffic.cpp.i
+
+Network_traffic.s: Network_traffic.cpp.s
+.PHONY : Network_traffic.s
+
+# target to generate assembly for a file
+Network_traffic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.s
+.PHONY : Network_traffic.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -297,6 +321,30 @@ moc_NetworkAction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.s
 .PHONY : moc_NetworkAction.cpp.s
 
+moc_Network_traffic.o: moc_Network_traffic.cpp.o
+.PHONY : moc_Network_traffic.o
+
+# target to build an object file
+moc_Network_traffic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o
+.PHONY : moc_Network_traffic.cpp.o
+
+moc_Network_traffic.i: moc_Network_traffic.cpp.i
+.PHONY : moc_Network_traffic.i
+
+# target to preprocess a source file
+moc_Network_traffic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.i
+.PHONY : moc_Network_traffic.cpp.i
+
+moc_Network_traffic.s: moc_Network_traffic.cpp.s
+.PHONY : moc_Network_traffic.s
+
+# target to generate assembly for a file
+moc_Network_traffic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.s
+.PHONY : moc_Network_traffic.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -315,6 +363,9 @@ help:
 	@echo "... NetworkAction.o"
 	@echo "... NetworkAction.i"
 	@echo "... NetworkAction.s"
+	@echo "... Network_traffic.o"
+	@echo "... Network_traffic.i"
+	@echo "... Network_traffic.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -327,6 +378,9 @@ help:
 	@echo "... moc_NetworkAction.o"
 	@echo "... moc_NetworkAction.i"
 	@echo "... moc_NetworkAction.s"
+	@echo "... moc_Network_traffic.o"
+	@echo "... moc_Network_traffic.i"
+	@echo "... moc_Network_traffic.s"
 .PHONY : help
 
 

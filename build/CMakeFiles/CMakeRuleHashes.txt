@@ -2,3 +2,4 @@
 cf9f99cacb26a0467fd91cb0bdf2ee80 moc_Autorization.cpp
 a092d2ec9a981de520f1cc7700b1e88b moc_Menu.cpp
 1d0446015f2ab77ae4d2c5fd940245b0 moc_NetworkAction.cpp
+78eb5afd64e7d96f476356ad5438f839 moc_Network_traffic.cpp

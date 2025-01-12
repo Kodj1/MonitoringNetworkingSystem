@@ -11,7 +11,6 @@
 #include <QStringList>
 #include <QPushButton>
 #include <QLineEdit>
-#include <QIcon>
 #include <QProcess>
 #include <QtConcurrent/QtConcurrent>
 #include <QFuture>
@@ -47,8 +46,7 @@ void Ui_Network_Window::setupUi(QMainWindow *MainWindow) {
     label = new QLabel(centralwidget);
     label->setObjectName(QString::fromUtf8("label"));
     label->setGeometry(QRect(140, 450, 16, 20));
-    label->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
-
+    
     lineEdit_2 = new QLineEdit(centralwidget);
     lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
     lineEdit_2->setGeometry(QRect(160, 450, 113, 27));

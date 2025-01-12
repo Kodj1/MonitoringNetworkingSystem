@@ -11,12 +11,14 @@ set(SOURCES
     Autorization.cpp
     Menu.cpp
     NetworkAction.cpp
+    Network_traffic.cpp
 )
 
 set(HEADERS
     Autorization.h
     Menu.h
     NetworkAction.h
+    Network_traffic.h
 )
 
 qt5_wrap_cpp(MOC_SOURCES ${HEADERS})

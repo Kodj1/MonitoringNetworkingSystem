@@ -11,10 +11,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp" "CMakeFiles/Monitoring_System.dir/Autorization.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/Autorization.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.cpp" "CMakeFiles/Monitoring_System.dir/Menu.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/Menu.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.cpp" "CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o.d"
+  "/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp" "CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp" "CMakeFiles/Monitoring_System.dir/main.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/main.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Autorization.cpp" "CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Menu.cpp" "CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_NetworkAction.cpp" "CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o.d"
+  "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Network_traffic.cpp" "CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
