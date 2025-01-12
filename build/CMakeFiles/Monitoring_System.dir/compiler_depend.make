@@ -336,6 +336,7 @@ CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: /home/ilyaveretennikov/Moni
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -358,6 +359,7 @@ CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: /home/ilyaveretennikov/Moni
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -717,6 +719,7 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -739,6 +742,7 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -1281,6 +1285,7 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: /home/ilyaveretennikov/Mon
   /usr/include/qt5/QtWidgets/QMessageBox \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -1305,6 +1310,7 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: /home/ilyaveretennikov/Mon
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -1664,6 +1670,7 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -1686,6 +1693,7 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -2039,12 +2047,14 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtNetwork/qtnetwork-config.h \
   /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
+  /usr/include/qt5/QtWidgets/QComboBox \
   /usr/include/qt5/QtWidgets/QHeaderView \
   /usr/include/qt5/QtWidgets/QLabel \
   /usr/include/qt5/QtWidgets/QLineEdit \
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -2054,6 +2064,7 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtWidgets/qabstractslider.h \
   /usr/include/qt5/QtWidgets/qabstractspinbox.h \
   /usr/include/qt5/QtWidgets/qapplication.h \
+  /usr/include/qt5/QtWidgets/qcombobox.h \
   /usr/include/qt5/QtWidgets/qframe.h \
   /usr/include/qt5/QtWidgets/qheaderview.h \
   /usr/include/qt5/QtWidgets/qlabel.h \
@@ -2067,6 +2078,7 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -2426,6 +2438,7 @@ CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o: moc_Autorization.cpp \
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -2448,6 +2461,7 @@ CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o: moc_Autorization.cpp \
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -2807,6 +2821,7 @@ CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o: moc_Menu.cpp \
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -2829,6 +2844,7 @@ CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o: moc_Menu.cpp \
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -3189,6 +3205,7 @@ CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o: moc_NetworkAction.cpp 
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -3211,6 +3228,7 @@ CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o: moc_NetworkAction.cpp 
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -3570,6 +3588,7 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
+  /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -3592,6 +3611,7 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
+  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
@@ -3622,6 +3642,8 @@ moc_Network_traffic.cpp:
 moc_Menu.cpp:
 
 moc_Autorization.cpp:
+
+/usr/include/qt5/QtWidgets/QComboBox:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp:
 
@@ -3664,6 +3686,8 @@ moc_Autorization.cpp:
 /usr/include/qt5/QtCore/qthreadstorage.h:
 
 /usr/include/qt5/QtCore/qthreadpool.h:
+
+/usr/include/qt5/QtCore/qthread.h:
 
 /usr/include/qt5/QtCore/qline.h:
 
@@ -4145,9 +4169,15 @@ moc_Autorization.cpp:
 
 /usr/include/qt5/QtCore/qlinkedlist.h:
 
+/usr/include/qt5/QtCore/qtextcodec.h:
+
+/usr/include/bits/waitflags.h:
+
 /usr/include/bits/endian.h:
 
 /usr/include/c++/14/concepts:
+
+/usr/include/qt5/QtWidgets/qcombobox.h:
 
 /usr/include/c++/14/cwchar:
 
@@ -4415,6 +4445,8 @@ moc_NetworkAction.cpp:
 
 /usr/include/qt5/QtWidgets/QMainWindow:
 
+/usr/include/qt5/QtWidgets/QTableView:
+
 /usr/include/qt5/QtWidgets/QTreeView:
 
 /usr/include/qt5/QtWidgets/QWidget:
@@ -4424,6 +4456,8 @@ moc_NetworkAction.cpp:
 /usr/include/qt5/QtWidgets/qabstractbutton.h:
 
 /usr/include/c++/14/bits/std_mutex.h:
+
+/usr/include/qt5/QtWidgets/qtableview.h:
 
 /usr/include/qt5/QtWidgets/qlabel.h:
 
@@ -4756,9 +4790,3 @@ moc_NetworkAction.cpp:
 /usr/include/qt5/QtCore/qmutex.h:
 
 /usr/include/qt5/QtCore/qtextboundaryfinder.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/qt5/QtCore/qtextcodec.h:
-
-/usr/include/qt5/QtCore/qthread.h:

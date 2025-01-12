@@ -5,7 +5,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableView>
@@ -19,7 +19,7 @@ class Ui_Network_Traffic : public QObject
     Q_OBJECT
 public:
     QWidget *centralwidget;
-    QLineEdit *lineEdit;
+    QComboBox *comboBox;
     QLabel *label;
     QPushButton *pushButton;
     QTableView *tableView;

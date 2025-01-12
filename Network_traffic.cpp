@@ -15,9 +15,9 @@
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
 
-        lineEdit = new QLineEdit(centralwidget);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(230, 450, 113, 27));
+   		comboBox = new QComboBox(centralwidget);
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        comboBox->setGeometry(QRect(230, 450, 113, 27));
 
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
@@ -30,7 +30,7 @@
         tableView = new QTableView(centralwidget);
         tableView->setObjectName(QString::fromUtf8("tableView"));
         tableView->setGeometry(QRect(0, 0, 571, 441));
-        
+
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
