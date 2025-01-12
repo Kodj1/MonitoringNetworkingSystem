@@ -37,25 +37,39 @@ void Ui_Network_Window::setupUi(QMainWindow *MainWindow) {
     
     pushButton = new QPushButton(centralwidget);
     pushButton->setObjectName(QString::fromUtf8("pushButton"));
-    pushButton->setGeometry(QRect(10, 450, 140, 27));
+    pushButton->setGeometry(QRect(410, 450, 141, 27));
     pushButton->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
    
+    lineEdit = new QLineEdit(centralwidget);
+    lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+    lineEdit->setGeometry(QRect(10, 450, 113, 27));
+    
+    label = new QLabel(centralwidget);
+    label->setObjectName(QString::fromUtf8("label"));
+    label->setGeometry(QRect(140, 450, 16, 20));
+    label->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
+
+    lineEdit_2 = new QLineEdit(centralwidget);
+    lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+    lineEdit_2->setGeometry(QRect(160, 450, 113, 27));
+
     MainWindow->setCentralWidget(centralwidget);
 
     retranslateUi(MainWindow);
 
     QObject::connect(pushButton, &QPushButton::clicked, this, [this]() {
-        QString startIP = "192.168.0.0";
-        QString endIP = "192.168.0.255";
+        QString startIP = lineEdit->text(); // Чтение начального IP из lineEditStartIP
+        QString endIP = lineEdit_2->text(); // Чтение конечного IP из lineEditEndIP
         ScanNetwork(startIP, endIP);
     });
-
+ 
     QMetaObject::connectSlotsByName(MainWindow);
 }
 
 void Ui_Network_Window::retranslateUi(QMainWindow *MainWindow) {
     MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Сетевое сканирование", nullptr));
     pushButton->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
+    label->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
 }
 
 QString Ui_Network_Window::getHostIpAddress() {
@@ -100,7 +114,7 @@ QStringList Ui_Network_Window::scanPorts(const QHostAddress &address, const QLis
     for (int port : portsToScan) {
         QTcpSocket socket;
         socket.connectToHost(address, port);
-        if (socket.waitForConnected(1000)) { // Увеличиваем время ожидания до 2000 миллисекунд (2 секунды)
+        if (socket.waitForConnected(2000)) { // Увеличиваем время ожидания до 2000 миллисекунд (2 секунды)
             openPorts.append(QString::number(port));
             socket.disconnectFromHost();
         }

@@ -10,6 +10,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTreeView>
 #include <QtWidgets/QWidget>
+#include <QtWidgets/QLabel>
 #include <QStandardItemModel>
 #include <QHostAddress>
 #include "Menu.h"
@@ -24,6 +25,9 @@ public:
     QTreeView *treeView;
     QPushButton *pushButton;
     QStandardItemModel *model;
+    QLineEdit *lineEdit;
+    QLabel *label;
+    QLineEdit *lineEdit_2;
 
     void setupUi(QMainWindow *MainWindow);
     void retranslateUi(QMainWindow *MainWindow);
