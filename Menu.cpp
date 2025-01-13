@@ -2,6 +2,7 @@
 #include "Autorization.h"
 #include "NetworkAction.h"
 #include "Network_traffic.h"
+#include "Host_stats.h"
 #include <QApplication>
 
 
@@ -42,7 +43,7 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
 
         //  QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
         QObject::connect(pushButton_2, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Network_Traffic);
-        //QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Main_Menu::openWindowNetworkAction);
+        QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Host_Stats);
         // QObject::connect(pushButton_4, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
         QObject::connect(pushButton_5, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Network_Action);
 
@@ -57,16 +58,7 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Контейнеры и кластеры", nullptr));
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "Проблемы", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
-    } // retranslateUi
-
-    /* void Ui_Main_Menu::openMenu()//Open 
-    {
-    // Create a new Menu window
-    QMainWindow *menuWindow = new QMainWindow();
-    Ui::Menu *menu = new Ui::Menu();
-    menu->setupUi(menuWindow);
-    menuWindow->show();
-    }*/
+    }
 
     void Ui_Main_Menu::Open_Window_Network_Action()
     {
@@ -76,11 +68,18 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
     networkWindow->show();
     }
     
-
     void Ui_Main_Menu::Open_Window_Network_Traffic()
     {
     QMainWindow *Network_Traffic_Window = new QMainWindow();
     Ui::Network_Traffic *net_traffic = new Ui::Network_Traffic();
     net_traffic->setupUi(Network_Traffic_Window);
     Network_Traffic_Window->show();
+    }
+
+    void Ui_Main_Menu::Open_Window_Host_Stats()
+    {
+    QMainWindow *Network_Host_Stats = new QMainWindow();
+    Ui::Host_stats *host_stat = new Ui::Host_stats();
+    host_stat->setupUi(Network_Host_Stats);
+    Network_Host_Stats->show();
     }

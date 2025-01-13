@@ -12,6 +12,7 @@ set(SOURCES
     Menu.cpp
     NetworkAction.cpp
     Network_traffic.cpp
+    Host_stats.cpp
 )
 
 set(HEADERS
@@ -19,6 +20,7 @@ set(HEADERS
     Menu.h
     NetworkAction.h
     Network_traffic.h
+    Host_stats.h
 )
 
 qt5_wrap_cpp(MOC_SOURCES ${HEADERS})

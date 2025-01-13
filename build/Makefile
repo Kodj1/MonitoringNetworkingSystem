@@ -153,6 +153,30 @@ Autorization.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Autorization.cpp.s
 .PHONY : Autorization.cpp.s
 
+Host_stats.o: Host_stats.cpp.o
+.PHONY : Host_stats.o
+
+# target to build an object file
+Host_stats.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o
+.PHONY : Host_stats.cpp.o
+
+Host_stats.i: Host_stats.cpp.i
+.PHONY : Host_stats.i
+
+# target to preprocess a source file
+Host_stats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_stats.cpp.i
+.PHONY : Host_stats.cpp.i
+
+Host_stats.s: Host_stats.cpp.s
+.PHONY : Host_stats.s
+
+# target to generate assembly for a file
+Host_stats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_stats.cpp.s
+.PHONY : Host_stats.cpp.s
+
 Menu.o: Menu.cpp.o
 .PHONY : Menu.o
 
@@ -273,6 +297,30 @@ moc_Autorization.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.s
 .PHONY : moc_Autorization.cpp.s
 
+moc_Host_stats.o: moc_Host_stats.cpp.o
+.PHONY : moc_Host_stats.o
+
+# target to build an object file
+moc_Host_stats.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o
+.PHONY : moc_Host_stats.cpp.o
+
+moc_Host_stats.i: moc_Host_stats.cpp.i
+.PHONY : moc_Host_stats.i
+
+# target to preprocess a source file
+moc_Host_stats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.i
+.PHONY : moc_Host_stats.cpp.i
+
+moc_Host_stats.s: moc_Host_stats.cpp.s
+.PHONY : moc_Host_stats.s
+
+# target to generate assembly for a file
+moc_Host_stats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.s
+.PHONY : moc_Host_stats.cpp.s
+
 moc_Menu.o: moc_Menu.cpp.o
 .PHONY : moc_Menu.o
 
@@ -357,6 +405,9 @@ help:
 	@echo "... Autorization.o"
 	@echo "... Autorization.i"
 	@echo "... Autorization.s"
+	@echo "... Host_stats.o"
+	@echo "... Host_stats.i"
+	@echo "... Host_stats.s"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
@@ -372,6 +423,9 @@ help:
 	@echo "... moc_Autorization.o"
 	@echo "... moc_Autorization.i"
 	@echo "... moc_Autorization.s"
+	@echo "... moc_Host_stats.o"
+	@echo "... moc_Host_stats.i"
+	@echo "... moc_Host_stats.s"
 	@echo "... moc_Menu.o"
 	@echo "... moc_Menu.i"
 	@echo "... moc_Menu.s"
