@@ -56,8 +56,7 @@ bool Ui_Autorization_Window::authenticateUser(const QString &username, const QSt
     db.setHostName("127.0.0.1");
     db.setDatabaseName("mns");
     db.setUserName("postgres");
-    //db.setPassword("12345");
-
+ 
     if (!db.open()) {
         QMessageBox::critical(this, "Database Error", db.lastError().text());
         return false;

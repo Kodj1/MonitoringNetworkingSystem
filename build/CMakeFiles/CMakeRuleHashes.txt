@@ -1,7 +1,11 @@
 # Hashes of file build rules.
+fcf9849e0ce3adae334bc18b3e1e2628 moc_AddForm.cpp
 cf9f99cacb26a0467fd91cb0bdf2ee80 moc_Autorization.cpp
+397543b4b359802a6e10dce72f977e5c moc_CpuUsageWidget.cpp
+10a95f6fda920a65bf512a1ecc8e7ce9 moc_DiskUsageWidget.cpp
 ea390c090c2075e9b975b67a569670c5 moc_Host_stats.cpp
 4aa612f3759a0bb54e2fab8f55ceda10 moc_Host_window.cpp
+962fc3e1335dc0f902590a94041ad4c1 moc_MemUsageWidget.cpp
 a092d2ec9a981de520f1cc7700b1e88b moc_Menu.cpp
 1d0446015f2ab77ae4d2c5fd940245b0 moc_NetworkAction.cpp
 78eb5afd64e7d96f476356ad5438f839 moc_Network_traffic.cpp

@@ -129,6 +129,30 @@ Monitoring_System/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/build
 .PHONY : Monitoring_System/fast
 
+AddForm.o: AddForm.cpp.o
+.PHONY : AddForm.o
+
+# target to build an object file
+AddForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
+.PHONY : AddForm.cpp.o
+
+AddForm.i: AddForm.cpp.i
+.PHONY : AddForm.i
+
+# target to preprocess a source file
+AddForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/AddForm.cpp.i
+.PHONY : AddForm.cpp.i
+
+AddForm.s: AddForm.cpp.s
+.PHONY : AddForm.s
+
+# target to generate assembly for a file
+AddForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/AddForm.cpp.s
+.PHONY : AddForm.cpp.s
+
 Autorization.o: Autorization.cpp.o
 .PHONY : Autorization.o
 
@@ -152,6 +176,54 @@ Autorization.s: Autorization.cpp.s
 Autorization.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Autorization.cpp.s
 .PHONY : Autorization.cpp.s
+
+CpuUsageWidget.o: CpuUsageWidget.cpp.o
+.PHONY : CpuUsageWidget.o
+
+# target to build an object file
+CpuUsageWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/CpuUsageWidget.cpp.o
+.PHONY : CpuUsageWidget.cpp.o
+
+CpuUsageWidget.i: CpuUsageWidget.cpp.i
+.PHONY : CpuUsageWidget.i
+
+# target to preprocess a source file
+CpuUsageWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/CpuUsageWidget.cpp.i
+.PHONY : CpuUsageWidget.cpp.i
+
+CpuUsageWidget.s: CpuUsageWidget.cpp.s
+.PHONY : CpuUsageWidget.s
+
+# target to generate assembly for a file
+CpuUsageWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/CpuUsageWidget.cpp.s
+.PHONY : CpuUsageWidget.cpp.s
+
+DiskUsageWidget.o: DiskUsageWidget.cpp.o
+.PHONY : DiskUsageWidget.o
+
+# target to build an object file
+DiskUsageWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/DiskUsageWidget.cpp.o
+.PHONY : DiskUsageWidget.cpp.o
+
+DiskUsageWidget.i: DiskUsageWidget.cpp.i
+.PHONY : DiskUsageWidget.i
+
+# target to preprocess a source file
+DiskUsageWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/DiskUsageWidget.cpp.i
+.PHONY : DiskUsageWidget.cpp.i
+
+DiskUsageWidget.s: DiskUsageWidget.cpp.s
+.PHONY : DiskUsageWidget.s
+
+# target to generate assembly for a file
+DiskUsageWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/DiskUsageWidget.cpp.s
+.PHONY : DiskUsageWidget.cpp.s
 
 Host_stats.o: Host_stats.cpp.o
 .PHONY : Host_stats.o
@@ -200,6 +272,30 @@ Host_window.s: Host_window.cpp.s
 Host_window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_window.cpp.s
 .PHONY : Host_window.cpp.s
+
+MemUsageWidget.o: MemUsageWidget.cpp.o
+.PHONY : MemUsageWidget.o
+
+# target to build an object file
+MemUsageWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.o
+.PHONY : MemUsageWidget.cpp.o
+
+MemUsageWidget.i: MemUsageWidget.cpp.i
+.PHONY : MemUsageWidget.i
+
+# target to preprocess a source file
+MemUsageWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.i
+.PHONY : MemUsageWidget.cpp.i
+
+MemUsageWidget.s: MemUsageWidget.cpp.s
+.PHONY : MemUsageWidget.s
+
+# target to generate assembly for a file
+MemUsageWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.s
+.PHONY : MemUsageWidget.cpp.s
 
 Menu.o: Menu.cpp.o
 .PHONY : Menu.o
@@ -273,6 +369,30 @@ Network_traffic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.s
 .PHONY : Network_traffic.cpp.s
 
+db_connection.o: db_connection.cpp.o
+.PHONY : db_connection.o
+
+# target to build an object file
+db_connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/db_connection.cpp.o
+.PHONY : db_connection.cpp.o
+
+db_connection.i: db_connection.cpp.i
+.PHONY : db_connection.i
+
+# target to preprocess a source file
+db_connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/db_connection.cpp.i
+.PHONY : db_connection.cpp.i
+
+db_connection.s: db_connection.cpp.s
+.PHONY : db_connection.s
+
+# target to generate assembly for a file
+db_connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/db_connection.cpp.s
+.PHONY : db_connection.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -297,6 +417,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+moc_AddForm.o: moc_AddForm.cpp.o
+.PHONY : moc_AddForm.o
+
+# target to build an object file
+moc_AddForm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o
+.PHONY : moc_AddForm.cpp.o
+
+moc_AddForm.i: moc_AddForm.cpp.i
+.PHONY : moc_AddForm.i
+
+# target to preprocess a source file
+moc_AddForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.i
+.PHONY : moc_AddForm.cpp.i
+
+moc_AddForm.s: moc_AddForm.cpp.s
+.PHONY : moc_AddForm.s
+
+# target to generate assembly for a file
+moc_AddForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.s
+.PHONY : moc_AddForm.cpp.s
+
 moc_Autorization.o: moc_Autorization.cpp.o
 .PHONY : moc_Autorization.o
 
@@ -320,6 +464,54 @@ moc_Autorization.s: moc_Autorization.cpp.s
 moc_Autorization.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.s
 .PHONY : moc_Autorization.cpp.s
+
+moc_CpuUsageWidget.o: moc_CpuUsageWidget.cpp.o
+.PHONY : moc_CpuUsageWidget.o
+
+# target to build an object file
+moc_CpuUsageWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_CpuUsageWidget.cpp.o
+.PHONY : moc_CpuUsageWidget.cpp.o
+
+moc_CpuUsageWidget.i: moc_CpuUsageWidget.cpp.i
+.PHONY : moc_CpuUsageWidget.i
+
+# target to preprocess a source file
+moc_CpuUsageWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_CpuUsageWidget.cpp.i
+.PHONY : moc_CpuUsageWidget.cpp.i
+
+moc_CpuUsageWidget.s: moc_CpuUsageWidget.cpp.s
+.PHONY : moc_CpuUsageWidget.s
+
+# target to generate assembly for a file
+moc_CpuUsageWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_CpuUsageWidget.cpp.s
+.PHONY : moc_CpuUsageWidget.cpp.s
+
+moc_DiskUsageWidget.o: moc_DiskUsageWidget.cpp.o
+.PHONY : moc_DiskUsageWidget.o
+
+# target to build an object file
+moc_DiskUsageWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_DiskUsageWidget.cpp.o
+.PHONY : moc_DiskUsageWidget.cpp.o
+
+moc_DiskUsageWidget.i: moc_DiskUsageWidget.cpp.i
+.PHONY : moc_DiskUsageWidget.i
+
+# target to preprocess a source file
+moc_DiskUsageWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_DiskUsageWidget.cpp.i
+.PHONY : moc_DiskUsageWidget.cpp.i
+
+moc_DiskUsageWidget.s: moc_DiskUsageWidget.cpp.s
+.PHONY : moc_DiskUsageWidget.s
+
+# target to generate assembly for a file
+moc_DiskUsageWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_DiskUsageWidget.cpp.s
+.PHONY : moc_DiskUsageWidget.cpp.s
 
 moc_Host_stats.o: moc_Host_stats.cpp.o
 .PHONY : moc_Host_stats.o
@@ -368,6 +560,30 @@ moc_Host_window.s: moc_Host_window.cpp.s
 moc_Host_window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_window.cpp.s
 .PHONY : moc_Host_window.cpp.s
+
+moc_MemUsageWidget.o: moc_MemUsageWidget.cpp.o
+.PHONY : moc_MemUsageWidget.o
+
+# target to build an object file
+moc_MemUsageWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_MemUsageWidget.cpp.o
+.PHONY : moc_MemUsageWidget.cpp.o
+
+moc_MemUsageWidget.i: moc_MemUsageWidget.cpp.i
+.PHONY : moc_MemUsageWidget.i
+
+# target to preprocess a source file
+moc_MemUsageWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_MemUsageWidget.cpp.i
+.PHONY : moc_MemUsageWidget.cpp.i
+
+moc_MemUsageWidget.s: moc_MemUsageWidget.cpp.s
+.PHONY : moc_MemUsageWidget.s
+
+# target to generate assembly for a file
+moc_MemUsageWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_MemUsageWidget.cpp.s
+.PHONY : moc_MemUsageWidget.cpp.s
 
 moc_Menu.o: moc_Menu.cpp.o
 .PHONY : moc_Menu.o
@@ -450,15 +666,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Monitoring_System"
+	@echo "... AddForm.o"
+	@echo "... AddForm.i"
+	@echo "... AddForm.s"
 	@echo "... Autorization.o"
 	@echo "... Autorization.i"
 	@echo "... Autorization.s"
+	@echo "... CpuUsageWidget.o"
+	@echo "... CpuUsageWidget.i"
+	@echo "... CpuUsageWidget.s"
+	@echo "... DiskUsageWidget.o"
+	@echo "... DiskUsageWidget.i"
+	@echo "... DiskUsageWidget.s"
 	@echo "... Host_stats.o"
 	@echo "... Host_stats.i"
 	@echo "... Host_stats.s"
 	@echo "... Host_window.o"
 	@echo "... Host_window.i"
 	@echo "... Host_window.s"
+	@echo "... MemUsageWidget.o"
+	@echo "... MemUsageWidget.i"
+	@echo "... MemUsageWidget.s"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
@@ -468,18 +696,33 @@ help:
 	@echo "... Network_traffic.o"
 	@echo "... Network_traffic.i"
 	@echo "... Network_traffic.s"
+	@echo "... db_connection.o"
+	@echo "... db_connection.i"
+	@echo "... db_connection.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... moc_AddForm.o"
+	@echo "... moc_AddForm.i"
+	@echo "... moc_AddForm.s"
 	@echo "... moc_Autorization.o"
 	@echo "... moc_Autorization.i"
 	@echo "... moc_Autorization.s"
+	@echo "... moc_CpuUsageWidget.o"
+	@echo "... moc_CpuUsageWidget.i"
+	@echo "... moc_CpuUsageWidget.s"
+	@echo "... moc_DiskUsageWidget.o"
+	@echo "... moc_DiskUsageWidget.i"
+	@echo "... moc_DiskUsageWidget.s"
 	@echo "... moc_Host_stats.o"
 	@echo "... moc_Host_stats.i"
 	@echo "... moc_Host_stats.s"
 	@echo "... moc_Host_window.o"
 	@echo "... moc_Host_window.i"
 	@echo "... moc_Host_window.s"
+	@echo "... moc_MemUsageWidget.o"
+	@echo "... moc_MemUsageWidget.i"
+	@echo "... moc_MemUsageWidget.s"
 	@echo "... moc_Menu.o"
 	@echo "... moc_Menu.i"
 	@echo "... moc_Menu.s"

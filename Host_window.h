@@ -10,7 +10,9 @@
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlQuery>
 #include <QtWidgets/QWidget>
+
 #include "Menu.h"
+#include "AddForm.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -23,12 +25,14 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QSqlTableModel *model;
 
     void retranslateUi(QMainWindow *MainWindow);
     void setupUi(QMainWindow *MainWindow);
 
 public slots:
-    bool authenticateUser();
+void openAddForm();
+void deleteRecord();
 };
 
 namespace Ui {

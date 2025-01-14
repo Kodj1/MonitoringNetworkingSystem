@@ -30,7 +30,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow);  
 
 public slots:
-    //void Open_Menu();
     void Open_Window_Network_Action();
     void Open_Window_Network_Traffic();
     void Open_Window_Host_Stats();

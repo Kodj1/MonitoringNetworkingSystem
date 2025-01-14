@@ -1,14 +1,33 @@
-#include <QApplication>
-#include <QSqlDatabase>
-#include <QSqlTableModel>
-#include <QTableView>
-#include <QPushButton>
-#include <QMessageBox>
-#include <QSqlDatabase>
+#include "Host_window.h"
 #include <QSqlQuery>
 #include <QSqlError>
-#include "Host_window.h"
-#include "Menu.h"
+#include <QMessageBox>
+#include <QModelIndex>
+#include <QStyledItemDelegate>
+#include <QMainWindow>
+#include <QPushButton>
+#include <QTableView>
+#include <QSqlTableModel>
+
+class ReadOnlyDelegate : public QStyledItemDelegate
+{
+    Q_OBJECT
+
+public:
+    ReadOnlyDelegate(int editableColumns, QObject *parent = nullptr)
+        : QStyledItemDelegate(parent), m_editableColumns(editableColumns) {}
+
+    QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const override
+    {
+        if (index.column() >= m_editableColumns) {
+            return nullptr; // Prevent editing for columns after m_editableColumns
+        }
+        return QStyledItemDelegate::createEditor(parent, option, index);
+    }
+
+private:
+    int m_editableColumns;
+};
 
 void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
 {
@@ -22,18 +41,23 @@ void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
     tableView = new QTableView(centralwidget);
     tableView->setObjectName(QString::fromUtf8("tableView"));
     tableView->setGeometry(QRect(0, 0, 791, 281));
-    tableView->setSelectionMode(QAbstractItemView::SingleSelection);
+    tableView->setSelectionMode(QAbstractItemView::SingleSelection); // Single selection
+    tableView->setSelectionBehavior(QAbstractItemView::SelectRows); // Select rows
 
-    // Создание и настройка модели для таблицы
-    QSqlTableModel *model = new QSqlTableModel(this);
-    model->setTable("host"); // Укажите имя вашей таблицы
-    model->select(); // Выполнение запроса к базе данных
-    
-    // Установка модели в tableView
+    // Create and set up the model
+    model = new QSqlTableModel(this); // Initialize model
+    model->setTable("host"); // Set table name
+    model->select(); // Execute query
+
+    // Set the model to the tableView
     tableView->setModel(model);
+    tableView->setColumnHidden(model->fieldIndex("id"), true); // Hide id column
 
-    tableView->setColumnHidden(model->fieldIndex("id"), true);
+    // Set delegate for read-only columns
+    int ipAddressColumn = model->fieldIndex("ip_address");
+    tableView->setItemDelegate(new ReadOnlyDelegate(ipAddressColumn + 1, this));
 
+    // Set up buttons
     pushButton = new QPushButton(centralwidget);
     pushButton->setObjectName(QString::fromUtf8("pushButton"));
     pushButton->setGeometry(QRect(10, 290, 81, 27));
@@ -50,8 +74,12 @@ void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
 
     retranslateUi(MainWindow);
 
+    // Connect signals to slots
+    QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Host_Window::deleteRecord);
+    QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Host_Window::openAddForm);
+
     QMetaObject::connectSlotsByName(MainWindow);
-} 
+}
 
 void Ui_Host_Window::retranslateUi(QMainWindow *MainWindow)
 {
@@ -59,19 +87,39 @@ void Ui_Host_Window::retranslateUi(QMainWindow *MainWindow)
     pushButton->setText(QCoreApplication::translate("MainWindow", "Добавить", nullptr));
     pushButton_2->setText(QCoreApplication::translate("MainWindow", "Редактировать", nullptr));
     pushButton_3->setText(QCoreApplication::translate("MainWindow", "Удалить", nullptr));
-} 
+}
 
-bool Ui_Host_Window::authenticateUser()
+void Ui_Host_Window::deleteRecord()
 {
-    QSqlDatabase db = QSqlDatabase::addDatabase("QPSQL");
-    db.setHostName("127.0.0.1");
-    db.setDatabaseName("mns");
-    db.setUserName("postgres");
-    db.setPassword("12345"); // Установите пароль
-
-    if (!db.open()) {
-        QMessageBox::critical(nullptr, "Database Error", db.lastError().text());
-        return false;
+    QModelIndex index = tableView->currentIndex();
+    if (!index.isValid()) {
+        QMessageBox::warning(nullptr, QObject::tr("Selection Error"),
+                             QObject::tr("Please select a row to delete."));
+        return;
     }
-    return true;
+
+    int row = index.row();
+    int id = model->data(model->index(row, model->fieldIndex("id"))).toInt(); // Assuming there is an id column
+
+    QSqlQuery query;
+    query.prepare("DELETE FROM host WHERE id = :id");
+    query.bindValue(":id", id);
+
+    if (!query.exec()) {
+        QMessageBox::critical(nullptr, QObject::tr("Database Error"),
+                              query.lastError().text());
+    } else {
+        model->removeRow(row); // Remove row from model
+        model->select(); // Refresh model
+        QMessageBox::information(nullptr, QObject::tr("Success"),
+                                 QObject::tr("Record deleted successfully."));
+    }
+}
+
+void Ui_Host_Window::openAddForm()
+{
+    QMainWindow *Open_Add_form = new QMainWindow();
+    Ui::AddForm *Add_form = new Ui::AddForm();
+    Add_form->setupUi(Open_Add_form);
+    Open_Add_form->show();
 }
