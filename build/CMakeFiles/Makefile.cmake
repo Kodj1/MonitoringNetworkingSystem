@@ -55,6 +55,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib64/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake"
   "/usr/lib64/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake"
   "/usr/lib64/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake"
+  "/usr/lib64/cmake/Qt5Sql/Qt5SqlConfig.cmake"
+  "/usr/lib64/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake"
+  "/usr/lib64/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake"
+  "/usr/lib64/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake"
@@ -72,12 +76,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake/Modules/Compiler/GNU.cmake"
+  "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/share/cmake/Modules/FindPackageMessage.cmake"
+  "/usr/share/cmake/Modules/FindPostgreSQL.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake"
   "/usr/share/cmake/Modules/Platform/Linux.cmake"
   "/usr/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake/Modules/SelectLibraryConfigurations.cmake"
   )
 
 # The corresponding makefile is:

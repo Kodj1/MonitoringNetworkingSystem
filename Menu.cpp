@@ -3,6 +3,7 @@
 #include "NetworkAction.h"
 #include "Network_traffic.h"
 #include "Host_stats.h"
+#include "Host_window.h"
 #include <QApplication>
 
 
@@ -41,7 +42,7 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
 
         retranslateUi(MainWindow);
 
-        //  QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
+        QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Host_Window);
         QObject::connect(pushButton_2, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Network_Traffic);
         QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Host_Stats);
         // QObject::connect(pushButton_4, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
@@ -55,7 +56,7 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Главное меню", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Хосты", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Сетевая активность", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Контейнеры и кластеры", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Статистика хостов", nullptr));
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "Проблемы", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
     }
@@ -82,4 +83,12 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
     Ui::Host_stats *host_stat = new Ui::Host_stats();
     host_stat->setupUi(Network_Host_Stats);
     Network_Host_Stats->show();
+    }
+
+    void Ui_Main_Menu::Open_Window_Host_Window()
+    {
+    QMainWindow *_Host = new QMainWindow();
+    Ui::Host *host_win= new Ui::Host();
+    host_win->setupUi(_Host);
+    _Host->show();
     }

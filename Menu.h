@@ -11,6 +11,7 @@
 #include "Autorization.h"
 #include "NetworkAction.h"
 #include "Network_traffic.h"
+#include "Host_window.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -33,6 +34,7 @@ public slots:
     void Open_Window_Network_Action();
     void Open_Window_Network_Traffic();
     void Open_Window_Host_Stats();
+    void Open_Window_Host_Window();
 };
 
 namespace Ui {

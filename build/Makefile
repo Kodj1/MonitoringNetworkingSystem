@@ -177,6 +177,30 @@ Host_stats.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_stats.cpp.s
 .PHONY : Host_stats.cpp.s
 
+Host_window.o: Host_window.cpp.o
+.PHONY : Host_window.o
+
+# target to build an object file
+Host_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_window.cpp.o
+.PHONY : Host_window.cpp.o
+
+Host_window.i: Host_window.cpp.i
+.PHONY : Host_window.i
+
+# target to preprocess a source file
+Host_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_window.cpp.i
+.PHONY : Host_window.cpp.i
+
+Host_window.s: Host_window.cpp.s
+.PHONY : Host_window.s
+
+# target to generate assembly for a file
+Host_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Host_window.cpp.s
+.PHONY : Host_window.cpp.s
+
 Menu.o: Menu.cpp.o
 .PHONY : Menu.o
 
@@ -321,6 +345,30 @@ moc_Host_stats.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.s
 .PHONY : moc_Host_stats.cpp.s
 
+moc_Host_window.o: moc_Host_window.cpp.o
+.PHONY : moc_Host_window.o
+
+# target to build an object file
+moc_Host_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_window.cpp.o
+.PHONY : moc_Host_window.cpp.o
+
+moc_Host_window.i: moc_Host_window.cpp.i
+.PHONY : moc_Host_window.i
+
+# target to preprocess a source file
+moc_Host_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_window.cpp.i
+.PHONY : moc_Host_window.cpp.i
+
+moc_Host_window.s: moc_Host_window.cpp.s
+.PHONY : moc_Host_window.s
+
+# target to generate assembly for a file
+moc_Host_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Host_window.cpp.s
+.PHONY : moc_Host_window.cpp.s
+
 moc_Menu.o: moc_Menu.cpp.o
 .PHONY : moc_Menu.o
 
@@ -408,6 +456,9 @@ help:
 	@echo "... Host_stats.o"
 	@echo "... Host_stats.i"
 	@echo "... Host_stats.s"
+	@echo "... Host_window.o"
+	@echo "... Host_window.i"
+	@echo "... Host_window.s"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
@@ -426,6 +477,9 @@ help:
 	@echo "... moc_Host_stats.o"
 	@echo "... moc_Host_stats.i"
 	@echo "... moc_Host_stats.s"
+	@echo "... moc_Host_window.o"
+	@echo "... moc_Host_window.i"
+	@echo "... moc_Host_window.s"
 	@echo "... moc_Menu.o"
 	@echo "... moc_Menu.i"
 	@echo "... moc_Menu.s"

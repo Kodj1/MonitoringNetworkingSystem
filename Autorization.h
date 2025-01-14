@@ -1,5 +1,5 @@
-#ifndef AUTORIZATION_H
-#define AUTORIZATION_H
+#ifndef AUTHORIZATION_H
+#define AUTHORIZATION_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -8,12 +8,14 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QWidget>
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlQuery>
+#include <QMessageBox>
 #include "Menu.h"
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Autorization_Window : public QObject
+class Ui_Autorization_Window : public QMainWindow
 {
     Q_OBJECT
 public:
@@ -22,13 +24,14 @@ public:
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QLabel *label;
-    QMainWindow *mainWindow; // Member variable to store the main window
+    QMainWindow *mainWindow;
 
     void setupUi(QMainWindow *MainWindow);
     void retranslateUi(QMainWindow *MainWindow);
 
 public slots:
     void openMenu();
+    bool authenticateUser(const QString &username, const QString &password);
 };
 
 namespace Ui {
@@ -37,4 +40,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif
+#endif // AUTHORIZATION_H
