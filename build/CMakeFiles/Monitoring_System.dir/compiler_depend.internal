@@ -712,12 +712,9 @@ CMakeFiles/Monitoring_System.dir/Autorization.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
- /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
- /usr/include/qt5/QtSql/qsqlquerymodel.h
- /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -1897,12 +1894,9 @@ CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
- /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
- /usr/include/qt5/QtSql/qsqlquerymodel.h
- /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -2317,12 +2311,9 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
- /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
- /usr/include/qt5/QtSql/qsqlquerymodel.h
- /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -2334,7 +2325,6 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o
  /usr/include/qt5/QtWidgets/QMessageBox
  /usr/include/qt5/QtWidgets/QPushButton
  /usr/include/qt5/QtWidgets/QStatusBar
- /usr/include/qt5/QtWidgets/QStyledItemDelegate
  /usr/include/qt5/QtWidgets/QTableView
  /usr/include/qt5/QtWidgets/QTreeView
  /usr/include/qt5/QtWidgets/QWidget
@@ -2359,7 +2349,6 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o
  /usr/include/qt5/QtWidgets/qslider.h
  /usr/include/qt5/QtWidgets/qstatusbar.h
  /usr/include/qt5/QtWidgets/qstyle.h
- /usr/include/qt5/QtWidgets/qstyleditemdelegate.h
  /usr/include/qt5/QtWidgets/qstyleoption.h
  /usr/include/qt5/QtWidgets/qtabbar.h
  /usr/include/qt5/QtWidgets/qtableview.h
@@ -3132,11 +3121,8 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o
  /usr/include/qt5/QtNetwork/qtnetworkglobal.h
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlQuery
- /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlquery.h
- /usr/include/qt5/QtSql/qsqlquerymodel.h
- /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -3726,11 +3712,8 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o
  /usr/include/qt5/QtNetwork/qtnetworkglobal.h
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlQuery
- /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlquery.h
- /usr/include/qt5/QtSql/qsqlquerymodel.h
- /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -4126,11 +4109,8 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o
  /usr/include/qt5/QtNetwork/qtnetworkglobal.h
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlQuery
- /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlquery.h
- /usr/include/qt5/QtSql/qsqlquerymodel.h
- /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -4865,12 +4845,9 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
- /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
- /usr/include/qt5/QtSql/qsqlquerymodel.h
- /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication

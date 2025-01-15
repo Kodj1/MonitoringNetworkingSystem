@@ -10,7 +10,7 @@
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlQuery>
 #include <QtWidgets/QWidget>
-
+#include <QtSql/QSqlTableModel> 
 #include "Menu.h"
 #include "AddForm.h"
 

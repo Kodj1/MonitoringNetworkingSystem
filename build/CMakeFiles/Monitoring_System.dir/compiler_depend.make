@@ -710,12 +710,9 @@ CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: /home/ilyaveretennikov/Moni
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -1892,12 +1889,9 @@ CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o: /home/ilyaveretennikov/Monito
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -2311,12 +2305,9 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o: /home/ilyaveretennikov/Monit
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -2328,7 +2319,6 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o: /home/ilyaveretennikov/Monit
   /usr/include/qt5/QtWidgets/QMessageBox \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QStatusBar \
-  /usr/include/qt5/QtWidgets/QStyledItemDelegate \
   /usr/include/qt5/QtWidgets/QTableView \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
@@ -2353,7 +2343,6 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o: /home/ilyaveretennikov/Monit
   /usr/include/qt5/QtWidgets/qslider.h \
   /usr/include/qt5/QtWidgets/qstatusbar.h \
   /usr/include/qt5/QtWidgets/qstyle.h \
-  /usr/include/qt5/QtWidgets/qstyleditemdelegate.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
   /usr/include/qt5/QtWidgets/qtableview.h \
@@ -3124,11 +3113,8 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -3717,11 +3703,8 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: /home/ilyaveretennikov/Mon
   /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -4116,11 +4099,8 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -4853,12 +4833,9 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -8826,6 +8803,8 @@ moc_AddForm.cpp:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/db_connection.cpp:
 
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp:
+
 /usr/include/qt5/QtNetwork/qtcpsocket.h:
 
 /usr/include/qt5/QtNetwork/qnetworkinterface.h:
@@ -8956,8 +8935,6 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtCore/qcommandlineparser.h:
 
-/usr/include/qt5/QtCore/qcollator.h:
-
 /usr/include/c++/14/list:
 
 /usr/include/c++/14/bits/char_traits.h:
@@ -8983,6 +8960,8 @@ moc_AddForm.cpp:
 /usr/include/c++/14/exception:
 
 /usr/include/qt5/QtCharts/QPieSlice:
+
+/usr/include/qt5/QtCore/qglobal.h:
 
 /usr/include/bits/cpu-set.h:
 
@@ -9448,10 +9427,6 @@ moc_Host_stats.cpp:
 
 /usr/include/qt5/QtSql/qsqltablemodel.h:
 
-/usr/include/qt5/QtCore/qcommandlineoption.h:
-
-/usr/include/bits/errno.h:
-
 /usr/include/qt5/QtCore/qpair.h:
 
 /usr/include/bits/timex.h:
@@ -9601,10 +9576,6 @@ moc_DiskUsageWidget.cpp:
 /usr/include/qt5/QtSql/qsqlquery.h:
 
 /usr/include/bits/types/__locale_t.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp:
-
-/usr/include/qt5/QtWidgets/QStyledItemDelegate:
 
 /usr/include/c++/14/bits/ios_base.h:
 
@@ -9908,6 +9879,10 @@ moc_MemUsageWidget.cpp:
 
 /usr/include/qt5/QtCore/qbitarray.h:
 
+/usr/include/bits/errno.h:
+
+/usr/include/qt5/QtCore/qcommandlineoption.h:
+
 /home/ilyaveretennikov/MonitoringNetworkingSystem/CpuUsageWidget.h:
 
 /usr/include/qt5/QtCharts/QChart:
@@ -9937,6 +9912,8 @@ moc_MemUsageWidget.cpp:
 /usr/include/bits/select.h:
 
 /usr/include/qt5/QtCore/QMargins:
+
+/usr/include/qt5/QtCore/qcollator.h:
 
 /usr/include/qt5/QtCore/QtGlobal:
 
@@ -9977,10 +9954,6 @@ moc_MemUsageWidget.cpp:
 /usr/include/c++/14/bits/version.h:
 
 /usr/include/qt5/QtWidgets/qgraphicswidget.h:
-
-/usr/include/qt5/QtCore/qglobal.h:
-
-/usr/include/qt5/QtWidgets/qstyleditemdelegate.h:
 
 /usr/include/c++/14/ext/alloc_traits.h:
 

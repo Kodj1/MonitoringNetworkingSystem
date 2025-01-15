@@ -21,76 +21,6 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_ReadOnlyDelegate_t {
-    QByteArrayData data[1];
-    char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_ReadOnlyDelegate_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_ReadOnlyDelegate_t qt_meta_stringdata_ReadOnlyDelegate = {
-    {
-QT_MOC_LITERAL(0, 0, 16) // "ReadOnlyDelegate"
-
-    },
-    "ReadOnlyDelegate"
-};
-#undef QT_MOC_LITERAL
-
-static const uint qt_meta_data_ReadOnlyDelegate[] = {
-
- // content:
-       8,       // revision
-       0,       // classname
-       0,    0, // classinfo
-       0,    0, // methods
-       0,    0, // properties
-       0,    0, // enums/sets
-       0,    0, // constructors
-       0,       // flags
-       0,       // signalCount
-
-       0        // eod
-};
-
-void ReadOnlyDelegate::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    (void)_o;
-    (void)_id;
-    (void)_c;
-    (void)_a;
-}
-
-QT_INIT_METAOBJECT const QMetaObject ReadOnlyDelegate::staticMetaObject = { {
-    QMetaObject::SuperData::link<QStyledItemDelegate::staticMetaObject>(),
-    qt_meta_stringdata_ReadOnlyDelegate.data,
-    qt_meta_data_ReadOnlyDelegate,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
-
-
-const QMetaObject *ReadOnlyDelegate::metaObject() const
-{
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
-}
-
-void *ReadOnlyDelegate::qt_metacast(const char *_clname)
-{
-    if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_ReadOnlyDelegate.stringdata0))
-        return static_cast<void*>(this);
-    return QStyledItemDelegate::qt_metacast(_clname);
-}
-
-int ReadOnlyDelegate::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
-{
-    _id = QStyledItemDelegate::qt_metacall(_c, _id, _a);
-    return _id;
-}
 struct qt_meta_stringdata_Ui_Host_Window_t {
     QByteArrayData data[4];
     char stringdata0[41];
@@ -103,12 +33,12 @@ struct qt_meta_stringdata_Ui_Host_Window_t {
 static const qt_meta_stringdata_Ui_Host_Window_t qt_meta_stringdata_Ui_Host_Window = {
     {
 QT_MOC_LITERAL(0, 0, 14), // "Ui_Host_Window"
-QT_MOC_LITERAL(1, 15, 12), // "deleteRecord"
-QT_MOC_LITERAL(2, 28, 0), // ""
-QT_MOC_LITERAL(3, 29, 11) // "openAddForm"
+QT_MOC_LITERAL(1, 15, 11), // "openAddForm"
+QT_MOC_LITERAL(2, 27, 0), // ""
+QT_MOC_LITERAL(3, 28, 12) // "deleteRecord"
 
     },
-    "Ui_Host_Window\0deleteRecord\0\0openAddForm"
+    "Ui_Host_Window\0openAddForm\0\0deleteRecord"
 };
 #undef QT_MOC_LITERAL
 
@@ -126,8 +56,8 @@ static const uint qt_meta_data_Ui_Host_Window[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x08 /* Private */,
-       3,    0,   25,    2, 0x08 /* Private */,
+       1,    0,   24,    2, 0x0a /* Public */,
+       3,    0,   25,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -142,8 +72,8 @@ void Ui_Host_Window::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<Ui_Host_Window *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->deleteRecord(); break;
-        case 1: _t->openAddForm(); break;
+        case 0: _t->openAddForm(); break;
+        case 1: _t->deleteRecord(); break;
         default: ;
         }
     }
@@ -151,7 +81,7 @@ void Ui_Host_Window::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject Ui_Host_Window::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_Ui_Host_Window.data,
     qt_meta_data_Ui_Host_Window,
     qt_static_metacall,
@@ -170,12 +100,12 @@ void *Ui_Host_Window::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_Ui_Host_Window.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QObject::qt_metacast(_clname);
 }
 
 int Ui_Host_Window::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
