@@ -7,15 +7,27 @@ LISTEN_PORT=8080
 handle_data() {
     # Принять данные в формате JSON
     read json_data
+
+    # Проверка, что json_data не пустой
+    if [ -z "$json_data" ]; then
+        echo "Получены пустые данные. Пропуск обработки."
+        return
+    fi
     
     # Используем jq для парсинга JSON-данных
-    node_name=$(echo "$json_data" | jq -r '.node_name')
-    ip_address=$(echo "$json_data" | jq -r '.ip_address')
-    cpu_usage=$(echo "$json_data" | jq -r '.cpu_usage')
-    memory_usage=$(echo "$json_data" | jq -r '.memory_usage')
-    network_in=$(echo "$json_data" | jq -r '.network_in')
-    network_out=$(echo "$json_data" | jq -r '.network_out')
+    node_name=$(echo "$json_data" | jq -r '.node_name // empty')
+    ip_address=$(echo "$json_data" | jq -r '.ip_address // empty')
+    cpu_usage=$(echo "$json_data" | jq -r '.cpu_usage // empty')
+    memory_usage=$(echo "$json_data" | jq -r '.memory_usage // empty')
+    network_in=$(echo "$json_data" | jq -r '.network_in // empty')
+    network_out=$(echo "$json_data" | jq -r '.network_out // empty')
     collected_at=$(date +'%Y-%m-%d %H:%M:%S')
+
+    # Проверка, что все необходимые данные получены
+    if [ -z "$node_name" ] || [ -z "$ip_address" ] || [ -z "$cpu_usage" ] || [ -z "$memory_usage" ] || [ -z "$network_in" ] || [ -z "$network_out" ]; then
+        echo "Некоторые данные отсутствуют. Пропуск записи в базу данных."
+        return
+    fi
     
     # Формирование SQL-запроса для вставки данных в таблицу metrics
     SQL_QUERY=$(cat <<EOF
@@ -31,7 +43,7 @@ EOF
 )
 
     # Выполнение SQL-запроса с использованием psql
-    echo "$SQL_QUERY" | PGPASSWORD="your_password" psql -h 127.0.0.1 -d mns -U postgres
+    echo "$SQL_QUERY" | PGPASSWORD="12345" psql -h 127.0.0.1 -d mns -U postgres
 
     # Проверка на успешное выполнение
     if [ $? -eq 0 ]; then
@@ -43,5 +55,6 @@ EOF
 
 # Прослушивание порта и обработка входящих данных
 while true; do
-    nc -l -p $LISTEN_PORT -c 'handle_data'
+    # Используем nc для прослушивания порта и перенаправляем данные в handle_data
+    nc -l -p $LISTEN_PORT | handle_data
 done
