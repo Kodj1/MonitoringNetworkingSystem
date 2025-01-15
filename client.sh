@@ -1,29 +1,33 @@
 #!/bin/bash
 
-# Собрать информацию об имени хоста
+# Собрать информацию об имени хоста и IP-адресе
 hostname=$(hostname)
+ip_address=$(hostname -I | awk '{print $1}')
 
 # Собрать информацию о загрузке процессора
-cpu_load=$(top -bn1 | grep "load average:" | awk '{print $10 $11 $12}')
+cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4}')
 
 # Собрать информацию об использовании оперативной памяти
-memory_usage=$(free -h | grep "Mem:" | awk '{print $3 "/" $2}')
+memory_usage=$(free -m | awk 'NR==2{printf "%.2f", $3*100/$2 }')
 
-# Собрать информацию о дисковом пространстве
-disk_usage=$(df -h / | grep "/" | awk '{print $3 "/" $2}')
+# Собрать информацию о сетевом трафике
+network_in=$(cat /proc/net/dev | grep eth0 | awk '{print $2}')
+network_out=$(cat /proc/net/dev | grep eth0 | awk '{print $10}')
 
 # Собрать всю информацию в JSON-формате
 data=$(cat <<EOF
 {
-    "hostname": "$hostname",
-    "cpu_load": "$cpu_load",
+    "node_name": "$hostname",
+    "ip_address": "$ip_address",
+    "cpu_usage": "$cpu_usage",
     "memory_usage": "$memory_usage",
-    "disk_usage": "$disk_usage"
+    "network_in": "$network_in",
+    "network_out": "$network_out"
 }
 EOF
 )
 
-# IP-адрес получателя
+# IP-адрес и порт получателя
 recipient_ip="192.168.0.3"
 recipient_port="8080"
 
