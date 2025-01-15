@@ -7,8 +7,36 @@
 #include <arpa/inet.h>
 #include <libpq-fe.h>
 
+// Функция для вставки данных в таблицу nodes
+void insertNodeIfNotExists(PGconn* conn, int nodeId, const std::string& nodeName, const std::string& nodeIpAddress) {
+    std::ostringstream checkQuery;
+    checkQuery << "SELECT 1 FROM nodes WHERE id = " << nodeId << ";";
+    PGresult* res = PQexec(conn, checkQuery.str().c_str());
+
+    if (PQresultStatus(res) != PGRES_TUPLES_OK) {
+        std::cerr << "Check node existence failed: " << PQerrorMessage(conn) << std::endl;
+        PQclear(res);
+        return;
+    }
+
+    if (PQntuples(res) == 0) {
+        // Node does not exist, insert it with required fields
+        std::ostringstream insertQuery;
+        insertQuery << "INSERT INTO nodes (id, name, ip_address) VALUES (" << nodeId << ", '" << nodeName << "', '" << nodeIpAddress << "');";
+        PGresult* insertRes = PQexec(conn, insertQuery.str().c_str());
+
+        if (PQresultStatus(insertRes) != PGRES_COMMAND_OK) {
+            std::cerr << "Insert node failed: " << PQerrorMessage(conn) << std::endl;
+        }
+
+        PQclear(insertRes);
+    }
+
+    PQclear(res);
+}
+
 // Функция для вставки данных в базу данных PostgreSQL
-void insertToDatabase(int nodeId, double cpuUsage, double memoryUsage, double networkIn, double networkOut) {
+void insertToDatabase(int nodeId, const std::string& nodeName, const std::string& nodeIpAddress, double cpuUsage, double memoryUsage, double networkIn, double networkOut) {
     const char* conninfo = "host=localhost dbname=mns user=postgres password=12345";
     PGconn* conn = PQconnectdb(conninfo);
 
@@ -17,6 +45,9 @@ void insertToDatabase(int nodeId, double cpuUsage, double memoryUsage, double ne
         PQfinish(conn);
         return;
     }
+
+    // Проверка и вставка узла, если он не существует
+    insertNodeIfNotExists(conn, nodeId, nodeName, nodeIpAddress);
 
     std::ostringstream query;
     query << "INSERT INTO metrics (node_id, cpu_usage, memory_usage, network_in, network_out) VALUES ("
@@ -55,16 +86,21 @@ void handleClient(int clientSocket) {
     // Парсим полученные данные (предполагаем, что данные получены в формате: nodeId,cpuUsage,memoryUsage,networkIn,networkOut)
     int nodeId;
     double cpuUsage, memoryUsage, networkIn, networkOut;
-    std::istringstream iss(buffer);
     char delimiter;
+
+    std::istringstream iss(buffer);
     if (!(iss >> nodeId >> delimiter >> cpuUsage >> delimiter >> memoryUsage >> delimiter >> networkIn >> delimiter >> networkOut)) {
         std::cerr << "Error parsing data." << std::endl;
         close(clientSocket);
         return;
     }
 
+    // Заменить эти значения фактическими значениями для nodeName и nodeIpAddress
+    std::string nodeName = "defaultNodeName";
+    std::string nodeIpAddress = "127.0.0.1";
+
     // Сохраняем данные в базу данных
-    insertToDatabase(nodeId, cpuUsage, memoryUsage, networkIn, networkOut);
+    insertToDatabase(nodeId, nodeName, nodeIpAddress, cpuUsage, memoryUsage, networkIn, networkOut);
 
     close(clientSocket);
     std::cout << "Client disconnected." << std::endl;
