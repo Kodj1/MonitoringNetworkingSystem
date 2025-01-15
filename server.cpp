@@ -7,7 +7,8 @@
 #include <arpa/inet.h>
 #include <libpq-fe.h>
 
-void insertToDatabase(const std::string& jsonData) {
+// Функция для вставки данных в базу данных PostgreSQL
+void insertToDatabase(int nodeId, double cpuUsage, double memoryUsage, double networkIn, double networkOut) {
     const char* conninfo = "host=localhost dbname=mns user=postgres password=12345";
     PGconn* conn = PQconnectdb(conninfo);
 
@@ -18,7 +19,8 @@ void insertToDatabase(const std::string& jsonData) {
     }
 
     std::ostringstream query;
-    query << "INSERT INTO system_data (data) VALUES ('" << jsonData << "');";
+    query << "INSERT INTO metrics (node_id, cpu_usage, memory_usage, network_in, network_out) VALUES ("
+          << nodeId << ", " << cpuUsage << ", " << memoryUsage << ", " << networkIn << ", " << networkOut << ");";
 
     PGresult* res = PQexec(conn, query.str().c_str());
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
@@ -34,6 +36,7 @@ void insertToDatabase(const std::string& jsonData) {
     PQfinish(conn);
 }
 
+// Функция для обработки клиента
 void handleClient(int clientSocket) {
     const size_t bufferSize = 1024;
     char buffer[bufferSize];
@@ -49,8 +52,19 @@ void handleClient(int clientSocket) {
     buffer[bytesRead] = '\0'; // Завершаем строку
     std::cout << "Received data: " << buffer << std::endl;
 
+    // Парсим полученные данные (предполагаем, что данные получены в формате: nodeId,cpuUsage,memoryUsage,networkIn,networkOut)
+    int nodeId;
+    double cpuUsage, memoryUsage, networkIn, networkOut;
+    std::istringstream iss(buffer);
+    char delimiter;
+    if (!(iss >> nodeId >> delimiter >> cpuUsage >> delimiter >> memoryUsage >> delimiter >> networkIn >> delimiter >> networkOut)) {
+        std::cerr << "Error parsing data." << std::endl;
+        close(clientSocket);
+        return;
+    }
+
     // Сохраняем данные в базу данных
-    insertToDatabase(buffer);
+    insertToDatabase(nodeId, cpuUsage, memoryUsage, networkIn, networkOut);
 
     close(clientSocket);
     std::cout << "Client disconnected." << std::endl;

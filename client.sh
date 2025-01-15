@@ -1,29 +1,29 @@
 #!/bin/bash
 
-# Собрать информацию об имени хоста и IP-адресе
+# Собрать информацию об имени хоста
 hostname=$(hostname)
-ip_address=$(hostname -I | awk '{print $1}')
 
 # Собрать информацию о загрузке процессора
-cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4}')
+cpu_load=$(top -bn1 | grep "load average:" | awk '{print $10 $11 $12}')
 
 # Собрать информацию об использовании оперативной памяти
-memory_usage=$(free -m | awk 'NR==2{printf "%.2f", $3*100/$2 }')
+memory_usage=$(free -h | grep "Mem:" | awk '{print $3 "/" $2}')
 
-# Собрать информацию о сетевом трафике
-network_in=$(cat /proc/net/dev | grep eth0 | awk '{print $2}')
-network_out=$(cat /proc/net/dev | grep eth0 | awk '{print $10}')
+# Собрать информацию о дисковом пространстве
+disk_usage=$(df -h / | grep "/" | awk '{print $3 "/" $2}')
 
-# Собрать всю информацию в JSON-формате
+# Собрать информацию о сетевом трафике (пример, может потребовать доработки в зависимости от интерфейса)
+network_in=$(ifconfig eth0 | grep "RX packets" | awk '{print $5}')
+network_out=$(ifconfig eth0 | grep "TX packets" | awk '{print $5}')
+
+# Собрать всю информацию в формате, который будет понят серверу
 data=$(cat <<EOF
-{
-    "node_name": "$hostname",
-    "ip_address": "$ip_address",
-    "cpu_usage": "$cpu_usage",
-    "memory_usage": "$memory_usage",
-    "network_in": "$network_in",
-    "network_out": "$network_out"
-}
+hostname=$hostname
+cpu_load=$cpu_load
+memory_usage=$memory_usage
+disk_usage=$disk_usage
+network_in=$network_in
+network_out=$network_out
 EOF
 )
 
@@ -31,10 +31,10 @@ EOF
 recipient_ip="192.168.0.3"
 recipient_port="8080"
 
-# Отправить данные на другой IP-адрес с использованием netcat
+# Отправить данные на сервер с использованием netcat
 echo "$data" | nc $recipient_ip $recipient_port
 
-# Вывести результат отправки
+# Проверка результата отправки
 if [ $? -eq 0 ]; then
     echo "Данные успешно отправлены на $recipient_ip:$recipient_port"
 else
