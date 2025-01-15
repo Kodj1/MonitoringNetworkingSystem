@@ -5,16 +5,17 @@ LISTEN_PORT=8080
 
 # Функция для обработки входящих данных
 handle_data() {
-    # Принять данные в формате JSON
-    read json_data
+    # Принять данные из файла
+    data_file="received_metrics.txt"
+    cat > $data_file
     
-    # Используем jq для парсинга JSON-данных
-    node_name=$(echo "$json_data" | jq -r '.node_name')
-    ip_address=$(echo "$json_data" | jq -r '.ip_address')
-    cpu_usage=$(echo "$json_data" | jq -r '.cpu_usage')
-    memory_usage=$(echo "$json_data" | jq -r '.memory_usage')
-    network_in=$(echo "$json_data" | jq -r '.network_in')
-    network_out=$(echo "$json_data" | jq -r '.network_out')
+# Чтение данных из файла
+    hostname=$(grep "hostname=" $data_file | cut -d'=' -f2)
+    ip_address=$(grep "ip_address=" $data_file | cut -d'=' -f2)
+    cpu_usage=$(grep "cpu_usage=" $data_file | cut -d'=' -f2)
+    memory_usage=$(grep "memory_usage=" $data_file | cut -d'=' -f2)
+    network_in=$(grep "network_in=" $data_file | cut -d'=' -f2)
+    network_out=$(grep "network_out=" $data_file | cut -d'=' -f2)
     collected_at=$(date +'%Y-%m-%d %H:%M:%S')
     
     # Формирование SQL-запроса для вставки данных в таблицу metrics
@@ -31,7 +32,7 @@ EOF
 )
 
     # Выполнение SQL-запроса с использованием psql
-    echo "$SQL_QUERY" | PGPASSWORD="your_password" psql -h 127.0.0.1 -d mns -U postgres
+    echo "$SQL_QUERY" | PGPASSWORD="12345" psql -h 127.0.0.1 -d mns -U postgres
 
     # Проверка на успешное выполнение
     if [ $? -eq 0 ]; then
