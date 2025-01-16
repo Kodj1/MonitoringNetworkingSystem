@@ -20,6 +20,22 @@ void insertToDatabase(const std::string& hostname, double cpuUsage, double total
         return;
     }
 
+    // Валидация данных перед вставкой
+    if (cpuUsage < 0 || cpuUsage > 100 ||
+        totalCpu < 0 || totalCpu > 100 ||
+        memoryUsage < 0 || memoryUsage > 100 ||
+        totalMemory < 0 || totalMemory > 100 ||
+        networkInMbps < 0 || networkInMbps > 1e10 ||
+        totalNetworkInMbps < 0 || totalNetworkInMbps > 1e10 ||
+        networkOutMbps < 0 || networkOutMbps > 1e10 ||
+        totalNetworkOutMbps < 0 || totalNetworkOutMbps > 1e10 ||
+        diskUsageGb < 0 || diskUsageGb > 1e15 ||
+        totalDiskGb < 0 || totalDiskGb > 1e15) {
+        std::cerr << "Data validation failed: one or more values are out of accepted range." << std::endl;
+        PQfinish(conn);
+        return;
+    }
+
     std::ostringstream query;
     query << "INSERT INTO metrics (hostname, cpu_usage, total_cpu, memory_usage, total_memory, "
           << "network_in_mbps, total_network_in_mbps, network_out_mbps, total_network_out_mbps, "

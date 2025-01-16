@@ -52,8 +52,8 @@ CREATE TABLE metrics (
     total_network_in_mbps DECIMAL(10, 2) CHECK (total_network_in_mbps >= 0), -- Полный объем входящего трафика в Мбит/с
     network_out_mbps DECIMAL(10, 2) CHECK (network_out_mbps >= 0), -- Исходящий трафик в Мбит/с, с проверкой допустимых значений
     total_network_out_mbps DECIMAL(10, 2) CHECK (total_network_out_mbps >= 0), -- Полный объем исходящего трафика в Мбит/с
-    disk_usage_gb DECIMAL(10, 2) CHECK (disk_usage_gb >= 0), -- Используемый объем дискового пространства в ГБ
-    total_disk_gb DECIMAL(10, 2) CHECK (total_disk_gb >= 0), -- Полный объем дискового пространства в ГБ
+    disk_usage_gb DECIMAL(15, 2) CHECK (disk_usage_gb >= 0), -- Используемый объем дискового пространства в ГБ
+    total_disk_gb DECIMAL(15, 2) CHECK (total_disk_gb >= 0), -- Полный объем дискового пространства в ГБ
     collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Дата и время сбора метрики
     FOREIGN KEY (hostname) REFERENCES nodes(hostname) ON DELETE CASCADE -- Внешний ключ на узел, при удалении узла удаляются метрики
 );

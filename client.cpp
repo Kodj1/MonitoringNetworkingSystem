@@ -103,7 +103,7 @@ void getNetworkUsage(double& networkInMbps, double& totalNetworkInMbps, double& 
     totalNetworkOutMbps = networkOutMbps;
 }
 
-// Функция для получения использования диска и полного объема диска
+// Функция для получения использования диска и полного объема диска в байтах и преобразование в гигабайты
 void getDiskUsage(double& diskUsageGb, double& totalDiskGb) {
     std::ifstream file("/proc/self/mounts");
     std::string line, device, mountpoint, fstype, options;
@@ -117,12 +117,18 @@ void getDiskUsage(double& diskUsageGb, double& totalDiskGb) {
             std::ifstream statFile("/proc/self/mountstats");
             while (std::getline(statFile, line)) {
                 if (line.find("device " + device + " mounted on /") != std::string::npos) {
-                    std::istringstream statSS(line);
-                    statSS >> device >> mountpoint >> fstype >> blocks >> used >> available;
+                    // Используем команду 'df' для получения информации о дисковом пространстве
+                    std::string command = "df --block-size=1 " + mountpoint + " | awk 'NR==2 {print $3, $2}'";
+                    FILE* pipe = popen(command.c_str(), "r");
+                    if (pipe) {
+                        long used_bytes, total_bytes;
+                        fscanf(pipe, "%ld %ld", &used_bytes, &total_bytes);
+                        pclose(pipe);
 
-                    diskUsageGb = used / 1024.0 / 1024.0; // Преобразуем в ГБ
-                    totalDiskGb = (used + available) / 1024.0 / 1024.0; // Преобразуем в ГБ
-                    return;
+                        diskUsageGb = used_bytes / 1024.0 / 1024.0 / 1024.0; // Преобразуем байты в ГБ
+                        totalDiskGb = total_bytes / 1024.0 / 1024.0 / 1024.0; // Преобразуем байты в ГБ
+                        return;
+                    }
                 }
             }
         }
