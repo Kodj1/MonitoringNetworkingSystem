@@ -7,8 +7,8 @@
 #include <arpa/inet.h>
 #include <fstream>
 
-// Функция для получения использования CPU
-double getCpuUsage() {
+// Функция для получения использования CPU и полного объема CPU
+void getCpuUsage(double& cpuUsage, double& totalCpu) {
     std::ifstream file("/proc/stat");
     std::string line, cpu;
     long user, nice, system, idle, iowait, irq, softirq, steal;
@@ -41,13 +41,14 @@ double getCpuUsage() {
         prev_irq = irq;
         prev_softirq = softirq;
         prev_steal = steal;
-    }
 
-    return usage;
+        cpuUsage = usage;
+        totalCpu = 100.0; // Полный объем CPU всегда 100%
+    }
 }
 
-// Функция для получения использования памяти
-double getMemoryUsage() {
+// Функция для получения использования памяти и полного объема памяти
+void getMemoryUsage(double& memoryUsage, double& totalMemory) {
     std::ifstream file("/proc/meminfo");
     std::string line, key;
     long value, total_memory, free_memory;
@@ -62,11 +63,12 @@ double getMemoryUsage() {
         }
     }
 
-    return ((total_memory - free_memory) / static_cast<double>(total_memory)) * 100;
+    memoryUsage = ((total_memory - free_memory) / static_cast<double>(total_memory)) * 100;
+    totalMemory = 100.0; // Полный объем памяти всегда 100%
 }
 
-// Функция для получения сетевого трафика
-void getNetworkUsage(double& networkIn, double& networkOut) {
+// Функция для получения сетевого трафика и полного объема сетевого трафика
+void getNetworkUsage(double& networkInMbps, double& totalNetworkInMbps, double& networkOutMbps, double& totalNetworkOutMbps) {
     std::ifstream file("/proc/net/dev");
     std::string line, iface;
     long rx_bytes, tx_bytes;
@@ -76,8 +78,8 @@ void getNetworkUsage(double& networkIn, double& networkOut) {
     std::getline(file, line);
     std::getline(file, line);
 
-    networkIn = 0;
-    networkOut = 0;
+    networkInMbps = 0;
+    networkOutMbps = 0;
 
     while (std::getline(file, line)) {
         std::istringstream ss(line);
@@ -86,16 +88,62 @@ void getNetworkUsage(double& networkIn, double& networkOut) {
         ss >> tx_bytes;
 
         if (iface != "lo:") { // Игнорируем loopback интерфейс
-            networkIn += rx_bytes;
-            networkOut += tx_bytes;
+            networkInMbps += rx_bytes / 125000.0; // Преобразуем байты в Мбит/с
+            networkOutMbps += tx_bytes / 125000.0; // Преобразуем байты в Мбит/с
         }
     }
 
-    networkIn -= prev_rx_bytes;
-    networkOut -= prev_tx_bytes;
+    networkInMbps -= prev_rx_bytes / 125000.0;
+    networkOutMbps -= prev_tx_bytes / 125000.0;
 
-    prev_rx_bytes += networkIn;
-    prev_tx_bytes += networkOut;
+    prev_rx_bytes += networkInMbps * 125000;
+    prev_tx_bytes += networkOutMbps * 125000;
+
+    totalNetworkInMbps = networkInMbps;
+    totalNetworkOutMbps = networkOutMbps;
+}
+
+// Функция для получения использования диска и полного объема диска
+void getDiskUsage(double& diskUsageGb, double& totalDiskGb) {
+    std::ifstream file("/proc/self/mounts");
+    std::string line, device, mountpoint, fstype, options;
+    long blocks, used, available;
+
+    while (std::getline(file, line)) {
+        std::istringstream ss(line);
+        ss >> device >> mountpoint >> fstype >> options;
+
+        if (mountpoint == "/") {
+            std::ifstream statFile("/proc/self/mountstats");
+            while (std::getline(statFile, line)) {
+                if (line.find("device " + device + " mounted on /") != std::string::npos) {
+                    std::istringstream statSS(line);
+                    statSS >> device >> mountpoint >> fstype >> blocks >> used >> available;
+
+                    diskUsageGb = used / 1024.0 / 1024.0; // Преобразуем в ГБ
+                    totalDiskGb = (used + available) / 1024.0 / 1024.0; // Преобразуем в ГБ
+                    return;
+                }
+            }
+        }
+    }
+}
+
+// Функция для получения имени узла
+std::string getNodeName() {
+    std::ifstream file("/etc/hostname");
+    std::string nodeName;
+    std::getline(file, nodeName);
+    return nodeName;
+}
+
+// Функция для получения IP-адреса узла
+std::string getNodeIpAddress() {
+    std::string ipAddress;
+    std::system("hostname -I | awk '{print $1}' > /tmp/ip_address.txt");
+    std::ifstream file("/tmp/ip_address.txt");
+    std::getline(file, ipAddress);
+    return ipAddress;
 }
 
 // Функция для отправки данных на сервер
@@ -133,19 +181,30 @@ void sendDataToServer(const std::string& serverIp, int serverPort, const std::st
 }
 
 int main() {
-    std::string serverIp = "127.0.0.1"; // IP-адрес сервера
+    std::string serverIp = "192.168.0.3"; // IP-адрес сервера
     int serverPort = 8080; // Порт сервера
 
     // Получаем системные метрики
-    int nodeId = 1; // Предположим, что nodeId фиксированный для данного узла
-    double cpuUsage = getCpuUsage();
-    double memoryUsage = getMemoryUsage();
-    double networkIn, networkOut;
-    getNetworkUsage(networkIn, networkOut);
+    std::string hostname = getNodeName(); // Имя узла
+    std::string nodeIpAddress = getNodeIpAddress(); // IP-адрес узла
 
-    // Формируем строку данных в формате nodeId,cpuUsage,memoryUsage,networkIn,networkOut
+    double cpuUsage, totalCpu;
+    getCpuUsage(cpuUsage, totalCpu);
+
+    double memoryUsage, totalMemory;
+    getMemoryUsage(memoryUsage, totalMemory);
+
+    double networkInMbps, totalNetworkInMbps, networkOutMbps, totalNetworkOutMbps;
+    getNetworkUsage(networkInMbps, totalNetworkInMbps, networkOutMbps, totalNetworkOutMbps);
+
+    double diskUsageGb, totalDiskGb;
+    getDiskUsage(diskUsageGb, totalDiskGb);
+
+    // Формируем строку данных в формате hostname,cpuUsage,totalCpu,memoryUsage,totalMemory,networkInMbps,totalNetworkInMbps,networkOutMbps,totalNetworkOutMbps,diskUsageGb,totalDiskGb
     std::ostringstream dataStream;
-    dataStream << nodeId << "," << cpuUsage << "," << memoryUsage << "," << networkIn << "," << networkOut;
+    dataStream << hostname << "," << cpuUsage << "," << totalCpu << "," << memoryUsage << "," << totalMemory << ","
+               << networkInMbps << "," << totalNetworkInMbps << "," << networkOutMbps << "," << totalNetworkOutMbps << ","
+               << diskUsageGb << "," << totalDiskGb;
     std::string data = dataStream.str();
 
     // Отправляем данные на сервер

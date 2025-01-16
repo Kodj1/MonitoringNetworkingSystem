@@ -7,36 +7,10 @@
 #include <arpa/inet.h>
 #include <libpq-fe.h>
 
-// Функция для вставки данных в таблицу nodes
-void insertNodeIfNotExists(PGconn* conn, int nodeId, const std::string& nodeName, const std::string& nodeIpAddress) {
-    std::ostringstream checkQuery;
-    checkQuery << "SELECT 1 FROM nodes WHERE id = " << nodeId << ";";
-    PGresult* res = PQexec(conn, checkQuery.str().c_str());
-
-    if (PQresultStatus(res) != PGRES_TUPLES_OK) {
-        std::cerr << "Check node existence failed: " << PQerrorMessage(conn) << std::endl;
-        PQclear(res);
-        return;
-    }
-
-    if (PQntuples(res) == 0) {
-        // Node does not exist, insert it with required fields
-        std::ostringstream insertQuery;
-        insertQuery << "INSERT INTO nodes (id, name, ip_address) VALUES (" << nodeId << ", '" << nodeName << "', '" << nodeIpAddress << "');";
-        PGresult* insertRes = PQexec(conn, insertQuery.str().c_str());
-
-        if (PQresultStatus(insertRes) != PGRES_COMMAND_OK) {
-            std::cerr << "Insert node failed: " << PQerrorMessage(conn) << std::endl;
-        }
-
-        PQclear(insertRes);
-    }
-
-    PQclear(res);
-}
-
 // Функция для вставки данных в базу данных PostgreSQL
-void insertToDatabase(int nodeId, const std::string& nodeName, const std::string& nodeIpAddress, double cpuUsage, double memoryUsage, double networkIn, double networkOut) {
+void insertToDatabase(const std::string& hostname, double cpuUsage, double totalCpu, double memoryUsage, double totalMemory, 
+                      double networkInMbps, double totalNetworkInMbps, double networkOutMbps, double totalNetworkOutMbps, 
+                      double diskUsageGb, double totalDiskGb) {
     const char* conninfo = "host=localhost dbname=mns user=postgres password=12345";
     PGconn* conn = PQconnectdb(conninfo);
 
@@ -46,12 +20,13 @@ void insertToDatabase(int nodeId, const std::string& nodeName, const std::string
         return;
     }
 
-    // Проверка и вставка узла, если он не существует
-    insertNodeIfNotExists(conn, nodeId, nodeName, nodeIpAddress);
-
     std::ostringstream query;
-    query << "INSERT INTO metrics (node_id, cpu_usage, memory_usage, network_in, network_out) VALUES ("
-          << nodeId << ", " << cpuUsage << ", " << memoryUsage << ", " << networkIn << ", " << networkOut << ");";
+    query << "INSERT INTO metrics (hostname, cpu_usage, total_cpu, memory_usage, total_memory, "
+          << "network_in_mbps, total_network_in_mbps, network_out_mbps, total_network_out_mbps, "
+          << "disk_usage_gb, total_disk_gb) VALUES ('"
+          << hostname << "', " << cpuUsage << ", " << totalCpu << ", " << memoryUsage << ", " << totalMemory << ", "
+          << networkInMbps << ", " << totalNetworkInMbps << ", " << networkOutMbps << ", " << totalNetworkOutMbps << ", "
+          << diskUsageGb << ", " << totalDiskGb << ");";
 
     PGresult* res = PQexec(conn, query.str().c_str());
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
@@ -83,24 +58,22 @@ void handleClient(int clientSocket) {
     buffer[bytesRead] = '\0'; // Завершаем строку
     std::cout << "Received data: " << buffer << std::endl;
 
-    // Парсим полученные данные (предполагаем, что данные получены в формате: nodeId,cpuUsage,memoryUsage,networkIn,networkOut)
-    int nodeId;
-    double cpuUsage, memoryUsage, networkIn, networkOut;
+    // Парсим полученные данные (предполагаем, что данные получены в формате: hostname,cpuUsage,totalCpu,memoryUsage,totalMemory,networkInMbps,totalNetworkInMbps,networkOutMbps,totalNetworkOutMbps,diskUsageGb,totalDiskGb)
+    std::string hostname;
+    double cpuUsage, totalCpu, memoryUsage, totalMemory, networkInMbps, totalNetworkInMbps, networkOutMbps, totalNetworkOutMbps, diskUsageGb, totalDiskGb;
     char delimiter;
 
     std::istringstream iss(buffer);
-    if (!(iss >> nodeId >> delimiter >> cpuUsage >> delimiter >> memoryUsage >> delimiter >> networkIn >> delimiter >> networkOut)) {
+    if (!(std::getline(iss, hostname, ',') >> cpuUsage >> delimiter >> totalCpu >> delimiter >> memoryUsage >> delimiter >> totalMemory >> delimiter
+          >> networkInMbps >> delimiter >> totalNetworkInMbps >> delimiter >> networkOutMbps >> delimiter >> totalNetworkOutMbps >> delimiter
+          >> diskUsageGb >> delimiter >> totalDiskGb)) {
         std::cerr << "Error parsing data." << std::endl;
         close(clientSocket);
         return;
     }
 
-    // Заменить эти значения фактическими значениями для nodeName и nodeIpAddress
-    std::string nodeName = "defaultNodeName";
-    std::string nodeIpAddress = "127.0.0.1";
-
     // Сохраняем данные в базу данных
-    insertToDatabase(nodeId, nodeName, nodeIpAddress, cpuUsage, memoryUsage, networkIn, networkOut);
+    insertToDatabase(hostname, cpuUsage, totalCpu, memoryUsage, totalMemory, networkInMbps, totalNetworkInMbps, networkOutMbps, totalNetworkOutMbps, diskUsageGb, totalDiskGb);
 
     close(clientSocket);
     std::cout << "Client disconnected." << std::endl;

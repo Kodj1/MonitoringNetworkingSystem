@@ -1,6 +1,0 @@
-hostname=workstation
-cpu_load=loadaverage:0,27,
-memory_usage=
-disk_usage=87G/468G
-network_in=22494278107
-network_out=1299607637
