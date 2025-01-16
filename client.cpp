@@ -72,14 +72,13 @@ void getNetworkUsage(double& networkInMbps, double& totalNetworkInMbps, double& 
     std::ifstream file("/proc/net/dev");
     std::string line, iface;
     long rx_bytes, tx_bytes;
-    static long prev_rx_bytes, prev_tx_bytes;
+    static long prev_rx_bytes = 0, prev_tx_bytes = 0;
 
     // Пропускаем первые две строки заголовков
     std::getline(file, line);
     std::getline(file, line);
 
-    networkInMbps = 0;
-    networkOutMbps = 0;
+    long total_rx_bytes = 0, total_tx_bytes = 0;
 
     while (std::getline(file, line)) {
         std::istringstream ss(line);
@@ -88,19 +87,22 @@ void getNetworkUsage(double& networkInMbps, double& totalNetworkInMbps, double& 
         ss >> tx_bytes;
 
         if (iface != "lo:") { // Игнорируем loopback интерфейс
-            networkInMbps += rx_bytes / 125000.0; // Преобразуем байты в Мбит/с
-            networkOutMbps += tx_bytes / 125000.0; // Преобразуем байты в Мбит/с
+            total_rx_bytes += rx_bytes;
+            total_tx_bytes += tx_bytes;
         }
     }
 
-    networkInMbps -= prev_rx_bytes / 125000.0;
-    networkOutMbps -= prev_tx_bytes / 125000.0;
+    // Вычисляем сетевой трафик в Мбит/с
+    networkInMbps = (total_rx_bytes - prev_rx_bytes) / 125000.0; // Преобразуем байты в Мбит/с
+    networkOutMbps = (total_tx_bytes - prev_tx_bytes) / 125000.0; // Преобразуем байты в Мбит/с
 
-    prev_rx_bytes += networkInMbps * 125000;
-    prev_tx_bytes += networkOutMbps * 125000;
+    // Обновляем предыдущие значения
+    prev_rx_bytes = total_rx_bytes;
+    prev_tx_bytes = total_tx_bytes;
 
-    totalNetworkInMbps = networkInMbps;
-    totalNetworkOutMbps = networkOutMbps;
+    // Общий объем сетевого трафика
+    totalNetworkInMbps = total_rx_bytes / 125000.0;
+    totalNetworkOutMbps = total_tx_bytes / 125000.0;
 }
 
 // Функция для получения использования диска и полного объема диска в байтах и преобразование в гигабайты
@@ -187,7 +189,7 @@ void sendDataToServer(const std::string& serverIp, int serverPort, const std::st
 }
 
 int main() {
-    std::string serverIp = "192.168.0.3"; // IP-адрес сервера
+    std::string serverIp = "127.0.0.1"; // IP-адрес сервера
     int serverPort = 8080; // Порт сервера
 
     // Получаем системные метрики
