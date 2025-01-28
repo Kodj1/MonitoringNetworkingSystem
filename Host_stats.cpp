@@ -93,7 +93,7 @@ void Ui_Host_stats::populateListWidget()
     listWidget->clear();
 
     QSqlQuery query;
-    query.prepare("SELECT hostname FROM host");
+    query.prepare("SELECT hostname FROM nodes");
 
     if (!query.exec()) {
         QMessageBox::critical(mainWindow, "Query Error", query.lastError().text());

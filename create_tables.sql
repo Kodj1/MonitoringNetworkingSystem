@@ -14,11 +14,11 @@ CREATE INDEX idx_users_email ON users(email);
 CREATE TABLE IF NOT EXISTS nodes (
     id SERIAL PRIMARY KEY, -- Уникальный идентификатор узла
     hostname VARCHAR(255) NOT NULL UNIQUE, -- Имя узла, должно быть уникальным
+    mac_address VARCHAR(30) DEFAULT 'unknown',
     ip_address VARCHAR(15) NOT NULL UNIQUE, -- IP-адрес узла, должен быть уникальным
     os VARCHAR(100) NOT NULL, -- Операционная система узла
-    status VARCHAR(50) DEFAULT 'unknown', -- Статус узла (например, активен, неактивен), по умолчанию 'unknown'
     сreated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Дата и время создания записи
-    UNIQUE (hostname, ip_address) -- Сочетание имени и IP-адреса также должно быть уникальным
+    UNIQUE (hostname, mac_address,ip_address) -- Сочетание имени и IP-адреса также должно быть уникальным
 );
 
 -- Создание индексов для таблицы nodes
@@ -44,14 +44,12 @@ CREATE INDEX idx_logs_log_level ON logs(log_level);
 CREATE TABLE metrics (
     id SERIAL PRIMARY KEY, -- Уникальный идентификатор метрики
     hostname VARCHAR(255) NOT NULL, -- Имя узла, к которому относится метрика
+    mac_address VARCHAR(30) NOT NULL UNIQUE,
+    ip_address VARCHAR(15) NOT NULL UNIQUE, -- IP-адрес узла, должен быть уникальным
     cpu_usage DECIMAL(5, 2) CHECK (cpu_usage >= 0 AND cpu_usage <= 100), -- Использование CPU в процентах, с проверкой допустимых значений
     total_cpu DECIMAL(5, 2) CHECK (total_cpu >= 0 AND total_cpu <= 100), -- Полный объем CPU в процентах
     memory_usage DECIMAL(5, 2) CHECK (memory_usage >= 0 AND memory_usage <= 100), -- Использование памяти в процентах, с проверкой допустимых значений
     total_memory DECIMAL(5, 2) CHECK (total_memory >= 0 AND total_memory <= 100), -- Полный объем памяти в процентах
-    network_in_mbps DECIMAL(10, 2) CHECK (network_in_mbps >= 0), -- Входящий трафик в Мбит/с, с проверкой допустимых значений
-    total_network_in_mbps DECIMAL(10, 2) CHECK (total_network_in_mbps >= 0), -- Полный объем входящего трафика в Мбит/с
-    network_out_mbps DECIMAL(10, 2) CHECK (network_out_mbps >= 0), -- Исходящий трафик в Мбит/с, с проверкой допустимых значений
-    total_network_out_mbps DECIMAL(10, 2) CHECK (total_network_out_mbps >= 0), -- Полный объем исходящего трафика в Мбит/с
     disk_usage_gb DECIMAL(15, 2) CHECK (disk_usage_gb >= 0), -- Используемый объем дискового пространства в ГБ
     total_disk_gb DECIMAL(15, 2) CHECK (total_disk_gb >= 0), -- Полный объем дискового пространства в ГБ
     collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Дата и время сбора метрики
@@ -61,3 +59,30 @@ CREATE TABLE metrics (
 -- Индексы для таблицы metrics
 CREATE INDEX idx_metrics_hostname ON metrics(hostname);
 CREATE INDEX idx_metrics_collected_at ON metrics(collected_at);
+
+CREATE OR REPLACE FUNCTION update_mac_address_in_nodes()
+RETURNS TRIGGER AS $$
+BEGIN
+  -- Проверяем, что hostname и ip_address совпадают
+  IF EXISTS (
+    SELECT 1
+    FROM nodes
+    WHERE nodes.hostname = NEW.hostname
+      AND nodes.ip_address = NEW.ip_address
+  ) THEN
+    -- Если совпадает, обновляем mac_address в таблице nodes
+    UPDATE nodes
+    SET mac_address = NEW.mac_address
+    WHERE nodes.hostname = NEW.hostname
+      AND nodes.ip_address = NEW.ip_address
+      AND nodes.mac_address = 'unknown';  -- Обновляем только если mac_address равен 'unknown'
+  END IF;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE TRIGGER trigger_update_mac_address
+AFTER INSERT ON metrics
+FOR EACH ROW
+EXECUTE FUNCTION update_mac_address_in_nodes();

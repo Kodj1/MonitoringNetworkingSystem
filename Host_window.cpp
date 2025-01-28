@@ -4,7 +4,7 @@
 #include <QMessageBox>
 #include <QModelIndex>
 #include <QSqlTableModel> 
-//#include "AddForm.h"
+#include "AddForm.h"
 
 
 void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
@@ -21,10 +21,12 @@ void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
     tableView->setGeometry(QRect(0, 0, 791, 281));
     tableView->setSelectionMode(QAbstractItemView::SingleSelection); // Выбор только одного элемента
     tableView->setSelectionBehavior(QAbstractItemView::SelectRows); // Выбор строк
+    tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+
 
     // Создание и настройка модели для таблицы
     model = new QSqlTableModel(this); // Инициализация модели
-    model->setTable("host"); // Укажите имя вашей таблицы
+    model->setTable("nodes"); // Укажите имя вашей таблицы
     model->select(); // Выполнение запроса к базе данных
     
     // Установка модели в tableView
@@ -50,7 +52,7 @@ void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
 
     // Подключите сигнал нажатия кнопки к слоту
     QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Host_Window::deleteRecord);
-
+    QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Host_Window::openAddForm);
     QMetaObject::connectSlotsByName(MainWindow);
 }
 
@@ -76,7 +78,7 @@ void Ui_Host_Window::deleteRecord()
     int id = model->data(model->index(row, model->fieldIndex("id"))).toInt(); // Предполагается, что есть столбец id
 
     QSqlQuery query;
-    query.prepare("DELETE FROM host WHERE id = :id");
+    query.prepare("DELETE FROM nodes WHERE id = :id");
     query.bindValue(":id", id);
 
     if (!query.exec()) {

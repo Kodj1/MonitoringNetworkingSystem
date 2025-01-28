@@ -3,6 +3,11 @@
 
 CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.cpp \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.h \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.h \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -217,6 +222,8 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
+  /usr/include/qt5/QtCore/QModelIndex \
+  /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
   /usr/include/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/qt5/QtCore/qalgorithms.h \
@@ -232,9 +239,11 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/qt5/QtCore/qconfig.h \
   /usr/include/qt5/QtCore/qcontainerfwd.h \
   /usr/include/qt5/QtCore/qcontainertools_impl.h \
+  /usr/include/qt5/QtCore/qcontiguouscache.h \
   /usr/include/qt5/QtCore/qcoreapplication.h \
   /usr/include/qt5/QtCore/qcoreevent.h \
   /usr/include/qt5/QtCore/qdatastream.h \
+  /usr/include/qt5/QtCore/qdebug.h \
   /usr/include/qt5/QtCore/qeventloop.h \
   /usr/include/qt5/QtCore/qflags.h \
   /usr/include/qt5/QtCore/qgenericatomic.h \
@@ -280,11 +289,14 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/qt5/QtCore/qsysinfo.h \
   /usr/include/qt5/QtCore/qsystemdetection.h \
   /usr/include/qt5/QtCore/qtcore-config.h \
+  /usr/include/qt5/QtCore/qtextstream.h \
   /usr/include/qt5/QtCore/qtypeinfo.h \
   /usr/include/qt5/QtCore/qvariant.h \
   /usr/include/qt5/QtCore/qvarlengtharray.h \
   /usr/include/qt5/QtCore/qvector.h \
   /usr/include/qt5/QtCore/qversiontagging.h \
+  /usr/include/qt5/QtGui/QIcon \
+  /usr/include/qt5/QtGui/QStandardItemModel \
   /usr/include/qt5/QtGui/qbrush.h \
   /usr/include/qt5/QtGui/qcolor.h \
   /usr/include/qt5/QtGui/qcursor.h \
@@ -306,6 +318,7 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/qt5/QtGui/qregion.h \
   /usr/include/qt5/QtGui/qrgb.h \
   /usr/include/qt5/QtGui/qrgba64.h \
+  /usr/include/qt5/QtGui/qstandarditemmodel.h \
   /usr/include/qt5/QtGui/qtextcursor.h \
   /usr/include/qt5/QtGui/qtextformat.h \
   /usr/include/qt5/QtGui/qtextoption.h \
@@ -314,6 +327,11 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/qt5/QtGui/qtransform.h \
   /usr/include/qt5/QtGui/qvalidator.h \
   /usr/include/qt5/QtGui/qwindowdefs.h \
+  /usr/include/qt5/QtNetwork/QHostAddress \
+  /usr/include/qt5/QtNetwork/qabstractsocket.h \
+  /usr/include/qt5/QtNetwork/qhostaddress.h \
+  /usr/include/qt5/QtNetwork/qtnetwork-config.h \
+  /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
@@ -326,12 +344,16 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
+  /usr/include/qt5/QtWidgets/QComboBox \
+  /usr/include/qt5/QtWidgets/QHeaderView \
   /usr/include/qt5/QtWidgets/QLabel \
   /usr/include/qt5/QtWidgets/QLineEdit \
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QMessageBox \
   /usr/include/qt5/QtWidgets/QPushButton \
+  /usr/include/qt5/QtWidgets/QStatusBar \
   /usr/include/qt5/QtWidgets/QTableView \
+  /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
   /usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -340,8 +362,10 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/qt5/QtWidgets/qabstractslider.h \
   /usr/include/qt5/QtWidgets/qabstractspinbox.h \
   /usr/include/qt5/QtWidgets/qapplication.h \
+  /usr/include/qt5/QtWidgets/qcombobox.h \
   /usr/include/qt5/QtWidgets/qdialog.h \
   /usr/include/qt5/QtWidgets/qframe.h \
+  /usr/include/qt5/QtWidgets/qheaderview.h \
   /usr/include/qt5/QtWidgets/qlabel.h \
   /usr/include/qt5/QtWidgets/qlineedit.h \
   /usr/include/qt5/QtWidgets/qmainwindow.h \
@@ -350,11 +374,13 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /usr/include/qt5/QtWidgets/qrubberband.h \
   /usr/include/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/qt5/QtWidgets/qslider.h \
+  /usr/include/qt5/QtWidgets/qstatusbar.h \
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
   /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt5/QtWidgets/qwidget.h \
@@ -710,9 +736,12 @@ CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: /home/ilyaveretennikov/Moni
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
+  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
+  /usr/include/qt5/QtSql/qsqlquerymodel.h \
+  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -1889,9 +1918,12 @@ CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o: /home/ilyaveretennikov/Monito
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
+  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
+  /usr/include/qt5/QtSql/qsqlquerymodel.h \
+  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -2305,9 +2337,12 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o: /home/ilyaveretennikov/Monit
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
+  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
+  /usr/include/qt5/QtSql/qsqlquerymodel.h \
+  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -3113,8 +3148,11 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlQuery \
+  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
+  /usr/include/qt5/QtSql/qsqlquerymodel.h \
+  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -3703,8 +3741,11 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: /home/ilyaveretennikov/Mon
   /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlQuery \
+  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
+  /usr/include/qt5/QtSql/qsqlquerymodel.h \
+  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -4099,8 +4140,11 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlQuery \
+  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
+  /usr/include/qt5/QtSql/qsqlquerymodel.h \
+  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -4833,9 +4877,12 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtSql/QSqlDatabase \
   /usr/include/qt5/QtSql/QSqlError \
   /usr/include/qt5/QtSql/QSqlQuery \
+  /usr/include/qt5/QtSql/QSqlTableModel \
   /usr/include/qt5/QtSql/qsqldatabase.h \
   /usr/include/qt5/QtSql/qsqlerror.h \
   /usr/include/qt5/QtSql/qsqlquery.h \
+  /usr/include/qt5/QtSql/qsqlquerymodel.h \
+  /usr/include/qt5/QtSql/qsqltablemodel.h \
   /usr/include/qt5/QtSql/qtsql-config.h \
   /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
@@ -5115,6 +5162,7 @@ CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o: moc_AddForm.cpp \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/qt5/QtCore/QVariant \
+  /usr/include/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/qt5/QtCore/qalgorithms.h \
   /usr/include/qt5/QtCore/qarraydata.h \
   /usr/include/qt5/QtCore/qatomic.h \
@@ -5159,6 +5207,7 @@ CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o: moc_AddForm.cpp \
   /usr/include/qt5/QtCore/qrect.h \
   /usr/include/qt5/QtCore/qrefcount.h \
   /usr/include/qt5/QtCore/qregexp.h \
+  /usr/include/qt5/QtCore/qregularexpression.h \
   /usr/include/qt5/QtCore/qscopedpointer.h \
   /usr/include/qt5/QtCore/qshareddata.h \
   /usr/include/qt5/QtCore/qsharedpointer.h \
@@ -5205,21 +5254,32 @@ CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o: moc_AddForm.cpp \
   /usr/include/qt5/QtGui/qtgui-config.h \
   /usr/include/qt5/QtGui/qtguiglobal.h \
   /usr/include/qt5/QtGui/qtransform.h \
+  /usr/include/qt5/QtGui/qvalidator.h \
   /usr/include/qt5/QtGui/qwindowdefs.h \
   /usr/include/qt5/QtWidgets/QApplication \
+  /usr/include/qt5/QtWidgets/QComboBox \
   /usr/include/qt5/QtWidgets/QLabel \
   /usr/include/qt5/QtWidgets/QLineEdit \
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QPushButton \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
+  /usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/qt5/QtWidgets/qabstractslider.h \
+  /usr/include/qt5/QtWidgets/qabstractspinbox.h \
   /usr/include/qt5/QtWidgets/qapplication.h \
+  /usr/include/qt5/QtWidgets/qcombobox.h \
   /usr/include/qt5/QtWidgets/qframe.h \
   /usr/include/qt5/QtWidgets/qlabel.h \
   /usr/include/qt5/QtWidgets/qlineedit.h \
   /usr/include/qt5/QtWidgets/qmainwindow.h \
   /usr/include/qt5/QtWidgets/qpushbutton.h \
+  /usr/include/qt5/QtWidgets/qrubberband.h \
   /usr/include/qt5/QtWidgets/qsizepolicy.h \
+  /usr/include/qt5/QtWidgets/qslider.h \
+  /usr/include/qt5/QtWidgets/qstyle.h \
+  /usr/include/qt5/QtWidgets/qstyleoption.h \
+  /usr/include/qt5/QtWidgets/qtabbar.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -8935,12 +8995,6 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtCore/qcommandlineparser.h:
 
-/usr/include/c++/14/list:
-
-/usr/include/c++/14/bits/char_traits.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Host_stats.h:
-
 /usr/include/qt5/QtCore/qline.h:
 
 /usr/include/qt5/QtCore/qbasicatomic.h:
@@ -8953,14 +9007,6 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtCore/qiodevice.h:
 
-/usr/include/qt5/QtCore/qglobalstatic.h:
-
-/usr/include/c++/14/chrono:
-
-/usr/include/c++/14/exception:
-
-/usr/include/qt5/QtCharts/QPieSlice:
-
 /usr/include/qt5/QtCore/qglobal.h:
 
 /usr/include/bits/cpu-set.h:
@@ -8968,6 +9014,14 @@ moc_AddForm.cpp:
 /usr/include/qt5/QtCore/qcoreapplication.h:
 
 /usr/include/qt5/QtGui/qpalette.h:
+
+/usr/include/qt5/QtCore/qcontiguouscache.h:
+
+/usr/include/c++/14/bits/stl_vector.h:
+
+/usr/include/c++/14/bits/basic_string.tcc:
+
+/usr/include/qt5/QtCore/qrect.h:
 
 /usr/include/qt5/QtCore/qcontainerfwd.h:
 
@@ -8995,25 +9049,21 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtCore/QVariant:
 
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/qt5/QtWidgets/QTabWidget:
+
 /usr/include/linux/errno.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h:
 
 /usr/include/qt5/QtGui/qpolygon.h:
 
-/usr/include/qt5/QtCore/qabstracttransition.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h:
-
 /usr/include/qt5/QtCore/QDebug:
 
 /usr/include/c++/14/bits/predefined_ops.h:
 
 /usr/include/qt5/QtCore/qatomic_cxx11.h:
-
-/usr/include/qt5/QtCore/qobject_impl.h:
-
-/usr/include/c++/14/tuple:
 
 /usr/include/qt5/QtWidgets/qboxlayout.h:
 
@@ -9026,6 +9076,16 @@ moc_AddForm.cpp:
 /usr/include/c++/14/bits/stl_function.h:
 
 /usr/include/c++/14/bits/random.tcc:
+
+/usr/include/c++/14/list:
+
+/usr/include/c++/14/bits/char_traits.h:
+
+/usr/include/c++/14/tuple:
+
+/usr/include/qt5/QtCore/qobject_impl.h:
+
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Host_stats.h:
 
 /usr/include/c++/14/iosfwd:
 
@@ -9044,10 +9104,6 @@ moc_AddForm.cpp:
 /usr/include/qt5/QtCore/qcborcommon.h:
 
 /usr/include/c++/14/map:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/qt5/QtWidgets/QTabWidget:
 
 /usr/include/qt5/QtCore/qcontainertools_impl.h:
 
@@ -9079,11 +9135,17 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtConcurrent/qtconcurrentmedian.h:
 
+/usr/include/c++/14/chrono:
+
+/usr/include/qt5/QtCore/qglobalstatic.h:
+
+/usr/include/c++/14/exception:
+
+/usr/include/qt5/QtCharts/QPieSlice:
+
 /usr/include/c++/14/cerrno:
 
 /usr/include/qt5/QtWidgets/QMessageBox:
-
-/usr/include/qt5/QtCore/qnamespace.h:
 
 /usr/include/c++/14/bits/align.h:
 
@@ -9094,6 +9156,8 @@ moc_AddForm.cpp:
 /usr/include/c++/14/bits/streambuf.tcc:
 
 /usr/include/c++/14/bits/vector.tcc:
+
+/usr/include/qt5/QtCore/qdebug.h:
 
 /usr/include/c++/14/bits/uses_allocator.h:
 
@@ -9110,6 +9174,8 @@ moc_AddForm.cpp:
 /usr/include/c++/14/iterator:
 
 /usr/include/gnu/stubs-64.h:
+
+/usr/include/qt5/QtCore/qnamespace.h:
 
 /usr/include/qt5/QtCore/qlocale.h:
 
@@ -9139,23 +9205,37 @@ moc_AddForm.cpp:
 
 /usr/include/c++/14/numeric:
 
-/usr/include/qt5/QtCore/qfinalstate.h:
+/usr/include/c++/14/bits/stl_construct.h:
 
-/usr/include/qt5/QtCharts/qxyseries.h:
+/usr/include/qt5/QtCore/qsemaphore.h:
 
-/usr/include/c++/14/ratio:
+/usr/include/qt5/QtGui/qtextcursor.h:
 
-/usr/include/ctype.h:
+/usr/include/c++/14/bits/stl_bvector.h:
 
-/usr/include/qt5/QtCore/qtextcodec.h:
+/usr/include/qt5/QtCore/qstringalgorithms.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/qt5/QtWidgets/QLineEdit:
 
-/usr/include/bits/types/struct_FILE.h:
+/usr/include/c++/14/bits/stl_algo.h:
+
+moc_Host_window.cpp:
+
+/usr/include/c++/14/cmath:
+
+/usr/include/c++/14/bits/std_function.h:
+
+/usr/include/bits/types/__sigset_t.h:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h:
+
+/usr/include/locale.h:
+
+/usr/include/qt5/QtCore/qchar.h:
+
+/usr/include/features.h:
 
 /usr/include/qt5/QtCore/qjsonvalue.h:
 
@@ -9168,12 +9248,6 @@ moc_AddForm.cpp:
 /usr/include/asm/errno.h:
 
 /usr/include/qt5/QtCore/qscopedpointer.h:
-
-/usr/include/locale.h:
-
-/usr/include/qt5/QtCore/qchar.h:
-
-/usr/include/features.h:
 
 /usr/include/bits/types/clockid_t.h:
 
@@ -9196,8 +9270,6 @@ moc_AddForm.cpp:
 /usr/include/c++/14/bits/cpp_type_traits.h:
 
 /usr/include/c++/14/bits/streambuf_iterator.h:
-
-/usr/include/qt5/QtWidgets/QPushButton:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp:
 
@@ -9223,17 +9295,13 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtGui/qpen.h:
 
+/usr/include/qt5/QtCore/qarraydata.h:
+
 /usr/include/qt5/QtCore/qcborstreamreader.h:
 
 /usr/include/c++/14/cstdlib:
 
-/usr/include/c++/14/concepts:
-
-/usr/include/bits/endian.h:
-
 /usr/include/qt5/QtCharts/qlegend.h:
-
-/usr/include/qt5/QtCore/qarraydata.h:
 
 /usr/include/linux/limits.h:
 
@@ -9253,101 +9321,11 @@ moc_AddForm.cpp:
 
 /usr/include/bits/thread-shared-types.h:
 
-/usr/include/qt5/QtCore/qfuturesynchronizer.h:
-
-/usr/include/c++/14/bits/stringfwd.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/qt5/QtCore/qoperatingsystemversion.h:
-
-/usr/include/c++/14/bits/atomic_base.h:
-
-/usr/include/qt5/QtCore/qendian.h:
-
-/usr/include/sys/types.h:
-
 /usr/include/c++/14/bits/stl_raw_storage_iter.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
 /usr/include/qt5/QtCore/qanimationgroup.h:
-
-/usr/include/c++/14/bits/stl_construct.h:
-
-/usr/include/qt5/QtCore/qsemaphore.h:
-
-/usr/include/qt5/QtGui/qtextcursor.h:
-
-/usr/include/qt5/QtCore/qitemselectionmodel.h:
-
-/usr/include/c++/14/functional:
-
-/usr/include/qt5/QtCore/qtypetraits.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp:
-
-/usr/include/c++/14/bits/stl_heap.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/c++/14/bits/locale_classes.tcc:
-
-/usr/include/qt5/QtCore/qdatastream.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/qt5/QtWidgets/qlistwidget.h:
-
-/usr/include/c++/14/cstddef:
-
-/usr/include/qt5/QtWidgets/QLabel:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/c++/14/bits/shared_ptr.h:
-
-/usr/include/qt5/QtCore/qconfig-64.h:
-
-moc_Host_stats.cpp:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/c++/14/bits/refwrap.h:
-
-/usr/include/qt5/QtGui/qtextoption.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/c++/14/bits/stl_vector.h:
-
-/usr/include/c++/14/bits/basic_string.tcc:
-
-/usr/include/qt5/QtCore/qrect.h:
-
-/usr/include/qt5/QtCore/qcontiguouscache.h:
-
-/usr/include/c++/14/bits/stl_bvector.h:
-
-/usr/include/qt5/QtCore/qstringalgorithms.h:
-
-/usr/include/qt5/QtWidgets/QLineEdit:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/qt5/QtGui/qkeysequence.h:
-
-/usr/include/qt5/QtCore/QDeadlineTimer:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/c++/14/bits/std_function.h:
 
 /usr/include/bits/setjmp.h:
 
@@ -9363,24 +9341,6 @@ moc_Host_stats.cpp:
 
 /usr/include/c++/14/bits/shared_ptr_base.h:
 
-/usr/include/qt5/QtCore/qcoreevent.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/qt5/QtWidgets/qabstractitemdelegate.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/qt5/QtCore/qtextstream.h:
-
-/usr/include/bits/types/timer_t.h:
-
 /usr/include/qt5/QtCore/qabstractanimation.h:
 
 /usr/include/c++/14/stdexcept:
@@ -9390,6 +9350,118 @@ moc_Host_stats.cpp:
 /usr/include/qt5/QtCore/qstring.h:
 
 /usr/include/c++/14/bits/charconv.h:
+
+/usr/include/qt5/QtCore/qcoreevent.h:
+
+/usr/include/qt5/QtWidgets/qstatusbar.h:
+
+/usr/include/qt5/QtCharts/QLegend:
+
+/usr/include/c++/14/bits/stl_iterator.h:
+
+/usr/include/qt5/QtCore/qsystemdetection.h:
+
+/usr/include/c++/14/bits/stl_algobase.h:
+
+/usr/include/qt5/QtCore/qstandardpaths.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/14/bits/memoryfwd.h:
+
+/usr/include/qt5/QtWidgets/qstyleoption.h:
+
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/qt5/QtSql/qsqlerror.h:
+
+/usr/include/qt5/QtSql/qsqltablemodel.h:
+
+/usr/include/qt5/QtCore/qabstracttransition.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h:
+
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h:
+
+/usr/include/qt5/QtGui/qbrush.h:
+
+/usr/include/qt5/QtCore/qcryptographichash.h:
+
+/usr/include/c++/14/bits/exception_defines.h:
+
+/usr/include/qt5/QtSql/qsqlquery.h:
+
+/usr/include/qt5/QtCore/qconfig-64.h:
+
+/usr/include/qt5/QtCore/QModelIndex:
+
+moc_Host_stats.cpp:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/qt5/QtGui/qtextoption.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/qt5/QtCore/qfuturesynchronizer.h:
+
+/usr/include/c++/14/bits/stringfwd.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/qt5/QtCore/qoperatingsystemversion.h:
+
+/usr/include/c++/14/bits/atomic_base.h:
+
+/usr/include/qt5/QtCore/qendian.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/qt5/QtCore/qdatastream.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/qt5/QtWidgets/qlistwidget.h:
+
+/usr/include/c++/14/cstddef:
+
+/usr/include/qt5/QtWidgets/QLabel:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/c++/14/bits/shared_ptr.h:
+
+/usr/include/qt5/QtCore/qitemselectionmodel.h:
+
+/usr/include/c++/14/functional:
+
+/usr/include/qt5/QtCore/qtypetraits.h:
+
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.cpp:
+
+/usr/include/c++/14/bits/stl_heap.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/c++/14/bits/locale_classes.tcc:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/qt5/QtWidgets/qabstractitemdelegate.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/qt5/QtCore/qtextstream.h:
+
+/usr/include/bits/types/timer_t.h:
 
 /usr/include/c++/14/bits/hash_bytes.h:
 
@@ -9405,27 +9477,33 @@ moc_Host_stats.cpp:
 
 /usr/include/qt5/QtGui/qrgba64.h:
 
+/usr/include/qt5/QtCore/qtsan_impl.h:
+
+/usr/include/qt5/QtCore/qeventtransition.h:
+
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h:
+
+/usr/include/qt5/QtGui/QStandardItemModel:
+
+/usr/include/alloca.h:
+
+/usr/include/qt5/QtCore/qsharedpointer.h:
+
 /usr/include/qt5/QtCore/qpointer.h:
 
 /usr/include/qt5/QtCore/qlogging.h:
 
-/usr/include/bits/uintn-identity.h:
-
 /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.h:
 
 /usr/include/qt5/QtCharts/qchart.h:
+
+/usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/posix2_lim.h:
 
 /usr/include/c++/14/bits/erase_if.h:
 
 /usr/include/qt5/QtGui/QIcon:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/qt5/QtSql/qsqlerror.h:
-
-/usr/include/qt5/QtSql/qsqltablemodel.h:
 
 /usr/include/qt5/QtCore/qpair.h:
 
@@ -9441,10 +9519,6 @@ moc_Host_stats.cpp:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h:
 
-/usr/include/qt5/QtCore/qmetatype.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
 /usr/include/qt5/QtCore/qobjectdefs_impl.h:
 
 /usr/include/qt5/QtCore/qmimedata.h:
@@ -9456,6 +9530,36 @@ moc_Host_stats.cpp:
 /usr/include/bits/stdint-least.h:
 
 /usr/include/c++/14/bits/invoke.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/qt5/QtGui/qkeysequence.h:
+
+/usr/include/qt5/QtCore/QDeadlineTimer:
+
+/usr/include/c++/14/ratio:
+
+/usr/include/c++/14/bits/refwrap.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/ctype.h:
+
+/usr/include/qt5/QtCore/qtextcodec.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/14/concepts:
+
+/usr/include/qt5/QtCore/qfinalstate.h:
+
+/usr/include/qt5/QtCharts/qxyseries.h:
 
 /usr/include/qt5/QtWidgets/qgraphicslayoutitem.h:
 
@@ -9480,8 +9584,6 @@ moc_Host_stats.cpp:
 /usr/include/bits/math-vector.h:
 
 /usr/include/bits/timesize.h:
-
-/usr/include/qt5/QtCore/qnumeric.h:
 
 /usr/include/c++/14/vector:
 
@@ -9529,16 +9631,6 @@ moc_Host_stats.cpp:
 
 /usr/include/bits/byteswap.h:
 
-/usr/include/c++/14/bits/stl_iterator.h:
-
-/usr/include/qt5/QtCore/qsystemdetection.h:
-
-/usr/include/qt5/QtCore/qstandardpaths.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/14/bits/stl_algobase.h:
-
 /usr/include/bits/pthreadtypes.h:
 
 /usr/include/c++/14/bits/basic_string.h:
@@ -9547,15 +9639,9 @@ moc_Host_stats.cpp:
 
 /usr/include/qt5/QtWidgets/qabstractscrollarea.h:
 
-/usr/include/qt5/QtCore/qobject.h:
-
-/usr/include/qt5/QtCore/qurl.h:
-
-/usr/include/qt5/QtCore/qmargins.h:
-
-/usr/include/c++/14/clocale:
-
 /usr/include/qt5/QtConcurrent/qtconcurrentstoredfunctioncall.h:
+
+/usr/include/qt5/QtCore/qhash.h:
 
 /usr/include/qt5/QtCore/qlist.h:
 
@@ -9567,14 +9653,6 @@ moc_DiskUsageWidget.cpp:
 
 /usr/include/qt5/QtCharts/qabstractseries.h:
 
-/usr/include/qt5/QtCore/qhash.h:
-
-/usr/include/qt5/QtCore/qcryptographichash.h:
-
-/usr/include/c++/14/bits/exception_defines.h:
-
-/usr/include/qt5/QtSql/qsqlquery.h:
-
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/c++/14/bits/ios_base.h:
@@ -9584,10 +9662,6 @@ moc_DiskUsageWidget.cpp:
 /usr/include/qt5/QtWidgets/QGraphicsWidget:
 
 /usr/include/c++/14/bits/move.h:
-
-/usr/include/c++/14/bits/memoryfwd.h:
-
-/usr/include/qt5/QtWidgets/qstyleoption.h:
 
 /usr/include/bits/posix1_lim.h:
 
@@ -9607,15 +9681,23 @@ moc_NetworkAction.cpp:
 
 /usr/include/c++/14/bits/std_abs.h:
 
-/usr/include/c++/14/bits/stl_algo.h:
+/usr/include/c++/14/clocale:
 
-/usr/include/qt5/QtCharts/QLegend:
+/usr/include/qt5/QtCore/qmargins.h:
 
-/usr/include/qt5/QtWidgets/qstatusbar.h:
+/usr/include/bits/pthreadtypes-arch.h:
 
-moc_Host_window.cpp:
+/usr/include/qt5/QtCore/qmetatype.h:
 
-/usr/include/c++/14/cmath:
+/usr/include/qt5/QtWidgets/QPushButton:
+
+/usr/include/qt5/QtCore/qnumeric.h:
+
+/usr/include/qt5/QtCore/qurl.h:
+
+/usr/include/qt5/QtCore/qobject.h:
+
+/usr/include/bits/iscanonical.h:
 
 /usr/include/qt5/QtCharts/qchartview.h:
 
@@ -9630,18 +9712,6 @@ moc_Host_window.cpp:
 /usr/include/c++/14/bits/stl_iterator_base_types.h:
 
 /usr/include/qt5/QtCore/qset.h:
-
-/usr/include/qt5/QtGui/QStandardItemModel:
-
-/usr/include/alloca.h:
-
-/usr/include/qt5/QtCore/qsharedpointer.h:
-
-/usr/include/qt5/QtCore/qtsan_impl.h:
-
-/usr/include/qt5/QtCore/qeventtransition.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h:
 
 /usr/include/qt5/QtCore/qsharedpointer_impl.h:
 
@@ -9660,10 +9730,6 @@ moc_Host_window.cpp:
 /usr/include/qt5/QtCore/qtypeinfo.h:
 
 /usr/include/qt5/QtCore/qversiontagging.h:
-
-/usr/include/qt5/QtGui/qbrush.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h:
 
 /usr/include/qt5/QtCore/qstringliteral.h:
 
@@ -9689,6 +9755,8 @@ moc_Host_window.cpp:
 
 /usr/include/qt5/QtGui/qpixmap.h:
 
+/usr/include/qt5/QtGui/qstandarditemmodel.h:
+
 /usr/include/qt5/QtCore/qeventloop.h:
 
 /usr/include/qt5/QtGui/qtgui-config.h:
@@ -9709,6 +9777,22 @@ moc_Host_window.cpp:
 
 /usr/include/qt5/QtGui/qwindowdefs.h:
 
+/usr/include/qt5/QtNetwork/QHostAddress:
+
+/usr/include/qt5/QtNetwork/qtnetwork-config.h:
+
+/usr/include/qt5/QtWidgets/qpushbutton.h:
+
+/usr/include/qt5/QtCore/qfile.h:
+
+/usr/include/c++/14/atomic:
+
+/usr/include/qt5/QtNetwork/qtnetworkglobal.h:
+
+/usr/include/qt5/QtCore/qparallelanimationgroup.h:
+
+/usr/include/qt5/QtGui/QFont:
+
 /usr/include/qt5/QtSql/QSqlDatabase:
 
 /usr/include/qt5/QtSql/QSqlQuery:
@@ -9723,13 +9807,27 @@ moc_Host_window.cpp:
 
 /usr/include/qt5/QtWidgets/QApplication:
 
+/usr/include/qt5/QtWidgets/QComboBox:
+
+moc_MemUsageWidget.cpp:
+
+/usr/include/qt5/QtWidgets/QHeaderView:
+
 /usr/include/qt5/QtWidgets/QMainWindow:
+
+/usr/include/qt5/QtCore/qresultstore.h:
+
+/usr/include/qt5/QtWidgets/qtabwidget.h:
+
+/usr/include/qt5/QtWidgets/QStatusBar:
 
 /usr/include/qt5/QtWidgets/QTableView:
 
 /usr/include/c++/14/bit:
 
 /usr/include/qt5/QtGui/qvector2d.h:
+
+/usr/include/qt5/QtWidgets/QTreeView:
 
 /usr/include/qt5/QtCharts/qchartglobal.h:
 
@@ -9740,6 +9838,16 @@ moc_Host_window.cpp:
 /usr/include/qt5/QtWidgets/qabstractbutton.h:
 
 /usr/include/c++/14/bits/std_mutex.h:
+
+/usr/include/c++/14/cwchar:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/qt5/QtWidgets/qcombobox.h:
+
+/usr/include/qt5/QtCore/qlockfile.h:
+
+/usr/include/qt5/QtWidgets/qheaderview.h:
 
 /usr/include/qt5/QtWidgets/qtableview.h:
 
@@ -9760,18 +9868,6 @@ moc_Host_window.cpp:
 /usr/include/qt5/QtCore/qvariant.h:
 
 /usr/include/qt5/QtCore/qbytearraymatcher.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/c++/14/cwchar:
-
-/usr/include/qt5/QtWidgets/qcombobox.h:
-
-/usr/include/qt5/QtWidgets/qpushbutton.h:
-
-/usr/include/qt5/QtNetwork/qtnetwork-config.h:
-
-/usr/include/qt5/QtCore/qfile.h:
 
 /usr/include/qt5/QtCore/qloggingcategory.h:
 
@@ -9795,7 +9891,17 @@ moc_Host_window.cpp:
 
 /usr/include/qt5/QtConcurrent/qtconcurrentmapkernel.h:
 
-/usr/include/qt5/QtGui/qstandarditemmodel.h:
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.cpp:
+
+/usr/include/bits/uio_lim.h:
+
+/usr/include/qt5/QtWidgets/qtreeview.h:
+
+/usr/include/qt5/QtCore/qbitarray.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/qt5/QtCore/qcommandlineoption.h:
 
 /usr/include/c++/14/bits/exception.h:
 
@@ -9838,50 +9944,6 @@ moc_Host_window.cpp:
 /usr/include/qt5/QtCharts/qvalueaxis.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.h:
-
-/usr/include/qt5/QtCore/qdebug.h:
-
-/usr/include/qt5/QtNetwork/QHostAddress:
-
-/usr/include/c++/14/atomic:
-
-/usr/include/qt5/QtNetwork/qtnetworkglobal.h:
-
-/usr/include/qt5/QtCore/qparallelanimationgroup.h:
-
-/usr/include/qt5/QtGui/QFont:
-
-/usr/include/qt5/QtWidgets/QComboBox:
-
-moc_MemUsageWidget.cpp:
-
-/usr/include/qt5/QtWidgets/QHeaderView:
-
-/usr/include/qt5/QtCore/qresultstore.h:
-
-/usr/include/qt5/QtWidgets/qtabwidget.h:
-
-/usr/include/qt5/QtWidgets/QStatusBar:
-
-/usr/include/qt5/QtWidgets/QTreeView:
-
-/usr/include/qt5/QtCore/qlockfile.h:
-
-/usr/include/qt5/QtWidgets/qheaderview.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.cpp:
-
-/usr/include/bits/uio_lim.h:
-
-/usr/include/qt5/QtWidgets/qtreeview.h:
-
-/usr/include/qt5/QtCore/qbitarray.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/qt5/QtCore/qcommandlineoption.h:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/CpuUsageWidget.h:
 
@@ -9989,8 +10051,6 @@ moc_MemUsageWidget.cpp:
 
 /usr/include/qt5/QtWidgets/qlistview.h:
 
-/usr/include/qt5/QtCore/QModelIndex:
-
 /usr/include/qt5/QtCore/qflags.h:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.cpp:
@@ -10087,9 +10147,9 @@ moc_MemUsageWidget.cpp:
 
 /usr/include/qt5/QtCore/qabstractstate.h:
 
-/usr/include/c++/14/algorithm:
-
 /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
+
+/usr/include/c++/14/algorithm:
 
 /usr/include/qt5/QtCore/qarraydatapointer.h:
 

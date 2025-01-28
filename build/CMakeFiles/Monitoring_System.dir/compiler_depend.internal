@@ -4,6 +4,11 @@
 CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.cpp
  /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.h
+ /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.h
+ /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h
+ /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h
+ /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h
+ /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -218,6 +223,8 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/linux/limits.h
  /usr/include/locale.h
  /usr/include/pthread.h
+ /usr/include/qt5/QtCore/QModelIndex
+ /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant
  /usr/include/qt5/QtCore/qabstractitemmodel.h
  /usr/include/qt5/QtCore/qalgorithms.h
@@ -233,9 +240,11 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/qt5/QtCore/qconfig.h
  /usr/include/qt5/QtCore/qcontainerfwd.h
  /usr/include/qt5/QtCore/qcontainertools_impl.h
+ /usr/include/qt5/QtCore/qcontiguouscache.h
  /usr/include/qt5/QtCore/qcoreapplication.h
  /usr/include/qt5/QtCore/qcoreevent.h
  /usr/include/qt5/QtCore/qdatastream.h
+ /usr/include/qt5/QtCore/qdebug.h
  /usr/include/qt5/QtCore/qeventloop.h
  /usr/include/qt5/QtCore/qflags.h
  /usr/include/qt5/QtCore/qgenericatomic.h
@@ -281,11 +290,14 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/qt5/QtCore/qsysinfo.h
  /usr/include/qt5/QtCore/qsystemdetection.h
  /usr/include/qt5/QtCore/qtcore-config.h
+ /usr/include/qt5/QtCore/qtextstream.h
  /usr/include/qt5/QtCore/qtypeinfo.h
  /usr/include/qt5/QtCore/qvariant.h
  /usr/include/qt5/QtCore/qvarlengtharray.h
  /usr/include/qt5/QtCore/qvector.h
  /usr/include/qt5/QtCore/qversiontagging.h
+ /usr/include/qt5/QtGui/QIcon
+ /usr/include/qt5/QtGui/QStandardItemModel
  /usr/include/qt5/QtGui/qbrush.h
  /usr/include/qt5/QtGui/qcolor.h
  /usr/include/qt5/QtGui/qcursor.h
@@ -307,6 +319,7 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/qt5/QtGui/qregion.h
  /usr/include/qt5/QtGui/qrgb.h
  /usr/include/qt5/QtGui/qrgba64.h
+ /usr/include/qt5/QtGui/qstandarditemmodel.h
  /usr/include/qt5/QtGui/qtextcursor.h
  /usr/include/qt5/QtGui/qtextformat.h
  /usr/include/qt5/QtGui/qtextoption.h
@@ -315,6 +328,11 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/qt5/QtGui/qtransform.h
  /usr/include/qt5/QtGui/qvalidator.h
  /usr/include/qt5/QtGui/qwindowdefs.h
+ /usr/include/qt5/QtNetwork/QHostAddress
+ /usr/include/qt5/QtNetwork/qabstractsocket.h
+ /usr/include/qt5/QtNetwork/qhostaddress.h
+ /usr/include/qt5/QtNetwork/qtnetwork-config.h
+ /usr/include/qt5/QtNetwork/qtnetworkglobal.h
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
@@ -327,12 +345,16 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
+ /usr/include/qt5/QtWidgets/QComboBox
+ /usr/include/qt5/QtWidgets/QHeaderView
  /usr/include/qt5/QtWidgets/QLabel
  /usr/include/qt5/QtWidgets/QLineEdit
  /usr/include/qt5/QtWidgets/QMainWindow
  /usr/include/qt5/QtWidgets/QMessageBox
  /usr/include/qt5/QtWidgets/QPushButton
+ /usr/include/qt5/QtWidgets/QStatusBar
  /usr/include/qt5/QtWidgets/QTableView
+ /usr/include/qt5/QtWidgets/QTreeView
  /usr/include/qt5/QtWidgets/QWidget
  /usr/include/qt5/QtWidgets/qabstractbutton.h
  /usr/include/qt5/QtWidgets/qabstractitemdelegate.h
@@ -341,8 +363,10 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/qt5/QtWidgets/qabstractslider.h
  /usr/include/qt5/QtWidgets/qabstractspinbox.h
  /usr/include/qt5/QtWidgets/qapplication.h
+ /usr/include/qt5/QtWidgets/qcombobox.h
  /usr/include/qt5/QtWidgets/qdialog.h
  /usr/include/qt5/QtWidgets/qframe.h
+ /usr/include/qt5/QtWidgets/qheaderview.h
  /usr/include/qt5/QtWidgets/qlabel.h
  /usr/include/qt5/QtWidgets/qlineedit.h
  /usr/include/qt5/QtWidgets/qmainwindow.h
@@ -351,11 +375,13 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
  /usr/include/qt5/QtWidgets/qrubberband.h
  /usr/include/qt5/QtWidgets/qsizepolicy.h
  /usr/include/qt5/QtWidgets/qslider.h
+ /usr/include/qt5/QtWidgets/qstatusbar.h
  /usr/include/qt5/QtWidgets/qstyle.h
  /usr/include/qt5/QtWidgets/qstyleoption.h
  /usr/include/qt5/QtWidgets/qtabbar.h
  /usr/include/qt5/QtWidgets/qtableview.h
  /usr/include/qt5/QtWidgets/qtabwidget.h
+ /usr/include/qt5/QtWidgets/qtreeview.h
  /usr/include/qt5/QtWidgets/qtwidgets-config.h
  /usr/include/qt5/QtWidgets/qtwidgetsglobal.h
  /usr/include/qt5/QtWidgets/qwidget.h
@@ -712,9 +738,12 @@ CMakeFiles/Monitoring_System.dir/Autorization.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
+ /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
+ /usr/include/qt5/QtSql/qsqlquerymodel.h
+ /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -1894,9 +1923,12 @@ CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
+ /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
+ /usr/include/qt5/QtSql/qsqlquerymodel.h
+ /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -2311,9 +2343,12 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
+ /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
+ /usr/include/qt5/QtSql/qsqlquerymodel.h
+ /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -3121,8 +3156,11 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o
  /usr/include/qt5/QtNetwork/qtnetworkglobal.h
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlQuery
+ /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlquery.h
+ /usr/include/qt5/QtSql/qsqlquerymodel.h
+ /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -3712,8 +3750,11 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o
  /usr/include/qt5/QtNetwork/qtnetworkglobal.h
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlQuery
+ /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlquery.h
+ /usr/include/qt5/QtSql/qsqlquerymodel.h
+ /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -4109,8 +4150,11 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o
  /usr/include/qt5/QtNetwork/qtnetworkglobal.h
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlQuery
+ /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlquery.h
+ /usr/include/qt5/QtSql/qsqlquerymodel.h
+ /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -4845,9 +4889,12 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o
  /usr/include/qt5/QtSql/QSqlDatabase
  /usr/include/qt5/QtSql/QSqlError
  /usr/include/qt5/QtSql/QSqlQuery
+ /usr/include/qt5/QtSql/QSqlTableModel
  /usr/include/qt5/QtSql/qsqldatabase.h
  /usr/include/qt5/QtSql/qsqlerror.h
  /usr/include/qt5/QtSql/qsqlquery.h
+ /usr/include/qt5/QtSql/qsqlquerymodel.h
+ /usr/include/qt5/QtSql/qsqltablemodel.h
  /usr/include/qt5/QtSql/qtsql-config.h
  /usr/include/qt5/QtSql/qtsqlglobal.h
  /usr/include/qt5/QtWidgets/QApplication
@@ -5128,6 +5175,7 @@ CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o
  /usr/include/locale.h
  /usr/include/pthread.h
  /usr/include/qt5/QtCore/QVariant
+ /usr/include/qt5/QtCore/qabstractitemmodel.h
  /usr/include/qt5/QtCore/qalgorithms.h
  /usr/include/qt5/QtCore/qarraydata.h
  /usr/include/qt5/QtCore/qatomic.h
@@ -5172,6 +5220,7 @@ CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o
  /usr/include/qt5/QtCore/qrect.h
  /usr/include/qt5/QtCore/qrefcount.h
  /usr/include/qt5/QtCore/qregexp.h
+ /usr/include/qt5/QtCore/qregularexpression.h
  /usr/include/qt5/QtCore/qscopedpointer.h
  /usr/include/qt5/QtCore/qshareddata.h
  /usr/include/qt5/QtCore/qsharedpointer.h
@@ -5218,21 +5267,32 @@ CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o
  /usr/include/qt5/QtGui/qtgui-config.h
  /usr/include/qt5/QtGui/qtguiglobal.h
  /usr/include/qt5/QtGui/qtransform.h
+ /usr/include/qt5/QtGui/qvalidator.h
  /usr/include/qt5/QtGui/qwindowdefs.h
  /usr/include/qt5/QtWidgets/QApplication
+ /usr/include/qt5/QtWidgets/QComboBox
  /usr/include/qt5/QtWidgets/QLabel
  /usr/include/qt5/QtWidgets/QLineEdit
  /usr/include/qt5/QtWidgets/QMainWindow
  /usr/include/qt5/QtWidgets/QPushButton
  /usr/include/qt5/QtWidgets/QWidget
  /usr/include/qt5/QtWidgets/qabstractbutton.h
+ /usr/include/qt5/QtWidgets/qabstractitemdelegate.h
+ /usr/include/qt5/QtWidgets/qabstractslider.h
+ /usr/include/qt5/QtWidgets/qabstractspinbox.h
  /usr/include/qt5/QtWidgets/qapplication.h
+ /usr/include/qt5/QtWidgets/qcombobox.h
  /usr/include/qt5/QtWidgets/qframe.h
  /usr/include/qt5/QtWidgets/qlabel.h
  /usr/include/qt5/QtWidgets/qlineedit.h
  /usr/include/qt5/QtWidgets/qmainwindow.h
  /usr/include/qt5/QtWidgets/qpushbutton.h
+ /usr/include/qt5/QtWidgets/qrubberband.h
  /usr/include/qt5/QtWidgets/qsizepolicy.h
+ /usr/include/qt5/QtWidgets/qslider.h
+ /usr/include/qt5/QtWidgets/qstyle.h
+ /usr/include/qt5/QtWidgets/qstyleoption.h
+ /usr/include/qt5/QtWidgets/qtabbar.h
  /usr/include/qt5/QtWidgets/qtabwidget.h
  /usr/include/qt5/QtWidgets/qtwidgets-config.h
  /usr/include/qt5/QtWidgets/qtwidgetsglobal.h

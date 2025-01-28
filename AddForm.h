@@ -3,6 +3,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -11,7 +12,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Add_Form : public QObject
+class UI_AddFormWindow : public QObject
 {
     Q_OBJECT
 public:
@@ -20,17 +21,20 @@ public:
     QLineEdit *lineEdit_2;
     QLabel *label;
     QLabel *label_2;
-    QPushButton *pushButton; 
+    QComboBox *comboBox;
+    QLabel *label_3;
+    QPushButton *pushButton;
 
-    void retranslateUi(QMainWindow *MainWindow);
     void setupUi(QMainWindow *MainWindow);
+    void retranslateUi(QMainWindow *MainWindow);
 
 public slots:
-    void onAddButtonClicked();
+
+
 };
 
 namespace Ui {
-    class AddForm: public Ui_Add_Form {};
+    class AddForm: public UI_AddFormWindow {};
 }
 
 QT_END_NAMESPACE
