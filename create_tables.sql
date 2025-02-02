@@ -86,3 +86,5 @@ CREATE TRIGGER trigger_update_mac_address
 AFTER INSERT ON metrics
 FOR EACH ROW
 EXECUTE FUNCTION update_mac_address_in_nodes();
+
+CREATE UNIQUE INDEX unique_hostname_idx ON metrics(hostname);

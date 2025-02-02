@@ -2,9 +2,9 @@
 #define MEMUSAGEWIDGET_H
 
 #include <QWidget>
+#include <QtCharts/QPieSeries>
 #include <QtCharts/QChartView>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QValueAxis>
+
 
 QT_CHARTS_USE_NAMESPACE
 
@@ -14,15 +14,11 @@ class MemUsageWidget : public QWidget
 
 public:
     explicit MemUsageWidget(QWidget *parent = nullptr);
-    void setMemUsage(double usage);
+    void setMemUsage(qreal used_mem, qreal total_mem);
 
 private:
-    QChart *chart;
-    QLineSeries *series;
+    QPieSeries *series;
     QChartView *chartView;
-    QValueAxis *axisX;
-    QValueAxis *axisY;
-    int time;
 };
 
-#endif // MEMUSAGEWIDGET_H
+#endif

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Ui_Host_stats_t {
-    QByteArrayData data[7];
-    char stringdata0[86];
+    QByteArrayData data[15];
+    char stringdata0[185];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,14 +36,25 @@ QT_MOC_LITERAL(0, 0, 13), // "Ui_Host_stats"
 QT_MOC_LITERAL(1, 14, 18), // "populateListWidget"
 QT_MOC_LITERAL(2, 33, 0), // ""
 QT_MOC_LITERAL(3, 34, 15), // "updateDiskUsage"
-QT_MOC_LITERAL(4, 50, 14), // "updateCpuUsage"
-QT_MOC_LITERAL(5, 65, 5), // "usage"
-QT_MOC_LITERAL(6, 71, 14) // "updateMemUsage"
+QT_MOC_LITERAL(4, 50, 9), // "used_disk"
+QT_MOC_LITERAL(5, 60, 10), // "total_disk"
+QT_MOC_LITERAL(6, 71, 14), // "updateCpuUsage"
+QT_MOC_LITERAL(7, 86, 8), // "used_cpu"
+QT_MOC_LITERAL(8, 95, 9), // "total_cpu"
+QT_MOC_LITERAL(9, 105, 14), // "updateMemUsage"
+QT_MOC_LITERAL(10, 120, 8), // "used_mem"
+QT_MOC_LITERAL(11, 129, 9), // "total_mem"
+QT_MOC_LITERAL(12, 139, 23), // "onListWidgetItemClicked"
+QT_MOC_LITERAL(13, 163, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(14, 180, 4) // "item"
 
     },
     "Ui_Host_stats\0populateListWidget\0\0"
-    "updateDiskUsage\0updateCpuUsage\0usage\0"
-    "updateMemUsage"
+    "updateDiskUsage\0used_disk\0total_disk\0"
+    "updateCpuUsage\0used_cpu\0total_cpu\0"
+    "updateMemUsage\0used_mem\0total_mem\0"
+    "onListWidgetItemClicked\0QListWidgetItem*\0"
+    "item"
 };
 #undef QT_MOC_LITERAL
 
@@ -53,7 +64,7 @@ static const uint qt_meta_data_Ui_Host_stats[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -61,16 +72,18 @@ static const uint qt_meta_data_Ui_Host_stats[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x0a /* Public */,
-       3,    0,   35,    2, 0x0a /* Public */,
-       4,    1,   36,    2, 0x0a /* Public */,
-       6,    1,   39,    2, 0x0a /* Public */,
+       1,    0,   39,    2, 0x0a /* Public */,
+       3,    2,   40,    2, 0x0a /* Public */,
+       6,    2,   45,    2, 0x0a /* Public */,
+       9,    2,   50,    2, 0x0a /* Public */,
+      12,    1,   55,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::QReal,    5,
-    QMetaType::Void, QMetaType::QReal,    5,
+    QMetaType::Void, QMetaType::QReal, QMetaType::QReal,    4,    5,
+    QMetaType::Void, QMetaType::QReal, QMetaType::QReal,    7,    8,
+    QMetaType::Void, QMetaType::QReal, QMetaType::QReal,   10,   11,
+    QMetaType::Void, 0x80000000 | 13,   14,
 
        0        // eod
 };
@@ -82,9 +95,10 @@ void Ui_Host_stats::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         (void)_t;
         switch (_id) {
         case 0: _t->populateListWidget(); break;
-        case 1: _t->updateDiskUsage(); break;
-        case 2: _t->updateCpuUsage((*reinterpret_cast< qreal(*)>(_a[1]))); break;
-        case 3: _t->updateMemUsage((*reinterpret_cast< qreal(*)>(_a[1]))); break;
+        case 1: _t->updateDiskUsage((*reinterpret_cast< qreal(*)>(_a[1])),(*reinterpret_cast< qreal(*)>(_a[2]))); break;
+        case 2: _t->updateCpuUsage((*reinterpret_cast< qreal(*)>(_a[1])),(*reinterpret_cast< qreal(*)>(_a[2]))); break;
+        case 3: _t->updateMemUsage((*reinterpret_cast< qreal(*)>(_a[1])),(*reinterpret_cast< qreal(*)>(_a[2]))); break;
+        case 4: _t->onListWidgetItemClicked((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -119,13 +133,13 @@ int Ui_Host_stats::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

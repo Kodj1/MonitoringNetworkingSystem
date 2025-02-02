@@ -1,30 +1,14 @@
 #include "CpuUsageWidget.h"
+#include <QtCharts/QPieSlice>
 #include <QVBoxLayout>
 
 CpuUsageWidget::CpuUsageWidget(QWidget *parent)
     : QWidget(parent),
-      chart(new QChart()),
-      series(new QLineSeries()),
-      chartView(new QChartView(chart)),
-      axisX(new QValueAxis()),
-      axisY(new QValueAxis()),
-      time(0)
+      series(new QPieSeries()),
+      chartView(new QChartView(new QChart()))
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
-
-    chart->addSeries(series);
-
-    axisX->setLabelFormat("%i");
-    axisX->setTitleText("Time");
-    axisX->setRange(0, 100);
-    chart->addAxis(axisX, Qt::AlignBottom);
-    series->attachAxis(axisX);
-
-    axisY->setRange(0, 100);
-    axisY->setTitleText("Usage (%)");
-    chart->addAxis(axisY, Qt::AlignLeft);
-    series->attachAxis(axisY);
-
+    chartView->chart()->addSeries(series);
     chartView->setRenderHint(QPainter::Antialiasing);
     chartView->setMinimumSize(600, 300);  // Установите минимальные размеры для chartView
     layout->addWidget(chartView);
@@ -32,15 +16,25 @@ CpuUsageWidget::CpuUsageWidget(QWidget *parent)
     setLayout(layout);
 }
 
-void CpuUsageWidget::setCpuUsage(qreal usage)
+void CpuUsageWidget::setCpuUsage(qreal used_cpu, qreal total_cpu)
 {
-    // Add new point to series
-    series->append(time++, usage);
+    series->clear();
 
-    // Keep only recent 100 points
-    if (series->count() > 100) {
-        series->removePoints(0, series->count() - 100);
-    }
+    qreal free = total_cpu - used_cpu;
+    QPieSlice *usedSlice = series->append("Used", used_cpu);
+    QPieSlice *freeSlice = series->append("Free", free);
 
-    axisX->setRange(time - 100, time);
+    usedSlice->setBrush(Qt::red);
+    freeSlice->setBrush(Qt::green);
+
+    usedSlice->setLabel(QString("Used: %1 %").arg(used_cpu));
+    freeSlice->setLabel(QString("Free: %1 %").arg(free));
+    
+    // Включите отображение меток
+    usedSlice->setLabelVisible(true);
+    freeSlice->setLabelVisible(true);
+
+    chartView->chart()->setTitle("Cpu Usage:"); // Установите заголовок диаграммы
+    
+    chartView->chart()->update();
 }

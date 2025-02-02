@@ -92,10 +92,15 @@ void Ui_Host_Window::deleteRecord()
     }
 }
 
-void Ui_Host_Window::openAddForm ()
-{
-    QMainWindow *Open_Add_form= new QMainWindow();
-    Ui::AddForm *Add_form= new Ui::AddForm();
+
+void Ui_Host_Window::openAddForm() {
+    QMainWindow *Open_Add_form = new QMainWindow();
+    Ui::AddForm *Add_form = new Ui::AddForm();
     Add_form->setupUi(Open_Add_form);
     Open_Add_form->show();
+
+    // Обновляем model после закрытия окна
+    connect(Open_Add_form, &QMainWindow::destroyed, this, [this]() {
+        model->select();
+    });
 }

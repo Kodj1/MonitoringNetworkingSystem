@@ -38,10 +38,10 @@ public:
 
 public slots:
     void populateListWidget();
-    void updateDiskUsage();
-    void updateCpuUsage(qreal usage);
-    void updateMemUsage(qreal usage);
-
+    void updateDiskUsage(qreal used_disk, qreal total_disk);
+    void updateCpuUsage(qreal used_cpu, qreal total_cpu);
+    void updateMemUsage(qreal used_mem, qreal total_mem);
+    void onListWidgetItemClicked(QListWidgetItem *item);
 };
 
 namespace Ui {

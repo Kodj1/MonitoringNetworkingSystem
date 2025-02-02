@@ -10,6 +10,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
+
 QT_BEGIN_NAMESPACE
 
 class UI_AddFormWindow : public QObject
@@ -29,8 +30,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow);
 
 public slots:
-
-
+    void AddToDB();
 };
 
 namespace Ui {

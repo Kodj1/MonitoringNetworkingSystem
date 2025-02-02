@@ -2,9 +2,8 @@
 #define CPUUSAGEWIDGET_H
 
 #include <QWidget>
+#include <QtCharts/QPieSeries>
 #include <QtCharts/QChartView>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QValueAxis>
 
 QT_CHARTS_USE_NAMESPACE
 
@@ -14,15 +13,11 @@ class CpuUsageWidget : public QWidget
 
 public:
     explicit CpuUsageWidget(QWidget *parent = nullptr);
-    void setCpuUsage(qreal usage);
+    void setCpuUsage(qreal used_cpu, qreal total_cpu);
 
 private:
-    QChart *chart;
-    QLineSeries *series;
+    QPieSeries *series;
     QChartView *chartView;
-    QValueAxis *axisX;
-    QValueAxis *axisY;
-    int time;
 };
 
-#endif // CPUUSAGEWIDGET_H
+#endif

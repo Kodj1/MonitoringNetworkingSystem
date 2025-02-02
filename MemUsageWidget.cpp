@@ -1,47 +1,41 @@
 #include "MemUsageWidget.h"
+#include <QtCharts/QPieSlice>
 #include <QVBoxLayout>
 
 MemUsageWidget::MemUsageWidget(QWidget *parent)
     : QWidget(parent),
-      chart(new QChart()),
-      series(new QLineSeries()),
-      chartView(new QChartView(chart)),
-      axisX(new QValueAxis()),
-      axisY(new QValueAxis()),
-      time(0)
+      series(new QPieSeries()),
+      chartView(new QChartView(new QChart()))
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
-
-    chart->addSeries(series);
-    chart->setTitle("Memory Usage");
-
-    axisX->setLabelFormat("%i");
-    axisX->setTitleText("Time");
-    axisX->setRange(0, 100);
-    chart->addAxis(axisX, Qt::AlignBottom);
-    series->attachAxis(axisX);
-
-    axisY->setRange(0, 100);
-    axisY->setTitleText("Usage (%)");
-    chart->addAxis(axisY, Qt::AlignLeft);
-    series->attachAxis(axisY);
-
+    chartView->chart()->addSeries(series);
     chartView->setRenderHint(QPainter::Antialiasing);
-    chartView->setMinimumSize(800, 600);  // Установите минимальные размеры для chartView
+    chartView->setMinimumSize(600, 300);  // Установите минимальные размеры для chartView
     layout->addWidget(chartView);
     layout->setContentsMargins(0, 0, 0, 0);  // Уберите отступы, чтобы график занимал все пространство
     setLayout(layout);
 }
 
-void MemUsageWidget::setMemUsage(double usage)
+void MemUsageWidget::setMemUsage(qreal used_mem, qreal total_mem)
 {
-    // Add new point to series
-    series->append(time++, usage);
+    series->clear();
 
-    // Keep only recent 100 points
-    if (series->count() > 100) {
-        series->removePoints(0, series->count() - 100);
-    }
+    qreal free = total_mem - used_mem;
+    QPieSlice *usedSlice = series->append("Used", used_mem);
+    QPieSlice *freeSlice = series->append("Free", free);
 
-    axisX->setRange(time - 100, time);
+    usedSlice->setBrush(Qt::red);
+    freeSlice->setBrush(Qt::green);
+
+    // Установите метки для сегментов
+    usedSlice->setLabel(QString("Used: %1 %").arg(used_mem));
+    freeSlice->setLabel(QString("Free: %1 %").arg(free));
+    
+    // Включите отображение меток
+    usedSlice->setLabelVisible(true);
+    freeSlice->setLabelVisible(true);
+
+    chartView->chart()->setTitle(QString("Memory Usage:").arg(total_mem)); // Установите заголовок диаграммы
+    
+    chartView->chart()->update();
 }

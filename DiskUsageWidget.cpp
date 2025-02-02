@@ -16,16 +16,26 @@ DiskUsageWidget::DiskUsageWidget(QWidget *parent)
     setLayout(layout);
 }
 
-void DiskUsageWidget::setDiskUsage(qreal used, qreal total)
+void DiskUsageWidget::setDiskUsage(qreal used_disk, qreal total_disk)
 {
     series->clear();
 
-    qreal free = total - used;
-    QPieSlice *usedSlice = series->append("Used", used);
+    qreal free = total_disk - used_disk;
+    QPieSlice *usedSlice = series->append("Used", used_disk);
     QPieSlice *freeSlice = series->append("Free", free);
 
     usedSlice->setBrush(Qt::red);
     freeSlice->setBrush(Qt::green);
 
+    // Установите метки для сегментов
+    usedSlice->setLabel(QString("Used: %1 GB").arg(used_disk));
+    freeSlice->setLabel(QString("Free: %1 GB").arg(free));
+    
+    // Включите отображение меток
+    usedSlice->setLabelVisible(true);
+    freeSlice->setLabelVisible(true);
+
+    chartView->chart()->setTitle(QString("Disk Usage: Total %1 GB").arg(total_disk)); // Установите заголовок диаграммы
+    
     chartView->chart()->update();
 }

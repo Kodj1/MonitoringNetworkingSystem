@@ -1026,18 +1026,16 @@ CMakeFiles/Monitoring_System.dir/CpuUsageWidget.cpp.o: /home/ilyaveretennikov/Mo
   /usr/include/qt5/QtCharts/QChartGlobal \
   /usr/include/qt5/QtCharts/QChartView \
   /usr/include/qt5/QtCharts/QLegend \
-  /usr/include/qt5/QtCharts/QLineSeries \
-  /usr/include/qt5/QtCharts/QValueAxis \
-  /usr/include/qt5/QtCharts/QXYSeries \
+  /usr/include/qt5/QtCharts/QPieSeries \
+  /usr/include/qt5/QtCharts/QPieSlice \
   /usr/include/qt5/QtCharts/qabstractaxis.h \
   /usr/include/qt5/QtCharts/qabstractseries.h \
   /usr/include/qt5/QtCharts/qchart.h \
   /usr/include/qt5/QtCharts/qchartglobal.h \
   /usr/include/qt5/QtCharts/qchartview.h \
   /usr/include/qt5/QtCharts/qlegend.h \
-  /usr/include/qt5/QtCharts/qlineseries.h \
-  /usr/include/qt5/QtCharts/qvalueaxis.h \
-  /usr/include/qt5/QtCharts/qxyseries.h \
+  /usr/include/qt5/QtCharts/qpieseries.h \
+  /usr/include/qt5/QtCharts/qpieslice.h \
   /usr/include/qt5/QtCore/QMargins \
   /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
@@ -1777,22 +1775,16 @@ CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o: /home/ilyaveretennikov/Monito
   /usr/include/qt5/QtCharts/QChartGlobal \
   /usr/include/qt5/QtCharts/QChartView \
   /usr/include/qt5/QtCharts/QLegend \
-  /usr/include/qt5/QtCharts/QLineSeries \
   /usr/include/qt5/QtCharts/QPieSeries \
   /usr/include/qt5/QtCharts/QPieSlice \
-  /usr/include/qt5/QtCharts/QValueAxis \
-  /usr/include/qt5/QtCharts/QXYSeries \
   /usr/include/qt5/QtCharts/qabstractaxis.h \
   /usr/include/qt5/QtCharts/qabstractseries.h \
   /usr/include/qt5/QtCharts/qchart.h \
   /usr/include/qt5/QtCharts/qchartglobal.h \
   /usr/include/qt5/QtCharts/qchartview.h \
   /usr/include/qt5/QtCharts/qlegend.h \
-  /usr/include/qt5/QtCharts/qlineseries.h \
   /usr/include/qt5/QtCharts/qpieseries.h \
   /usr/include/qt5/QtCharts/qpieslice.h \
-  /usr/include/qt5/QtCharts/qvalueaxis.h \
-  /usr/include/qt5/QtCharts/qxyseries.h \
   /usr/include/qt5/QtCore/QMargins \
   /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
@@ -2627,18 +2619,16 @@ CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.o: /home/ilyaveretennikov/Mo
   /usr/include/qt5/QtCharts/QChartGlobal \
   /usr/include/qt5/QtCharts/QChartView \
   /usr/include/qt5/QtCharts/QLegend \
-  /usr/include/qt5/QtCharts/QLineSeries \
-  /usr/include/qt5/QtCharts/QValueAxis \
-  /usr/include/qt5/QtCharts/QXYSeries \
+  /usr/include/qt5/QtCharts/QPieSeries \
+  /usr/include/qt5/QtCharts/QPieSlice \
   /usr/include/qt5/QtCharts/qabstractaxis.h \
   /usr/include/qt5/QtCharts/qabstractseries.h \
   /usr/include/qt5/QtCharts/qchart.h \
   /usr/include/qt5/QtCharts/qchartglobal.h \
   /usr/include/qt5/QtCharts/qchartview.h \
   /usr/include/qt5/QtCharts/qlegend.h \
-  /usr/include/qt5/QtCharts/qlineseries.h \
-  /usr/include/qt5/QtCharts/qvalueaxis.h \
-  /usr/include/qt5/QtCharts/qxyseries.h \
+  /usr/include/qt5/QtCharts/qpieseries.h \
+  /usr/include/qt5/QtCharts/qpieslice.h \
   /usr/include/qt5/QtCore/QMargins \
   /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
@@ -3008,22 +2998,16 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtCharts/QChartGlobal \
   /usr/include/qt5/QtCharts/QChartView \
   /usr/include/qt5/QtCharts/QLegend \
-  /usr/include/qt5/QtCharts/QLineSeries \
   /usr/include/qt5/QtCharts/QPieSeries \
   /usr/include/qt5/QtCharts/QPieSlice \
-  /usr/include/qt5/QtCharts/QValueAxis \
-  /usr/include/qt5/QtCharts/QXYSeries \
   /usr/include/qt5/QtCharts/qabstractaxis.h \
   /usr/include/qt5/QtCharts/qabstractseries.h \
   /usr/include/qt5/QtCharts/qchart.h \
   /usr/include/qt5/QtCharts/qchartglobal.h \
   /usr/include/qt5/QtCharts/qchartview.h \
   /usr/include/qt5/QtCharts/qlegend.h \
-  /usr/include/qt5/QtCharts/qlineseries.h \
   /usr/include/qt5/QtCharts/qpieseries.h \
   /usr/include/qt5/QtCharts/qpieslice.h \
-  /usr/include/qt5/QtCharts/qvalueaxis.h \
-  /usr/include/qt5/QtCharts/qxyseries.h \
   /usr/include/qt5/QtCore/QMargins \
   /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
@@ -5924,18 +5908,16 @@ CMakeFiles/Monitoring_System.dir/moc_CpuUsageWidget.cpp.o: moc_CpuUsageWidget.cp
   /usr/include/qt5/QtCharts/QChartGlobal \
   /usr/include/qt5/QtCharts/QChartView \
   /usr/include/qt5/QtCharts/QLegend \
-  /usr/include/qt5/QtCharts/QLineSeries \
-  /usr/include/qt5/QtCharts/QValueAxis \
-  /usr/include/qt5/QtCharts/QXYSeries \
+  /usr/include/qt5/QtCharts/QPieSeries \
+  /usr/include/qt5/QtCharts/QPieSlice \
   /usr/include/qt5/QtCharts/qabstractaxis.h \
   /usr/include/qt5/QtCharts/qabstractseries.h \
   /usr/include/qt5/QtCharts/qchart.h \
   /usr/include/qt5/QtCharts/qchartglobal.h \
   /usr/include/qt5/QtCharts/qchartview.h \
   /usr/include/qt5/QtCharts/qlegend.h \
-  /usr/include/qt5/QtCharts/qlineseries.h \
-  /usr/include/qt5/QtCharts/qvalueaxis.h \
-  /usr/include/qt5/QtCharts/qxyseries.h \
+  /usr/include/qt5/QtCharts/qpieseries.h \
+  /usr/include/qt5/QtCharts/qpieslice.h \
   /usr/include/qt5/QtCore/QMargins \
   /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
@@ -6665,22 +6647,16 @@ CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o: moc_Host_stats.cpp \
   /usr/include/qt5/QtCharts/QChartGlobal \
   /usr/include/qt5/QtCharts/QChartView \
   /usr/include/qt5/QtCharts/QLegend \
-  /usr/include/qt5/QtCharts/QLineSeries \
   /usr/include/qt5/QtCharts/QPieSeries \
   /usr/include/qt5/QtCharts/QPieSlice \
-  /usr/include/qt5/QtCharts/QValueAxis \
-  /usr/include/qt5/QtCharts/QXYSeries \
   /usr/include/qt5/QtCharts/qabstractaxis.h \
   /usr/include/qt5/QtCharts/qabstractseries.h \
   /usr/include/qt5/QtCharts/qchart.h \
   /usr/include/qt5/QtCharts/qchartglobal.h \
   /usr/include/qt5/QtCharts/qchartview.h \
   /usr/include/qt5/QtCharts/qlegend.h \
-  /usr/include/qt5/QtCharts/qlineseries.h \
   /usr/include/qt5/QtCharts/qpieseries.h \
   /usr/include/qt5/QtCharts/qpieslice.h \
-  /usr/include/qt5/QtCharts/qvalueaxis.h \
-  /usr/include/qt5/QtCharts/qxyseries.h \
   /usr/include/qt5/QtCore/QMargins \
   /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
@@ -7505,18 +7481,16 @@ CMakeFiles/Monitoring_System.dir/moc_MemUsageWidget.cpp.o: moc_MemUsageWidget.cp
   /usr/include/qt5/QtCharts/QChartGlobal \
   /usr/include/qt5/QtCharts/QChartView \
   /usr/include/qt5/QtCharts/QLegend \
-  /usr/include/qt5/QtCharts/QLineSeries \
-  /usr/include/qt5/QtCharts/QValueAxis \
-  /usr/include/qt5/QtCharts/QXYSeries \
+  /usr/include/qt5/QtCharts/QPieSeries \
+  /usr/include/qt5/QtCharts/QPieSlice \
   /usr/include/qt5/QtCharts/qabstractaxis.h \
   /usr/include/qt5/QtCharts/qabstractseries.h \
   /usr/include/qt5/QtCharts/qchart.h \
   /usr/include/qt5/QtCharts/qchartglobal.h \
   /usr/include/qt5/QtCharts/qchartview.h \
   /usr/include/qt5/QtCharts/qlegend.h \
-  /usr/include/qt5/QtCharts/qlineseries.h \
-  /usr/include/qt5/QtCharts/qvalueaxis.h \
-  /usr/include/qt5/QtCharts/qxyseries.h \
+  /usr/include/qt5/QtCharts/qpieseries.h \
+  /usr/include/qt5/QtCharts/qpieslice.h \
   /usr/include/qt5/QtCore/QMargins \
   /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
@@ -8869,6 +8843,8 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtNetwork/qnetworkinterface.h:
 
+/usr/include/qt5/QtNetwork/qhostinfo.h:
+
 /usr/include/qt5/QtNetwork/QTcpSocket:
 
 /usr/include/qt5/QtNetwork/QNetworkInterface:
@@ -8878,6 +8854,8 @@ moc_AddForm.cpp:
 /usr/include/qt5/QtCore/qxmlstream.h:
 
 /usr/include/qt5/QtCore/qwineventnotifier.h:
+
+/usr/include/qt5/QtCore/qwaitcondition.h:
 
 /usr/include/qt5/QtCore/qversionnumber.h:
 
@@ -8983,17 +8961,13 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtCore/qfloat16.h:
 
+/usr/include/qt5/QtCore/qfinalstate.h:
+
 /usr/include/qt5/QtCore/qfilesystemwatcher.h:
 
 /usr/include/qt5/QtCore/qfactoryinterface.h:
 
 /usr/include/qt5/QtCore/qdiriterator.h:
-
-/usr/include/qt5/QtCore/qdatetime.h:
-
-/usr/include/qt5/QtCore/qconcatenatetablesproxymodel.h:
-
-/usr/include/qt5/QtCore/qcommandlineparser.h:
 
 /usr/include/qt5/QtCore/qline.h:
 
@@ -9257,12 +9231,6 @@ moc_Host_window.cpp:
 
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
 
-/usr/include/qt5/QtCore/qfileinfo.h:
-
-/usr/include/qt5/QtCore/qdeadlinetimer.h:
-
-/usr/include/c++/14/bits/stl_tempbuf.h:
-
 /usr/include/qt5/QtGui/qcolor.h:
 
 /usr/include/bits/local_lim.h:
@@ -9386,10 +9354,6 @@ moc_Host_window.cpp:
 /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h:
 
 /usr/include/qt5/QtGui/qbrush.h:
-
-/usr/include/qt5/QtCore/qcryptographichash.h:
-
-/usr/include/c++/14/bits/exception_defines.h:
 
 /usr/include/qt5/QtSql/qsqlquery.h:
 
@@ -9521,12 +9485,6 @@ moc_Host_stats.cpp:
 
 /usr/include/qt5/QtCore/qobjectdefs_impl.h:
 
-/usr/include/qt5/QtCore/qmimedata.h:
-
-/usr/include/qt5/QtCore/qdir.h:
-
-/usr/include/qt5/QtCore/qbuffer.h:
-
 /usr/include/bits/stdint-least.h:
 
 /usr/include/c++/14/bits/invoke.h:
@@ -9556,10 +9514,6 @@ moc_Host_stats.cpp:
 /usr/include/bits/endian.h:
 
 /usr/include/c++/14/concepts:
-
-/usr/include/qt5/QtCore/qfinalstate.h:
-
-/usr/include/qt5/QtCharts/qxyseries.h:
 
 /usr/include/qt5/QtWidgets/qgraphicslayoutitem.h:
 
@@ -9642,6 +9596,10 @@ moc_Host_stats.cpp:
 /usr/include/qt5/QtConcurrent/qtconcurrentstoredfunctioncall.h:
 
 /usr/include/qt5/QtCore/qhash.h:
+
+/usr/include/c++/14/backward/binders.h:
+
+/home/ilyaveretennikov/MonitoringNetworkingSystem/MemUsageWidget.h:
 
 /usr/include/qt5/QtCore/qlist.h:
 
@@ -9859,10 +9817,6 @@ moc_MemUsageWidget.cpp:
 
 /usr/include/qt5/QtWidgets/qmainwindow.h:
 
-/usr/include/qt5/QtNetwork/qhostinfo.h:
-
-/usr/include/qt5/QtCharts/QValueAxis:
-
 /usr/include/qt5/QtCore/qcbormap.h:
 
 /usr/include/qt5/QtCore/qvariant.h:
@@ -9941,23 +9895,13 @@ moc_MemUsageWidget.cpp:
 
 /usr/include/time.h:
 
-/usr/include/qt5/QtCharts/qvalueaxis.h:
-
 /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/CpuUsageWidget.h:
 
 /usr/include/qt5/QtCharts/QChart:
 
-/usr/include/c++/14/backward/binders.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/MemUsageWidget.h:
-
-/usr/include/qt5/QtCharts/QLineSeries:
-
-/usr/include/qt5/QtCore/qwaitcondition.h:
-
-/usr/include/qt5/QtCharts/QXYSeries:
+/usr/include/qt5/QtCharts/QPieSeries:
 
 /usr/include/c++/14/ext/string_conversions.h:
 
@@ -9965,7 +9909,9 @@ moc_MemUsageWidget.cpp:
 
 /usr/include/qt5/QtWidgets/qgridlayout.h:
 
-/usr/include/qt5/QtCharts/qlineseries.h:
+/usr/include/qt5/QtCore/qtimeline.h:
+
+/usr/include/qt5/QtCharts/qpieseries.h:
 
 /usr/include/qt5/QtCore/qscopedvaluerollback.h:
 
@@ -10032,12 +9978,6 @@ moc_MemUsageWidget.cpp:
 /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/DiskUsageWidget.cpp:
-
-/usr/include/qt5/QtCharts/QPieSeries:
-
-/usr/include/qt5/QtCore/qtimeline.h:
-
-/usr/include/qt5/QtCharts/qpieseries.h:
 
 /usr/include/c++/14/system_error:
 
@@ -10166,3 +10106,25 @@ moc_MemUsageWidget.cpp:
 /usr/include/qt5/QtGui/QPen:
 
 /usr/include/qt5/QtCore/qcborstreamwriter.h:
+
+/usr/include/qt5/QtCore/qcommandlineparser.h:
+
+/usr/include/qt5/QtCore/qconcatenatetablesproxymodel.h:
+
+/usr/include/c++/14/bits/exception_defines.h:
+
+/usr/include/qt5/QtCore/qcryptographichash.h:
+
+/usr/include/qt5/QtCore/qdatetime.h:
+
+/usr/include/qt5/QtCore/qfileinfo.h:
+
+/usr/include/c++/14/bits/stl_tempbuf.h:
+
+/usr/include/qt5/QtCore/qdeadlinetimer.h:
+
+/usr/include/qt5/QtCore/qmimedata.h:
+
+/usr/include/qt5/QtCore/qbuffer.h:
+
+/usr/include/qt5/QtCore/qdir.h:

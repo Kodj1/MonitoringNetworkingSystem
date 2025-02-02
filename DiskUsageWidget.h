@@ -13,7 +13,7 @@ class DiskUsageWidget : public QWidget
 
 public:
     explicit DiskUsageWidget(QWidget *parent = nullptr);
-    void setDiskUsage(qreal used, qreal total);
+    void setDiskUsage(qreal used_disk, qreal total_disk);
 
 private:
     QPieSeries *series;

@@ -1029,18 +1029,16 @@ CMakeFiles/Monitoring_System.dir/CpuUsageWidget.cpp.o
  /usr/include/qt5/QtCharts/QChartGlobal
  /usr/include/qt5/QtCharts/QChartView
  /usr/include/qt5/QtCharts/QLegend
- /usr/include/qt5/QtCharts/QLineSeries
- /usr/include/qt5/QtCharts/QValueAxis
- /usr/include/qt5/QtCharts/QXYSeries
+ /usr/include/qt5/QtCharts/QPieSeries
+ /usr/include/qt5/QtCharts/QPieSlice
  /usr/include/qt5/QtCharts/qabstractaxis.h
  /usr/include/qt5/QtCharts/qabstractseries.h
  /usr/include/qt5/QtCharts/qchart.h
  /usr/include/qt5/QtCharts/qchartglobal.h
  /usr/include/qt5/QtCharts/qchartview.h
  /usr/include/qt5/QtCharts/qlegend.h
- /usr/include/qt5/QtCharts/qlineseries.h
- /usr/include/qt5/QtCharts/qvalueaxis.h
- /usr/include/qt5/QtCharts/qxyseries.h
+ /usr/include/qt5/QtCharts/qpieseries.h
+ /usr/include/qt5/QtCharts/qpieslice.h
  /usr/include/qt5/QtCore/QMargins
  /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant
@@ -1782,22 +1780,16 @@ CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o
  /usr/include/qt5/QtCharts/QChartGlobal
  /usr/include/qt5/QtCharts/QChartView
  /usr/include/qt5/QtCharts/QLegend
- /usr/include/qt5/QtCharts/QLineSeries
  /usr/include/qt5/QtCharts/QPieSeries
  /usr/include/qt5/QtCharts/QPieSlice
- /usr/include/qt5/QtCharts/QValueAxis
- /usr/include/qt5/QtCharts/QXYSeries
  /usr/include/qt5/QtCharts/qabstractaxis.h
  /usr/include/qt5/QtCharts/qabstractseries.h
  /usr/include/qt5/QtCharts/qchart.h
  /usr/include/qt5/QtCharts/qchartglobal.h
  /usr/include/qt5/QtCharts/qchartview.h
  /usr/include/qt5/QtCharts/qlegend.h
- /usr/include/qt5/QtCharts/qlineseries.h
  /usr/include/qt5/QtCharts/qpieseries.h
  /usr/include/qt5/QtCharts/qpieslice.h
- /usr/include/qt5/QtCharts/qvalueaxis.h
- /usr/include/qt5/QtCharts/qxyseries.h
  /usr/include/qt5/QtCore/QMargins
  /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant
@@ -2634,18 +2626,16 @@ CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.o
  /usr/include/qt5/QtCharts/QChartGlobal
  /usr/include/qt5/QtCharts/QChartView
  /usr/include/qt5/QtCharts/QLegend
- /usr/include/qt5/QtCharts/QLineSeries
- /usr/include/qt5/QtCharts/QValueAxis
- /usr/include/qt5/QtCharts/QXYSeries
+ /usr/include/qt5/QtCharts/QPieSeries
+ /usr/include/qt5/QtCharts/QPieSlice
  /usr/include/qt5/QtCharts/qabstractaxis.h
  /usr/include/qt5/QtCharts/qabstractseries.h
  /usr/include/qt5/QtCharts/qchart.h
  /usr/include/qt5/QtCharts/qchartglobal.h
  /usr/include/qt5/QtCharts/qchartview.h
  /usr/include/qt5/QtCharts/qlegend.h
- /usr/include/qt5/QtCharts/qlineseries.h
- /usr/include/qt5/QtCharts/qvalueaxis.h
- /usr/include/qt5/QtCharts/qxyseries.h
+ /usr/include/qt5/QtCharts/qpieseries.h
+ /usr/include/qt5/QtCharts/qpieslice.h
  /usr/include/qt5/QtCore/QMargins
  /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant
@@ -3016,22 +3006,16 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o
  /usr/include/qt5/QtCharts/QChartGlobal
  /usr/include/qt5/QtCharts/QChartView
  /usr/include/qt5/QtCharts/QLegend
- /usr/include/qt5/QtCharts/QLineSeries
  /usr/include/qt5/QtCharts/QPieSeries
  /usr/include/qt5/QtCharts/QPieSlice
- /usr/include/qt5/QtCharts/QValueAxis
- /usr/include/qt5/QtCharts/QXYSeries
  /usr/include/qt5/QtCharts/qabstractaxis.h
  /usr/include/qt5/QtCharts/qabstractseries.h
  /usr/include/qt5/QtCharts/qchart.h
  /usr/include/qt5/QtCharts/qchartglobal.h
  /usr/include/qt5/QtCharts/qchartview.h
  /usr/include/qt5/QtCharts/qlegend.h
- /usr/include/qt5/QtCharts/qlineseries.h
  /usr/include/qt5/QtCharts/qpieseries.h
  /usr/include/qt5/QtCharts/qpieslice.h
- /usr/include/qt5/QtCharts/qvalueaxis.h
- /usr/include/qt5/QtCharts/qxyseries.h
  /usr/include/qt5/QtCore/QMargins
  /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant
@@ -5939,18 +5923,16 @@ CMakeFiles/Monitoring_System.dir/moc_CpuUsageWidget.cpp.o
  /usr/include/qt5/QtCharts/QChartGlobal
  /usr/include/qt5/QtCharts/QChartView
  /usr/include/qt5/QtCharts/QLegend
- /usr/include/qt5/QtCharts/QLineSeries
- /usr/include/qt5/QtCharts/QValueAxis
- /usr/include/qt5/QtCharts/QXYSeries
+ /usr/include/qt5/QtCharts/QPieSeries
+ /usr/include/qt5/QtCharts/QPieSlice
  /usr/include/qt5/QtCharts/qabstractaxis.h
  /usr/include/qt5/QtCharts/qabstractseries.h
  /usr/include/qt5/QtCharts/qchart.h
  /usr/include/qt5/QtCharts/qchartglobal.h
  /usr/include/qt5/QtCharts/qchartview.h
  /usr/include/qt5/QtCharts/qlegend.h
- /usr/include/qt5/QtCharts/qlineseries.h
- /usr/include/qt5/QtCharts/qvalueaxis.h
- /usr/include/qt5/QtCharts/qxyseries.h
+ /usr/include/qt5/QtCharts/qpieseries.h
+ /usr/include/qt5/QtCharts/qpieslice.h
  /usr/include/qt5/QtCore/QMargins
  /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant
@@ -6682,22 +6664,16 @@ CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o
  /usr/include/qt5/QtCharts/QChartGlobal
  /usr/include/qt5/QtCharts/QChartView
  /usr/include/qt5/QtCharts/QLegend
- /usr/include/qt5/QtCharts/QLineSeries
  /usr/include/qt5/QtCharts/QPieSeries
  /usr/include/qt5/QtCharts/QPieSlice
- /usr/include/qt5/QtCharts/QValueAxis
- /usr/include/qt5/QtCharts/QXYSeries
  /usr/include/qt5/QtCharts/qabstractaxis.h
  /usr/include/qt5/QtCharts/qabstractseries.h
  /usr/include/qt5/QtCharts/qchart.h
  /usr/include/qt5/QtCharts/qchartglobal.h
  /usr/include/qt5/QtCharts/qchartview.h
  /usr/include/qt5/QtCharts/qlegend.h
- /usr/include/qt5/QtCharts/qlineseries.h
  /usr/include/qt5/QtCharts/qpieseries.h
  /usr/include/qt5/QtCharts/qpieslice.h
- /usr/include/qt5/QtCharts/qvalueaxis.h
- /usr/include/qt5/QtCharts/qxyseries.h
  /usr/include/qt5/QtCore/QMargins
  /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant
@@ -7524,18 +7500,16 @@ CMakeFiles/Monitoring_System.dir/moc_MemUsageWidget.cpp.o
  /usr/include/qt5/QtCharts/QChartGlobal
  /usr/include/qt5/QtCharts/QChartView
  /usr/include/qt5/QtCharts/QLegend
- /usr/include/qt5/QtCharts/QLineSeries
- /usr/include/qt5/QtCharts/QValueAxis
- /usr/include/qt5/QtCharts/QXYSeries
+ /usr/include/qt5/QtCharts/QPieSeries
+ /usr/include/qt5/QtCharts/QPieSlice
  /usr/include/qt5/QtCharts/qabstractaxis.h
  /usr/include/qt5/QtCharts/qabstractseries.h
  /usr/include/qt5/QtCharts/qchart.h
  /usr/include/qt5/QtCharts/qchartglobal.h
  /usr/include/qt5/QtCharts/qchartview.h
  /usr/include/qt5/QtCharts/qlegend.h
- /usr/include/qt5/QtCharts/qlineseries.h
- /usr/include/qt5/QtCharts/qvalueaxis.h
- /usr/include/qt5/QtCharts/qxyseries.h
+ /usr/include/qt5/QtCharts/qpieseries.h
+ /usr/include/qt5/QtCharts/qpieslice.h
  /usr/include/qt5/QtCore/QMargins
  /usr/include/qt5/QtCore/QObject
  /usr/include/qt5/QtCore/QVariant

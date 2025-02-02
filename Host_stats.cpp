@@ -20,7 +20,7 @@ void Ui_Host_stats::setupUi(QMainWindow *MainWindow)
 
     tabWidget = new QTabWidget(centralwidget);
     tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-    tabWidget->setGeometry(QRect(210, 10, 801, 708)); // Увеличьте размер tabWidget
+    tabWidget->setGeometry(QRect(210, 10, 801, 708));
 
     tab = new QWidget();
     tab->setObjectName(QString::fromUtf8("tab"));
@@ -31,13 +31,13 @@ void Ui_Host_stats::setupUi(QMainWindow *MainWindow)
     tab_2 = new QWidget();
     tab_2->setObjectName(QString::fromUtf8("tab_2"));
     QVBoxLayout *tab2Layout = new QVBoxLayout(tab_2);
-    tab2Layout->setContentsMargins(0, 0, 0, 0);  // Уберите отступы, чтобы график занимал все пространство
+    tab2Layout->setContentsMargins(0, 0, 0, 0);
     tabWidget->addTab(tab_2, QString());
 
     tab_3 = new QWidget();
     tab_3->setObjectName(QString::fromUtf8("tab_3"));
     QVBoxLayout *tab3Layout = new QVBoxLayout(tab_3);
-    tab3Layout->setContentsMargins(0, 0, 0, 0);  // Уберите отступы, чтобы график занимал все пространство
+    tab3Layout->setContentsMargins(0, 0, 0, 0);
     tabWidget->addTab(tab_3, QString());
 
     lineEdit = new QLineEdit(centralwidget);
@@ -46,7 +46,7 @@ void Ui_Host_stats::setupUi(QMainWindow *MainWindow)
 
     listWidget = new QListWidget(centralwidget);
     listWidget->setObjectName(QString::fromUtf8("listWidget"));
-    listWidget->setGeometry(QRect(10, 50, 191, 708)); // Увеличьте высоту listWidget
+    listWidget->setGeometry(QRect(10, 50, 191, 708));
 
     diskUsageWidget = new DiskUsageWidget(tab_2);
     tab2Layout->addWidget(diskUsageWidget);
@@ -54,7 +54,7 @@ void Ui_Host_stats::setupUi(QMainWindow *MainWindow)
     cpuUsageWidget = new CpuUsageWidget(tab_3);
     tab3Layout->addWidget(cpuUsageWidget);
 
-    memUsageWidget = new MemUsageWidget(tab);  // Инициализируйте новый виджет
+    memUsageWidget = new MemUsageWidget(tab);
     tabLayout->addWidget(memUsageWidget);
 
     MainWindow->setCentralWidget(centralwidget);
@@ -65,11 +65,10 @@ void Ui_Host_stats::setupUi(QMainWindow *MainWindow)
 
     this->mainWindow = MainWindow;
 
-    // Populate the list widget when the UI is set up
     populateListWidget();
-    updateDiskUsage();
-    updateCpuUsage(75);
-    updateMemUsage(50);  // Обновите использование памяти с тестовым значением
+
+    // Подключение сигнала к слоту
+    connect(listWidget, &QListWidget::itemClicked, this, &Ui_Host_stats::onListWidgetItemClicked);
 
     QMetaObject::connectSlotsByName(MainWindow);
 }
@@ -106,20 +105,51 @@ void Ui_Host_stats::populateListWidget()
     }
 }
 
-void Ui_Host_stats::updateDiskUsage()
+void Ui_Host_stats::updateDiskUsage(qreal used_disk, qreal total_disk)
 {
-    qreal used = 300;  // пример значения использования
-    qreal total = 1000;  // пример общего объема
-
-    diskUsageWidget->setDiskUsage(used, total);
+    diskUsageWidget->setDiskUsage(used_disk, total_disk);
 }
 
-void Ui_Host_stats::updateCpuUsage(qreal usage)
+void Ui_Host_stats::updateCpuUsage(qreal used_cpu, qreal total_cpu)
 {
-    cpuUsageWidget->setCpuUsage(usage);
+    cpuUsageWidget->setCpuUsage(used_cpu, total_cpu);
 }
 
-void Ui_Host_stats::updateMemUsage(double usage)
+void Ui_Host_stats::updateMemUsage(qreal used_mem, qreal total_mem)
 {
-    memUsageWidget->setMemUsage(usage);
+    memUsageWidget->setMemUsage(used_mem, total_mem);
+}
+
+void Ui_Host_stats::onListWidgetItemClicked(QListWidgetItem *item)
+{
+    QString hostname = item->text();
+
+    if (!QSqlDatabase::database().isOpen()) {
+        QMessageBox::critical(mainWindow, "Database Error", "Database is not open.");
+        return;
+    }
+
+    QSqlQuery query;
+    query.prepare("SELECT cpu_usage, total_cpu, memory_usage, total_memory, disk_usage_gb, total_disk_gb FROM metrics WHERE hostname = :hostname");
+    query.bindValue(":hostname", hostname);
+
+    if (!query.exec()) {
+        QMessageBox::critical(mainWindow, "Query Error", query.lastError().text());
+        return;
+    }
+
+    if (query.next()) {
+        qreal cpuUsage = query.value(0).toDouble();
+        qreal totalCpu = query.value(1).toDouble();
+        qreal memUsage = query.value(2).toDouble();
+        qreal totalMemory = query.value(3).toDouble();
+        qreal diskUsage = query.value(4).toDouble();
+        qreal totalDisk = query.value(5).toDouble();
+        
+        updateCpuUsage(cpuUsage,totalCpu);
+        updateMemUsage(memUsage,totalMemory);
+        updateDiskUsage(diskUsage, totalDisk);  // Пример общего объема, замените на реальное значение если необходимо
+    } else {
+        QMessageBox::information(mainWindow, "No Data", "No metrics found for the selected host.");
+    }
 }

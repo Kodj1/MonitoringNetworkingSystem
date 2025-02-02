@@ -44,7 +44,6 @@ void logFailedInsertToFile(const std::string& hostname, const std::string& macAd
     file.close();
 }
 
-// Function to insert data into the PostgreSQL database
 void insertToDatabase(const std::string& hostname, const std::string& macAddress, const std::string& ipAddress, 
                       double cpuUsage, double totalCpu, double memoryUsage, double totalMemory, 
                       double diskUsageGb, double totalDiskGb) {
@@ -83,7 +82,17 @@ void insertToDatabase(const std::string& hostname, const std::string& macAddress
     query << "INSERT INTO metrics (hostname, mac_address, ip_address, cpu_usage, total_cpu, memory_usage, total_memory, "
           << "disk_usage_gb, total_disk_gb, collected_at) VALUES ('"
           << hostname << "', '" << macAddress << "', '" << ipAddress << "', " << cpuUsage << ", " << totalCpu << ", " 
-          << memoryUsage << ", " << totalMemory << ", " << diskUsageGb << ", " << totalDiskGb << ", '" << collectedAt << "');";
+          << memoryUsage << ", " << totalMemory << ", " << diskUsageGb << ", " << totalDiskGb << ", '" << collectedAt << "') "
+          << "ON CONFLICT (hostname) DO UPDATE SET "
+          << "mac_address = EXCLUDED.mac_address, "
+          << "ip_address = EXCLUDED.ip_address, "
+          << "cpu_usage = EXCLUDED.cpu_usage, "
+          << "total_cpu = EXCLUDED.total_cpu, "
+          << "memory_usage = EXCLUDED.memory_usage, "
+          << "total_memory = EXCLUDED.total_memory, "
+          << "disk_usage_gb = EXCLUDED.disk_usage_gb, "
+          << "total_disk_gb = EXCLUDED.total_disk_gb, "
+          << "collected_at = EXCLUDED.collected_at;";
 
     // Executing the SQL query
     PGresult* res = PQexec(conn, query.str().c_str());
