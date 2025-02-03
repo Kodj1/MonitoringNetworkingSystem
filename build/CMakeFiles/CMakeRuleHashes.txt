@@ -8,4 +8,4 @@ ea390c090c2075e9b975b67a569670c5 moc_Host_stats.cpp
 962fc3e1335dc0f902590a94041ad4c1 moc_MemUsageWidget.cpp
 a092d2ec9a981de520f1cc7700b1e88b moc_Menu.cpp
 1d0446015f2ab77ae4d2c5fd940245b0 moc_NetworkAction.cpp
-78eb5afd64e7d96f476356ad5438f839 moc_Network_traffic.cpp
+def65acebe17eba5effb6e4e5c224ecf moc_Server_logs.cpp

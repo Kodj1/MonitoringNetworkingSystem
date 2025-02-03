@@ -81,13 +81,13 @@ moc_AddForm.cpp: /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating moc_AddForm.cpp"
 	/usr/lib64/qt5/bin/moc @/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_AddForm.cpp_parameters
 
-moc_NetworkAction.cpp: /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating moc_NetworkAction.cpp"
-	/usr/lib64/qt5/bin/moc @/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_NetworkAction.cpp_parameters
+moc_Server_logs.cpp: /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating moc_Server_logs.cpp"
+	/usr/lib64/qt5/bin/moc @/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Server_logs.cpp_parameters
 
-moc_Network_traffic.cpp: /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating moc_Network_traffic.cpp"
-	/usr/lib64/qt5/bin/moc @/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Network_traffic.cpp_parameters
+moc_NetworkAction.cpp: /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating moc_NetworkAction.cpp"
+	/usr/lib64/qt5/bin/moc @/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_NetworkAction.cpp_parameters
 
 moc_Host_stats.cpp: /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_stats.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating moc_Host_stats.cpp"
@@ -165,10 +165,24 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/AddForm.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.cpp -o CMakeFiles/Monitoring_System.dir/AddForm.cpp.s
 
+CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
+CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.cpp
+CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o -MF CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o.d -o CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.cpp
+
+CMakeFiles/Monitoring_System.dir/Server_logs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/Server_logs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.cpp > CMakeFiles/Monitoring_System.dir/Server_logs.cpp.i
+
+CMakeFiles/Monitoring_System.dir/Server_logs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/Server_logs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.cpp -o CMakeFiles/Monitoring_System.dir/Server_logs.cpp.s
+
 CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
 CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.cpp
 CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o -MF CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o.d -o CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.cpp
 
 CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.i: cmake_force
@@ -178,20 +192,6 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.i: cmake_force
 CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.cpp -o CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.s
-
-CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
-CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp
-CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o -MF CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o.d -o CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp
-
-CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp > CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.i
-
-CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp -o CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.s
 
 CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
 CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_stats.cpp
@@ -319,10 +319,24 @@ CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_AddForm.cpp -o CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.s
 
+CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
+CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o: moc_Server_logs.cpp
+CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o -MF CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o.d -o CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Server_logs.cpp
+
+CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Server_logs.cpp > CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.i
+
+CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Server_logs.cpp -o CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.s
+
 CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
 CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o: moc_NetworkAction.cpp
 CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o -MF CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o.d -o CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_NetworkAction.cpp
 
 CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.i: cmake_force
@@ -332,20 +346,6 @@ CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.i: cmake_force
 CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_NetworkAction.cpp -o CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.s
-
-CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
-CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.cpp
-CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: CMakeFiles/Monitoring_System.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o -MF CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o.d -o CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o -c /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Network_traffic.cpp
-
-CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Network_traffic.cpp > CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.i
-
-CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Network_traffic.cpp -o CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.s
 
 CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o: CMakeFiles/Monitoring_System.dir/flags.make
 CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o: moc_Host_stats.cpp
@@ -423,8 +423,8 @@ Monitoring_System_OBJECTS = \
 "CMakeFiles/Monitoring_System.dir/Autorization.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/Menu.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/AddForm.cpp.o" \
+"CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o" \
-"CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/Host_window.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/db_connection.cpp.o" \
@@ -434,8 +434,8 @@ Monitoring_System_OBJECTS = \
 "CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o" \
+"CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o" \
-"CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/moc_Host_window.cpp.o" \
 "CMakeFiles/Monitoring_System.dir/moc_DiskUsageWidget.cpp.o" \
@@ -449,8 +449,8 @@ Monitoring_System: CMakeFiles/Monitoring_System.dir/main.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/Autorization.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/Menu.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/AddForm.cpp.o
+Monitoring_System: CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o
-Monitoring_System: CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/Host_window.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/db_connection.cpp.o
@@ -460,8 +460,8 @@ Monitoring_System: CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o
+Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o
-Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_Host_window.cpp.o
 Monitoring_System: CMakeFiles/Monitoring_System.dir/moc_DiskUsageWidget.cpp.o
@@ -496,7 +496,7 @@ CMakeFiles/Monitoring_System.dir/depend: moc_Host_window.cpp
 CMakeFiles/Monitoring_System.dir/depend: moc_MemUsageWidget.cpp
 CMakeFiles/Monitoring_System.dir/depend: moc_Menu.cpp
 CMakeFiles/Monitoring_System.dir/depend: moc_NetworkAction.cpp
-CMakeFiles/Monitoring_System.dir/depend: moc_Network_traffic.cpp
+CMakeFiles/Monitoring_System.dir/depend: moc_Server_logs.cpp
 	cd /home/ilyaveretennikov/MonitoringNetworkingSystem/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ilyaveretennikov/MonitoringNetworkingSystem /home/ilyaveretennikov/MonitoringNetworkingSystem /home/ilyaveretennikov/MonitoringNetworkingSystem/build /home/ilyaveretennikov/MonitoringNetworkingSystem/build /home/ilyaveretennikov/MonitoringNetworkingSystem/build/CMakeFiles/Monitoring_System.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Monitoring_System.dir/depend
 

@@ -10,18 +10,26 @@
 #include <vector>
 #include <fstream>
 
-// Function to log failed insertions into a text file
-void logFailedInsertToFile(const std::string& hostname, const std::string& macAddress, const std::string& ipAddress, 
+void logFailedInsertToFile(const std::string& path, const std::string& hostname, const std::string& macAddress, const std::string& ipAddress, 
                            double cpuUsage, double totalCpu, double memoryUsage, double totalMemory, 
                            double diskUsageGb, double totalDiskGb, const std::string& errorMessage) {
-    std::ofstream file("failed_inserts.txt", std::ios::app);
+    // Get the current timestamp
+    std::time_t now = std::time(nullptr);
+    char dateBuffer[100];
+    std::strftime(dateBuffer, sizeof(dateBuffer), "%Y-%m-%d", std::localtime(&now));
+
+    // Create the filename using the current date
+    std::ostringstream filename;
+    filename << path << "/failed_inserts_" << dateBuffer << ".txt";
+
+    // Open the file for appending
+    std::ofstream file(filename.str(), std::ios::app);
     if (!file.is_open()) {
         std::cerr << "Failed to open log file." << std::endl;
         return;
     }
     
-    // Get the current timestamp
-    std::time_t now = std::time(nullptr);
+    // Format the current timestamp for logging
     char collectedAt[100];
     std::strftime(collectedAt, sizeof(collectedAt), "%Y-%m-%d %H:%M:%S", std::localtime(&now));
     
@@ -177,6 +185,7 @@ void handleClient(int clientSocket) {
 }
 
 int main() {
+    std::string::path='~/MonitoringNetworkingSystem/Problems'
     const int port = 10900; // Server port
 
     // Create socket

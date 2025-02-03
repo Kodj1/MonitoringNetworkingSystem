@@ -67,7 +67,6 @@ void Ui_Host_stats::setupUi(QMainWindow *MainWindow)
 
     populateListWidget();
 
-    // Подключение сигнала к слоту
     connect(listWidget, &QListWidget::itemClicked, this, &Ui_Host_stats::onListWidgetItemClicked);
 
     QMetaObject::connectSlotsByName(MainWindow);

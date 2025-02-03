@@ -10,9 +10,9 @@ DiskUsageWidget::DiskUsageWidget(QWidget *parent)
     QVBoxLayout *layout = new QVBoxLayout(this);
     chartView->chart()->addSeries(series);
     chartView->setRenderHint(QPainter::Antialiasing);
-    chartView->setMinimumSize(600, 300);  // Установите минимальные размеры для chartView
+    chartView->setMinimumSize(600, 300);
     layout->addWidget(chartView);
-    layout->setContentsMargins(0, 0, 0, 0);  // Уберите отступы, чтобы график занимал все пространство
+    layout->setContentsMargins(0, 0, 0, 0);
     setLayout(layout);
 }
 

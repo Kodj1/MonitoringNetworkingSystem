@@ -56,8 +56,8 @@ void Ui_Network_Window::setupUi(QMainWindow *MainWindow) {
     retranslateUi(MainWindow);
 
     QObject::connect(pushButton, &QPushButton::clicked, this, [this]() {
-        QString startIP = lineEdit->text(); // Чтение начального IP из lineEditStartIP
-        QString endIP = lineEdit_2->text(); // Чтение конечного IP из lineEditEndIP
+        QString startIP = lineEdit->text();
+        QString endIP = lineEdit_2->text();
         ScanNetwork(startIP, endIP);
     });
  

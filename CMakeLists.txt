@@ -24,8 +24,8 @@ set(SOURCES
     Autorization.cpp
     Menu.cpp
     AddForm.cpp
+    Server_logs.cpp
     NetworkAction.cpp
-    Network_traffic.cpp
     Host_stats.cpp
     Host_window.cpp
     db_connection.cpp
@@ -39,8 +39,8 @@ set(HEADERS
     Autorization.h
     Menu.h
     AddForm.h
+    Server_logs.h
     NetworkAction.h
-    Network_traffic.h
     Host_stats.h
     Host_window.h
     DiskUsageWidget.h

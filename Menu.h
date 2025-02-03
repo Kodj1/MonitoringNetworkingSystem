@@ -10,7 +10,6 @@
 #include <QtWidgets/QWidget>
 #include "Autorization.h"
 #include "NetworkAction.h"
-#include "Network_traffic.h"
 #include "Host_window.h"
 
 QT_BEGIN_NAMESPACE
@@ -24,16 +23,15 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
 
     void setupUi(QMainWindow *MainWindow);
     void retranslateUi(QMainWindow *MainWindow);  
 
 public slots:
     void Open_Window_Network_Action();
-    void Open_Window_Network_Traffic();
     void Open_Window_Host_Stats();
     void Open_Window_Host_Window();
+    void Open_Window_Server_Logs();
 };
 
 namespace Ui {

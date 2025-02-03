@@ -1,18 +1,17 @@
 #include "Menu.h"
 #include "Autorization.h"
 #include "NetworkAction.h"
-#include "Network_traffic.h"
 #include "Host_stats.h"
 #include "Host_window.h"
+#include "Server_logs.h"
 #include <QApplication>
-
 
 
 void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(283, 275);
+        MainWindow->resize(283, 210);
 
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
@@ -33,20 +32,14 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setGeometry(QRect(50, 150, 171, 27));
 
-        pushButton_5 = new QPushButton(centralwidget);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(50, 190, 171, 27));
-
         MainWindow->setCentralWidget(centralwidget);
  
-
         retranslateUi(MainWindow);
 
         QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Host_Window);
-        QObject::connect(pushButton_2, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Network_Traffic);
-        QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Host_Stats);
-        // QObject::connect(pushButton_4, &QPushButton::clicked, this, &Ui_Main_Menu::openMenu);
-        QObject::connect(pushButton_5, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Network_Action);
+        QObject::connect(pushButton_2, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Host_Stats);
+        QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Network_Action);
+        QObject::connect(pushButton_4, &QPushButton::clicked, this, &Ui_Main_Menu::Open_Window_Server_Logs);
 
         QMetaObject::connectSlotsByName(MainWindow);
     } 
@@ -55,10 +48,9 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Главное меню", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Хосты", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Сетевая активность", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Статистика хостов", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Проблемы", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Статистика хостов", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Сканирование сети", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Журнал системы", nullptr));
     }
 
     void Ui_Main_Menu::Open_Window_Network_Action()
@@ -69,14 +61,6 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
     networkWindow->show();
     }
     
-    void Ui_Main_Menu::Open_Window_Network_Traffic()
-    {
-    QMainWindow *Network_Traffic_Window = new QMainWindow();
-    Ui::Network_Traffic *net_traffic = new Ui::Network_Traffic();
-    net_traffic->setupUi(Network_Traffic_Window);
-    Network_Traffic_Window->show();
-    }
-
     void Ui_Main_Menu::Open_Window_Host_Stats()
     {
     QMainWindow *Network_Host_Stats = new QMainWindow();
@@ -91,4 +75,12 @@ void Ui_Main_Menu::setupUi(QMainWindow *MainWindow)
     Ui::Host *host_win= new Ui::Host();
     host_win->setupUi(_Host);
     _Host->show();
+    }
+
+    void Ui_Main_Menu::Open_Window_Server_Logs()
+    {
+    QMainWindow *_Server_logs = new QMainWindow();
+    Ui::Server_logs *server_logs= new Ui::Server_logs();
+    server_logs->setupUi(_Server_logs);
+    _Server_logs->show();
     }

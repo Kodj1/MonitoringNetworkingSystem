@@ -19,17 +19,14 @@ void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
     tableView = new QTableView(centralwidget);
     tableView->setObjectName(QString::fromUtf8("tableView"));
     tableView->setGeometry(QRect(0, 0, 791, 281));
-    tableView->setSelectionMode(QAbstractItemView::SingleSelection); // Выбор только одного элемента
-    tableView->setSelectionBehavior(QAbstractItemView::SelectRows); // Выбор строк
-    tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    tableView->setSelectionMode(QAbstractItemView::SingleSelection);
+    tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+    tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
-
-    // Создание и настройка модели для таблицы
-    model = new QSqlTableModel(this); // Инициализация модели
-    model->setTable("nodes"); // Укажите имя вашей таблицы
-    model->select(); // Выполнение запроса к базе данных
+    model = new QSqlTableModel(this);
+    model->setTable("nodes");
+    model->select();
     
-    // Установка модели в tableView
     tableView->setModel(model);
 
     tableView->setColumnHidden(model->fieldIndex("id"), true);
@@ -50,7 +47,6 @@ void Ui_Host_Window::setupUi(QMainWindow *MainWindow)
 
     retranslateUi(MainWindow);
 
-    // Подключите сигнал нажатия кнопки к слоту
     QObject::connect(pushButton_3, &QPushButton::clicked, this, &Ui_Host_Window::deleteRecord);
     QObject::connect(pushButton, &QPushButton::clicked, this, &Ui_Host_Window::openAddForm);
     QMetaObject::connectSlotsByName(MainWindow);
@@ -75,8 +71,7 @@ void Ui_Host_Window::deleteRecord()
     }
 
     int row = index.row();
-    int id = model->data(model->index(row, model->fieldIndex("id"))).toInt(); // Предполагается, что есть столбец id
-
+    int id = model->data(model->index(row, model->fieldIndex("id"))).toInt(); 
     QSqlQuery query;
     query.prepare("DELETE FROM nodes WHERE id = :id");
     query.bindValue(":id", id);
@@ -92,14 +87,12 @@ void Ui_Host_Window::deleteRecord()
     }
 }
 
-
 void Ui_Host_Window::openAddForm() {
     QMainWindow *Open_Add_form = new QMainWindow();
     Ui::AddForm *Add_form = new Ui::AddForm();
     Add_form->setupUi(Open_Add_form);
     Open_Add_form->show();
 
-    // Обновляем model после закрытия окна
     connect(Open_Add_form, &QMainWindow::destroyed, this, [this]() {
         model->select();
     });

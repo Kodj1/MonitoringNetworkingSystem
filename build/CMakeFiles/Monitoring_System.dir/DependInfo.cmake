@@ -17,7 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/MemUsageWidget.cpp" "CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/MemUsageWidget.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.cpp" "CMakeFiles/Monitoring_System.dir/Menu.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/Menu.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.cpp" "CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o.d"
-  "/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp" "CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o.d"
+  "/home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.cpp" "CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/db_connection.cpp" "CMakeFiles/Monitoring_System.dir/db_connection.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/db_connection.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/main.cpp" "CMakeFiles/Monitoring_System.dir/main.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/main.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_AddForm.cpp" "CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_AddForm.cpp.o.d"
@@ -29,7 +29,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_MemUsageWidget.cpp" "CMakeFiles/Monitoring_System.dir/moc_MemUsageWidget.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_MemUsageWidget.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Menu.cpp" "CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o.d"
   "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_NetworkAction.cpp" "CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o.d"
-  "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Network_traffic.cpp" "CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o.d"
+  "/home/ilyaveretennikov/MonitoringNetworkingSystem/build/moc_Server_logs.cpp" "CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o" "gcc" "CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

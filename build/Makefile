@@ -345,29 +345,29 @@ NetworkAction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.s
 .PHONY : NetworkAction.cpp.s
 
-Network_traffic.o: Network_traffic.cpp.o
-.PHONY : Network_traffic.o
+Server_logs.o: Server_logs.cpp.o
+.PHONY : Server_logs.o
 
 # target to build an object file
-Network_traffic.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o
-.PHONY : Network_traffic.cpp.o
+Server_logs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o
+.PHONY : Server_logs.cpp.o
 
-Network_traffic.i: Network_traffic.cpp.i
-.PHONY : Network_traffic.i
+Server_logs.i: Server_logs.cpp.i
+.PHONY : Server_logs.i
 
 # target to preprocess a source file
-Network_traffic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.i
-.PHONY : Network_traffic.cpp.i
+Server_logs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Server_logs.cpp.i
+.PHONY : Server_logs.cpp.i
 
-Network_traffic.s: Network_traffic.cpp.s
-.PHONY : Network_traffic.s
+Server_logs.s: Server_logs.cpp.s
+.PHONY : Server_logs.s
 
 # target to generate assembly for a file
-Network_traffic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.s
-.PHONY : Network_traffic.cpp.s
+Server_logs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/Server_logs.cpp.s
+.PHONY : Server_logs.cpp.s
 
 db_connection.o: db_connection.cpp.o
 .PHONY : db_connection.o
@@ -633,29 +633,29 @@ moc_NetworkAction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.s
 .PHONY : moc_NetworkAction.cpp.s
 
-moc_Network_traffic.o: moc_Network_traffic.cpp.o
-.PHONY : moc_Network_traffic.o
+moc_Server_logs.o: moc_Server_logs.cpp.o
+.PHONY : moc_Server_logs.o
 
 # target to build an object file
-moc_Network_traffic.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o
-.PHONY : moc_Network_traffic.cpp.o
+moc_Server_logs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o
+.PHONY : moc_Server_logs.cpp.o
 
-moc_Network_traffic.i: moc_Network_traffic.cpp.i
-.PHONY : moc_Network_traffic.i
+moc_Server_logs.i: moc_Server_logs.cpp.i
+.PHONY : moc_Server_logs.i
 
 # target to preprocess a source file
-moc_Network_traffic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.i
-.PHONY : moc_Network_traffic.cpp.i
+moc_Server_logs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.i
+.PHONY : moc_Server_logs.cpp.i
 
-moc_Network_traffic.s: moc_Network_traffic.cpp.s
-.PHONY : moc_Network_traffic.s
+moc_Server_logs.s: moc_Server_logs.cpp.s
+.PHONY : moc_Server_logs.s
 
 # target to generate assembly for a file
-moc_Network_traffic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.s
-.PHONY : moc_Network_traffic.cpp.s
+moc_Server_logs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Monitoring_System.dir/build.make CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.s
+.PHONY : moc_Server_logs.cpp.s
 
 # Help Target
 help:
@@ -693,9 +693,9 @@ help:
 	@echo "... NetworkAction.o"
 	@echo "... NetworkAction.i"
 	@echo "... NetworkAction.s"
-	@echo "... Network_traffic.o"
-	@echo "... Network_traffic.i"
-	@echo "... Network_traffic.s"
+	@echo "... Server_logs.o"
+	@echo "... Server_logs.i"
+	@echo "... Server_logs.s"
 	@echo "... db_connection.o"
 	@echo "... db_connection.i"
 	@echo "... db_connection.s"
@@ -729,9 +729,9 @@ help:
 	@echo "... moc_NetworkAction.o"
 	@echo "... moc_NetworkAction.i"
 	@echo "... moc_NetworkAction.s"
-	@echo "... moc_Network_traffic.o"
-	@echo "... moc_Network_traffic.i"
-	@echo "... moc_Network_traffic.s"
+	@echo "... moc_Server_logs.o"
+	@echo "... moc_Server_logs.i"
+	@echo "... moc_Server_logs.s"
 .PHONY : help
 
 

@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Ui_Main_Menu_t {
     QByteArrayData data[6];
-    char stringdata0[116];
+    char stringdata0[112];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,14 +35,14 @@ static const qt_meta_stringdata_Ui_Main_Menu_t qt_meta_stringdata_Ui_Main_Menu =
 QT_MOC_LITERAL(0, 0, 12), // "Ui_Main_Menu"
 QT_MOC_LITERAL(1, 13, 26), // "Open_Window_Network_Action"
 QT_MOC_LITERAL(2, 40, 0), // ""
-QT_MOC_LITERAL(3, 41, 27), // "Open_Window_Network_Traffic"
-QT_MOC_LITERAL(4, 69, 22), // "Open_Window_Host_Stats"
-QT_MOC_LITERAL(5, 92, 23) // "Open_Window_Host_Window"
+QT_MOC_LITERAL(3, 41, 22), // "Open_Window_Host_Stats"
+QT_MOC_LITERAL(4, 64, 23), // "Open_Window_Host_Window"
+QT_MOC_LITERAL(5, 88, 23) // "Open_Window_Server_Logs"
 
     },
     "Ui_Main_Menu\0Open_Window_Network_Action\0"
-    "\0Open_Window_Network_Traffic\0"
-    "Open_Window_Host_Stats\0Open_Window_Host_Window"
+    "\0Open_Window_Host_Stats\0Open_Window_Host_Window\0"
+    "Open_Window_Server_Logs"
 };
 #undef QT_MOC_LITERAL
 
@@ -81,9 +81,9 @@ void Ui_Main_Menu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         (void)_t;
         switch (_id) {
         case 0: _t->Open_Window_Network_Action(); break;
-        case 1: _t->Open_Window_Network_Traffic(); break;
-        case 2: _t->Open_Window_Host_Stats(); break;
-        case 3: _t->Open_Window_Host_Window(); break;
+        case 1: _t->Open_Window_Host_Stats(); break;
+        case 2: _t->Open_Window_Host_Window(); break;
+        case 3: _t->Open_Window_Server_Logs(); break;
         default: ;
         }
     }

@@ -17,8 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Monitoring_System.dir/Menu.cpp.o.d"
   "CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o"
   "CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o.d"
-  "CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o"
-  "CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o.d"
+  "CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o"
+  "CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o.d"
   "CMakeFiles/Monitoring_System.dir/db_connection.cpp.o"
   "CMakeFiles/Monitoring_System.dir/db_connection.cpp.o.d"
   "CMakeFiles/Monitoring_System.dir/main.cpp.o"
@@ -41,8 +41,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o.d"
   "CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o"
   "CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o.d"
-  "CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o"
-  "CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o.d"
+  "CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o"
+  "CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o.d"
   "Monitoring_System"
   "Monitoring_System.pdb"
   "moc_AddForm.cpp"
@@ -54,7 +54,7 @@ file(REMOVE_RECURSE
   "moc_MemUsageWidget.cpp"
   "moc_Menu.cpp"
   "moc_NetworkAction.cpp"
-  "moc_Network_traffic.cpp"
+  "moc_Server_logs.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

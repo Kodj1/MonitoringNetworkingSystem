@@ -7,7 +7,6 @@ CMakeFiles/Monitoring_System.dir/AddForm.cpp.o: /home/ilyaveretennikov/Monitorin
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -409,7 +408,6 @@ CMakeFiles/Monitoring_System.dir/Autorization.cpp.o: /home/ilyaveretennikov/Moni
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1554,7 +1552,6 @@ CMakeFiles/Monitoring_System.dir/Host_stats.cpp.o: /home/ilyaveretennikov/Monito
   /home/ilyaveretennikov/MonitoringNetworkingSystem/MemUsageWidget.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -2001,7 +1998,6 @@ CMakeFiles/Monitoring_System.dir/Host_window.cpp.o: /home/ilyaveretennikov/Monit
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -2777,7 +2773,7 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /home/ilyaveretennikov/MonitoringNetworkingSystem/MemUsageWidget.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -3116,6 +3112,7 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtGui/qrgba64.h \
   /usr/include/qt5/QtGui/qstandarditemmodel.h \
   /usr/include/qt5/QtGui/qtextcursor.h \
+  /usr/include/qt5/QtGui/qtextdocument.h \
   /usr/include/qt5/QtGui/qtextformat.h \
   /usr/include/qt5/QtGui/qtextoption.h \
   /usr/include/qt5/QtGui/qtgui-config.h \
@@ -3153,6 +3150,7 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtWidgets/QStatusBar \
   /usr/include/qt5/QtWidgets/QTabWidget \
   /usr/include/qt5/QtWidgets/QTableView \
+  /usr/include/qt5/QtWidgets/QTextEdit \
   /usr/include/qt5/QtWidgets/QTreeView \
   /usr/include/qt5/QtWidgets/QWidget \
   /usr/include/qt5/QtWidgets/qabstractbutton.h \
@@ -3188,6 +3186,7 @@ CMakeFiles/Monitoring_System.dir/Menu.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /usr/include/qt5/QtWidgets/qtabbar.h \
   /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/qt5/QtWidgets/qtextedit.h \
   /usr/include/qt5/QtWidgets/qtreeview.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -3217,7 +3216,6 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: /home/ilyaveretennikov/Mon
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -3792,13 +3790,8 @@ CMakeFiles/Monitoring_System.dir/NetworkAction.cpp.o: /home/ilyaveretennikov/Mon
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
   /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h
 
-CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
+CMakeFiles/Monitoring_System.dir/Server_logs.cpp.o: /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.cpp \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -4013,7 +4006,9 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
-  /usr/include/qt5/QtCore/QObject \
+  /usr/include/qt5/QtCore/QDir \
+  /usr/include/qt5/QtCore/QFile \
+  /usr/include/qt5/QtCore/QTextStream \
   /usr/include/qt5/QtCore/QVariant \
   /usr/include/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/qt5/QtCore/qalgorithms.h \
@@ -4029,12 +4024,14 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtCore/qconfig.h \
   /usr/include/qt5/QtCore/qcontainerfwd.h \
   /usr/include/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/qt5/QtCore/qcontiguouscache.h \
   /usr/include/qt5/QtCore/qcoreapplication.h \
   /usr/include/qt5/QtCore/qcoreevent.h \
   /usr/include/qt5/QtCore/qdatastream.h \
-  /usr/include/qt5/QtCore/qdebug.h \
+  /usr/include/qt5/QtCore/qdir.h \
   /usr/include/qt5/QtCore/qeventloop.h \
+  /usr/include/qt5/QtCore/qfile.h \
+  /usr/include/qt5/QtCore/qfiledevice.h \
+  /usr/include/qt5/QtCore/qfileinfo.h \
   /usr/include/qt5/QtCore/qflags.h \
   /usr/include/qt5/QtCore/qgenericatomic.h \
   /usr/include/qt5/QtCore/qglobal.h \
@@ -4081,12 +4078,11 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtCore/qtcore-config.h \
   /usr/include/qt5/QtCore/qtextstream.h \
   /usr/include/qt5/QtCore/qtypeinfo.h \
+  /usr/include/qt5/QtCore/qurl.h \
   /usr/include/qt5/QtCore/qvariant.h \
   /usr/include/qt5/QtCore/qvarlengtharray.h \
   /usr/include/qt5/QtCore/qvector.h \
   /usr/include/qt5/QtCore/qversiontagging.h \
-  /usr/include/qt5/QtGui/QIcon \
-  /usr/include/qt5/QtGui/QStandardItemModel \
   /usr/include/qt5/QtGui/qbrush.h \
   /usr/include/qt5/QtGui/qcolor.h \
   /usr/include/qt5/QtGui/qcursor.h \
@@ -4108,8 +4104,8 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtGui/qregion.h \
   /usr/include/qt5/QtGui/qrgb.h \
   /usr/include/qt5/QtGui/qrgba64.h \
-  /usr/include/qt5/QtGui/qstandarditemmodel.h \
   /usr/include/qt5/QtGui/qtextcursor.h \
+  /usr/include/qt5/QtGui/qtextdocument.h \
   /usr/include/qt5/QtGui/qtextformat.h \
   /usr/include/qt5/QtGui/qtextoption.h \
   /usr/include/qt5/QtGui/qtgui-config.h \
@@ -4117,58 +4113,37 @@ CMakeFiles/Monitoring_System.dir/Network_traffic.cpp.o: /home/ilyaveretennikov/M
   /usr/include/qt5/QtGui/qtransform.h \
   /usr/include/qt5/QtGui/qvalidator.h \
   /usr/include/qt5/QtGui/qwindowdefs.h \
-  /usr/include/qt5/QtNetwork/QHostAddress \
-  /usr/include/qt5/QtNetwork/qabstractsocket.h \
-  /usr/include/qt5/QtNetwork/qhostaddress.h \
-  /usr/include/qt5/QtNetwork/qtnetwork-config.h \
-  /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
-  /usr/include/qt5/QtSql/QSqlDatabase \
-  /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
-  /usr/include/qt5/QtSql/qsqldatabase.h \
-  /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
-  /usr/include/qt5/QtSql/qtsql-config.h \
-  /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
-  /usr/include/qt5/QtWidgets/QComboBox \
-  /usr/include/qt5/QtWidgets/QHeaderView \
-  /usr/include/qt5/QtWidgets/QLabel \
-  /usr/include/qt5/QtWidgets/QLineEdit \
+  /usr/include/qt5/QtWidgets/QListWidget \
   /usr/include/qt5/QtWidgets/QMainWindow \
   /usr/include/qt5/QtWidgets/QMessageBox \
-  /usr/include/qt5/QtWidgets/QPushButton \
-  /usr/include/qt5/QtWidgets/QStatusBar \
-  /usr/include/qt5/QtWidgets/QTableView \
-  /usr/include/qt5/QtWidgets/QTreeView \
+  /usr/include/qt5/QtWidgets/QTextEdit \
+  /usr/include/qt5/QtWidgets/QVBoxLayout \
   /usr/include/qt5/QtWidgets/QWidget \
-  /usr/include/qt5/QtWidgets/qabstractbutton.h \
   /usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
   /usr/include/qt5/QtWidgets/qabstractitemview.h \
   /usr/include/qt5/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt5/QtWidgets/qabstractslider.h \
   /usr/include/qt5/QtWidgets/qabstractspinbox.h \
   /usr/include/qt5/QtWidgets/qapplication.h \
-  /usr/include/qt5/QtWidgets/qcombobox.h \
+  /usr/include/qt5/QtWidgets/qboxlayout.h \
   /usr/include/qt5/QtWidgets/qdialog.h \
   /usr/include/qt5/QtWidgets/qframe.h \
-  /usr/include/qt5/QtWidgets/qheaderview.h \
-  /usr/include/qt5/QtWidgets/qlabel.h \
-  /usr/include/qt5/QtWidgets/qlineedit.h \
+  /usr/include/qt5/QtWidgets/qgridlayout.h \
+  /usr/include/qt5/QtWidgets/qlayout.h \
+  /usr/include/qt5/QtWidgets/qlayoutitem.h \
+  /usr/include/qt5/QtWidgets/qlistview.h \
+  /usr/include/qt5/QtWidgets/qlistwidget.h \
   /usr/include/qt5/QtWidgets/qmainwindow.h \
   /usr/include/qt5/QtWidgets/qmessagebox.h \
-  /usr/include/qt5/QtWidgets/qpushbutton.h \
   /usr/include/qt5/QtWidgets/qrubberband.h \
   /usr/include/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/qt5/QtWidgets/qslider.h \
-  /usr/include/qt5/QtWidgets/qstatusbar.h \
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
-  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
-  /usr/include/qt5/QtWidgets/qtreeview.h \
+  /usr/include/qt5/QtWidgets/qtextedit.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt5/QtWidgets/qwidget.h \
@@ -4531,7 +4506,6 @@ CMakeFiles/Monitoring_System.dir/main.cpp.o: /home/ilyaveretennikov/MonitoringNe
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/db_connection.cpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -5293,7 +5267,6 @@ CMakeFiles/Monitoring_System.dir/moc_Autorization.cpp.o: moc_Autorization.cpp \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -6426,7 +6399,6 @@ CMakeFiles/Monitoring_System.dir/moc_Host_stats.cpp.o: moc_Host_stats.cpp \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/MemUsageWidget.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -6866,7 +6838,6 @@ CMakeFiles/Monitoring_System.dir/moc_Host_window.cpp.o: moc_Host_window.cpp \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -7630,7 +7601,6 @@ CMakeFiles/Monitoring_System.dir/moc_Menu.cpp.o: moc_Menu.cpp \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -8029,7 +7999,6 @@ CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o: moc_NetworkAction.cpp 
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
   /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -8423,13 +8392,8 @@ CMakeFiles/Monitoring_System.dir/moc_NetworkAction.cpp.o: moc_NetworkAction.cpp 
   /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
   /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h
 
-CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.cpp \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/AddForm.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Autorization.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_window.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Menu.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/NetworkAction.h \
-  /home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h \
+CMakeFiles/Monitoring_System.dir/moc_Server_logs.cpp.o: moc_Server_logs.cpp \
+  /home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -8644,7 +8608,6 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
-  /usr/include/qt5/QtCore/QObject \
   /usr/include/qt5/QtCore/QVariant \
   /usr/include/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/qt5/QtCore/qalgorithms.h \
@@ -8660,11 +8623,9 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/include/qt5/QtCore/qconfig.h \
   /usr/include/qt5/QtCore/qcontainerfwd.h \
   /usr/include/qt5/QtCore/qcontainertools_impl.h \
-  /usr/include/qt5/QtCore/qcontiguouscache.h \
   /usr/include/qt5/QtCore/qcoreapplication.h \
   /usr/include/qt5/QtCore/qcoreevent.h \
   /usr/include/qt5/QtCore/qdatastream.h \
-  /usr/include/qt5/QtCore/qdebug.h \
   /usr/include/qt5/QtCore/qeventloop.h \
   /usr/include/qt5/QtCore/qflags.h \
   /usr/include/qt5/QtCore/qgenericatomic.h \
@@ -8710,14 +8671,12 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/include/qt5/QtCore/qsysinfo.h \
   /usr/include/qt5/QtCore/qsystemdetection.h \
   /usr/include/qt5/QtCore/qtcore-config.h \
-  /usr/include/qt5/QtCore/qtextstream.h \
   /usr/include/qt5/QtCore/qtypeinfo.h \
+  /usr/include/qt5/QtCore/qurl.h \
   /usr/include/qt5/QtCore/qvariant.h \
   /usr/include/qt5/QtCore/qvarlengtharray.h \
   /usr/include/qt5/QtCore/qvector.h \
   /usr/include/qt5/QtCore/qversiontagging.h \
-  /usr/include/qt5/QtGui/QIcon \
-  /usr/include/qt5/QtGui/QStandardItemModel \
   /usr/include/qt5/QtGui/qbrush.h \
   /usr/include/qt5/QtGui/qcolor.h \
   /usr/include/qt5/QtGui/qcursor.h \
@@ -8739,8 +8698,8 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/include/qt5/QtGui/qregion.h \
   /usr/include/qt5/QtGui/qrgb.h \
   /usr/include/qt5/QtGui/qrgba64.h \
-  /usr/include/qt5/QtGui/qstandarditemmodel.h \
   /usr/include/qt5/QtGui/qtextcursor.h \
+  /usr/include/qt5/QtGui/qtextdocument.h \
   /usr/include/qt5/QtGui/qtextformat.h \
   /usr/include/qt5/QtGui/qtextoption.h \
   /usr/include/qt5/QtGui/qtgui-config.h \
@@ -8748,58 +8707,29 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/include/qt5/QtGui/qtransform.h \
   /usr/include/qt5/QtGui/qvalidator.h \
   /usr/include/qt5/QtGui/qwindowdefs.h \
-  /usr/include/qt5/QtNetwork/QHostAddress \
-  /usr/include/qt5/QtNetwork/qabstractsocket.h \
-  /usr/include/qt5/QtNetwork/qhostaddress.h \
-  /usr/include/qt5/QtNetwork/qtnetwork-config.h \
-  /usr/include/qt5/QtNetwork/qtnetworkglobal.h \
-  /usr/include/qt5/QtSql/QSqlDatabase \
-  /usr/include/qt5/QtSql/QSqlQuery \
-  /usr/include/qt5/QtSql/QSqlTableModel \
-  /usr/include/qt5/QtSql/qsqldatabase.h \
-  /usr/include/qt5/QtSql/qsqlquery.h \
-  /usr/include/qt5/QtSql/qsqlquerymodel.h \
-  /usr/include/qt5/QtSql/qsqltablemodel.h \
-  /usr/include/qt5/QtSql/qtsql-config.h \
-  /usr/include/qt5/QtSql/qtsqlglobal.h \
   /usr/include/qt5/QtWidgets/QApplication \
-  /usr/include/qt5/QtWidgets/QComboBox \
-  /usr/include/qt5/QtWidgets/QHeaderView \
-  /usr/include/qt5/QtWidgets/QLabel \
-  /usr/include/qt5/QtWidgets/QLineEdit \
+  /usr/include/qt5/QtWidgets/QListWidget \
   /usr/include/qt5/QtWidgets/QMainWindow \
-  /usr/include/qt5/QtWidgets/QMessageBox \
-  /usr/include/qt5/QtWidgets/QPushButton \
-  /usr/include/qt5/QtWidgets/QStatusBar \
-  /usr/include/qt5/QtWidgets/QTableView \
-  /usr/include/qt5/QtWidgets/QTreeView \
+  /usr/include/qt5/QtWidgets/QTextEdit \
   /usr/include/qt5/QtWidgets/QWidget \
-  /usr/include/qt5/QtWidgets/qabstractbutton.h \
   /usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
   /usr/include/qt5/QtWidgets/qabstractitemview.h \
   /usr/include/qt5/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt5/QtWidgets/qabstractslider.h \
   /usr/include/qt5/QtWidgets/qabstractspinbox.h \
   /usr/include/qt5/QtWidgets/qapplication.h \
-  /usr/include/qt5/QtWidgets/qcombobox.h \
-  /usr/include/qt5/QtWidgets/qdialog.h \
   /usr/include/qt5/QtWidgets/qframe.h \
-  /usr/include/qt5/QtWidgets/qheaderview.h \
-  /usr/include/qt5/QtWidgets/qlabel.h \
-  /usr/include/qt5/QtWidgets/qlineedit.h \
+  /usr/include/qt5/QtWidgets/qlistview.h \
+  /usr/include/qt5/QtWidgets/qlistwidget.h \
   /usr/include/qt5/QtWidgets/qmainwindow.h \
-  /usr/include/qt5/QtWidgets/qmessagebox.h \
-  /usr/include/qt5/QtWidgets/qpushbutton.h \
   /usr/include/qt5/QtWidgets/qrubberband.h \
   /usr/include/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/qt5/QtWidgets/qslider.h \
-  /usr/include/qt5/QtWidgets/qstatusbar.h \
   /usr/include/qt5/QtWidgets/qstyle.h \
   /usr/include/qt5/QtWidgets/qstyleoption.h \
   /usr/include/qt5/QtWidgets/qtabbar.h \
-  /usr/include/qt5/QtWidgets/qtableview.h \
   /usr/include/qt5/QtWidgets/qtabwidget.h \
-  /usr/include/qt5/QtWidgets/qtreeview.h \
+  /usr/include/qt5/QtWidgets/qtextedit.h \
   /usr/include/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/qt5/QtWidgets/qwidget.h \
@@ -8823,8 +8753,6 @@ CMakeFiles/Monitoring_System.dir/moc_Network_traffic.cpp.o: moc_Network_traffic.
   /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h
 
 
-moc_Network_traffic.cpp:
-
 moc_Menu.cpp:
 
 moc_CpuUsageWidget.cpp:
@@ -8837,7 +8765,13 @@ moc_AddForm.cpp:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/db_connection.cpp:
 
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.cpp:
+/usr/include/qt5/QtCore/QTextStream:
+
+/usr/include/qt5/QtCore/QFile:
+
+/usr/include/qt5/QtCore/QDir:
+
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.cpp:
 
 /usr/include/qt5/QtNetwork/qtcpsocket.h:
 
@@ -8969,6 +8903,8 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtCore/qdiriterator.h:
 
+/usr/include/qt5/QtCore/qdatetime.h:
+
 /usr/include/qt5/QtCore/qline.h:
 
 /usr/include/qt5/QtCore/qbasicatomic.h:
@@ -9033,6 +8969,10 @@ moc_AddForm.cpp:
 
 /usr/include/qt5/QtGui/qpolygon.h:
 
+/usr/include/qt5/QtCore/qabstracttransition.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h:
+
 /usr/include/qt5/QtCore/QDebug:
 
 /usr/include/c++/14/bits/predefined_ops.h:
@@ -9061,7 +9001,11 @@ moc_AddForm.cpp:
 
 /home/ilyaveretennikov/MonitoringNetworkingSystem/Host_stats.h:
 
+/usr/include/qt5/QtWidgets/qtextedit.h:
+
 /usr/include/c++/14/iosfwd:
+
+/usr/include/qt5/QtWidgets/QTextEdit:
 
 /usr/include/c++/14/initializer_list:
 
@@ -9197,19 +9141,11 @@ moc_Host_window.cpp:
 
 /usr/include/c++/14/cmath:
 
-/usr/include/c++/14/bits/std_function.h:
-
-/usr/include/bits/types/__sigset_t.h:
+/usr/include/bits/types/struct_FILE.h:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h:
-
-/usr/include/locale.h:
-
-/usr/include/qt5/QtCore/qchar.h:
-
-/usr/include/features.h:
 
 /usr/include/qt5/QtCore/qjsonvalue.h:
 
@@ -9223,6 +9159,12 @@ moc_Host_window.cpp:
 
 /usr/include/qt5/QtCore/qscopedpointer.h:
 
+/usr/include/locale.h:
+
+/usr/include/qt5/QtCore/qchar.h:
+
+/usr/include/features.h:
+
 /usr/include/bits/types/clockid_t.h:
 
 /usr/include/bits/atomic_wide_counter.h:
@@ -9230,6 +9172,12 @@ moc_Host_window.cpp:
 /usr/include/c++/14/mutex:
 
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
+
+/usr/include/qt5/QtCore/qfileinfo.h:
+
+/usr/include/qt5/QtCore/qdeadlinetimer.h:
+
+/usr/include/c++/14/bits/stl_tempbuf.h:
 
 /usr/include/qt5/QtGui/qcolor.h:
 
@@ -9319,6 +9267,24 @@ moc_Host_window.cpp:
 
 /usr/include/c++/14/bits/charconv.h:
 
+/usr/include/qt5/QtCore/qconfig-64.h:
+
+/usr/include/qt5/QtCore/QModelIndex:
+
+moc_Host_stats.cpp:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/qt5/QtGui/qtextoption.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/c++/14/bits/std_function.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
 /usr/include/qt5/QtCore/qcoreevent.h:
 
 /usr/include/qt5/QtWidgets/qstatusbar.h:
@@ -9330,6 +9296,8 @@ moc_Host_window.cpp:
 /usr/include/qt5/QtCore/qsystemdetection.h:
 
 /usr/include/c++/14/bits/stl_algobase.h:
+
+moc_Server_logs.cpp:
 
 /usr/include/qt5/QtCore/qstandardpaths.h:
 
@@ -9347,30 +9315,6 @@ moc_Host_window.cpp:
 
 /usr/include/qt5/QtSql/qsqltablemodel.h:
 
-/usr/include/qt5/QtCore/qabstracttransition.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h:
-
-/home/ilyaveretennikov/MonitoringNetworkingSystem/Network_traffic.h:
-
-/usr/include/qt5/QtGui/qbrush.h:
-
-/usr/include/qt5/QtSql/qsqlquery.h:
-
-/usr/include/qt5/QtCore/qconfig-64.h:
-
-/usr/include/qt5/QtCore/QModelIndex:
-
-moc_Host_stats.cpp:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/qt5/QtGui/qtextoption.h:
-
-/usr/include/bits/time.h:
-
 /usr/include/qt5/QtCore/qfuturesynchronizer.h:
 
 /usr/include/c++/14/bits/stringfwd.h:
@@ -9386,6 +9330,8 @@ moc_Host_stats.cpp:
 /usr/include/sys/types.h:
 
 /usr/include/qt5/QtCore/qdatastream.h:
+
+/usr/include/qt5/QtGui/qtextdocument.h:
 
 /usr/include/bits/struct_mutex.h:
 
@@ -9485,11 +9431,15 @@ moc_Host_stats.cpp:
 
 /usr/include/qt5/QtCore/qobjectdefs_impl.h:
 
+/usr/include/qt5/QtCore/qmimedata.h:
+
+/usr/include/qt5/QtCore/qdir.h:
+
+/usr/include/qt5/QtCore/qbuffer.h:
+
 /usr/include/bits/stdint-least.h:
 
 /usr/include/c++/14/bits/invoke.h:
-
-/usr/include/bits/types/struct_FILE.h:
 
 /usr/include/bits/sched.h:
 
@@ -9611,6 +9561,8 @@ moc_DiskUsageWidget.cpp:
 
 /usr/include/qt5/QtCharts/qabstractseries.h:
 
+/usr/include/qt5/QtSql/qsqlquery.h:
+
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/c++/14/bits/ios_base.h:
@@ -9661,6 +9613,8 @@ moc_NetworkAction.cpp:
 
 /usr/include/qt5/QtCore/qprocessordetection.h:
 
+/home/ilyaveretennikov/MonitoringNetworkingSystem/Server_logs.h:
+
 /usr/include/qt5/QtCore/qregexp.h:
 
 /usr/include/qt5/QtCore/qregularexpression.h:
@@ -9688,6 +9642,8 @@ moc_NetworkAction.cpp:
 /usr/include/qt5/QtCore/qtypeinfo.h:
 
 /usr/include/qt5/QtCore/qversiontagging.h:
+
+/usr/include/qt5/QtGui/qbrush.h:
 
 /usr/include/qt5/QtCore/qstringliteral.h:
 
@@ -10087,9 +10043,9 @@ moc_MemUsageWidget.cpp:
 
 /usr/include/qt5/QtCore/qabstractstate.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
-
 /usr/include/c++/14/algorithm:
+
+/usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
 
 /usr/include/qt5/QtCore/qarraydatapointer.h:
 
@@ -10114,17 +10070,3 @@ moc_MemUsageWidget.cpp:
 /usr/include/c++/14/bits/exception_defines.h:
 
 /usr/include/qt5/QtCore/qcryptographichash.h:
-
-/usr/include/qt5/QtCore/qdatetime.h:
-
-/usr/include/qt5/QtCore/qfileinfo.h:
-
-/usr/include/c++/14/bits/stl_tempbuf.h:
-
-/usr/include/qt5/QtCore/qdeadlinetimer.h:
-
-/usr/include/qt5/QtCore/qmimedata.h:
-
-/usr/include/qt5/QtCore/qbuffer.h:
-
-/usr/include/qt5/QtCore/qdir.h:

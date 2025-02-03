@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     Database db(connectionName);
 
     if (!db.isOpen()) {
-        return -1; // Завершите приложение, если не удалось подключиться к базе данных
+        return -1;
     }
 
     QMainWindow w;

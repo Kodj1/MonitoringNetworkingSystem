@@ -12,7 +12,7 @@ public:
         db.setHostName("127.0.0.1");
         db.setDatabaseName("mns");
         db.setUserName("postgres");
-        db.setPassword("your_password"); // Замените на ваш пароль
+        db.setPassword("your_password");
 
         if (!db.open()) {
             QMessageBox::critical(nullptr, "Database Error", db.lastError().text());
